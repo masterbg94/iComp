@@ -1,0 +1,31 @@
+.apple-banner-container {
+  display: flex;
+  justify-content: center;
+  background: #F4F4F4;
+  position: relative;
+  box-shadow: 0px 3px 6px #00000029;
+
+  .apple-banner-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 740px;
+    width: 100%;
+    padding: 20px 0;
+
+    .banner-img img {
+      height: 33px;
+    }
+
+    .banner-text {
+      p {
+        font-size: 14px;
+        text-align: right;
+        margin: 0;
+
+        &:first-child {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

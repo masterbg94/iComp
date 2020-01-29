@@ -1,0 +1,17 @@
+<div class="featured-container">
+  <div class="featured-content" style="padding: 30px 0">
+
+    <div class="featured-item" *ngFor="let i of featuredItems">
+      <div class="item-pic" style="max-height: 120px;max-width: 120px">
+        <img src="{{i.img}}" alt="" height="100%" width="100%">
+      </div>
+      <p class="item-name">
+        <b>{{i.name}}</b>
+      </p>
+      <p class="item-price">
+        {{i.price}}
+      </p>
+      <p style="padding-bottom: 5px;color: #D2A647;cursor: pointer"><b>Detaljnije</b></p>
+    </div>
+  </div>
+</div>

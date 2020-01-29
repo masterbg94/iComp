@@ -1,0 +1,37 @@
+.arcade-container {
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  background-size: cover;
+  background: transparent url("../../../../assets/arcade-background.png") no-repeat bottom;
+  width: 100%;
+  position: relative;
+  box-shadow: 0px 3px 6px #00000029;
+  z-index: 1;
+
+  .arcade-content {
+    max-width: 740px;
+    width: 100%;
+    padding-top: 32px;
+
+    img {
+      height: 50px;
+    }
+
+    p {
+      color: white;
+      font-weight: bold;
+      font-size: 15px;
+      margin: 0;
+
+      &:first-of-type {
+        font-size: 25px;
+        padding-top: 15px;
+      }
+
+      &:last-of-type {
+        padding-top: 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,130 @@
+.iphone-short-container {
+  display: flex;
+  justify-content: center;
+
+  .iphone-short-content {
+    display: flex;
+    max-width: 740px;
+    width: 100%;
+    margin: 40px 0;
+
+    .iphone-short-text {
+      p {
+        font-size: 14px;
+        max-width: 240px;
+        margin-bottom: 20px;
+
+        &:first-of-type {
+          font-size: 24px;
+          font-weight: bold;
+        }
+      }
+
+      .buttons {
+        button {
+          width: 109px;
+          height: 32px;
+          font-size: 14px;
+
+          &#models {
+            background: #D2A647 0% 0% no-repeat padding-box;
+            border: 1px solid #D2A647;
+            color: white;
+            margin-right: 10px;
+          }
+
+          &#service {
+            border: 1px solid #D2A647;
+            color: #D2A647;
+          }
+        }
+      }
+    }
+
+    .iphone-short-img {
+      display: flex;
+      flex-direction: column;
+
+      .items-and-phone {
+        display: flex;
+        border-bottom: 1px solid darkgray;
+
+        .items {
+          display: flex;
+          flex-direction: column;
+
+          .item {
+            display: flex;
+
+            .item-img {
+              max-width: 80px;
+              max-height: 80px;
+            }
+
+            .item-text {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+
+              p {
+                margin: 0;
+                font-size: 14px;
+              }
+
+              .name {
+                font-weight: bold;
+              }
+
+              .more {
+                color: #D2A647;
+                margin-top: 5px;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+
+        .phone {
+          max-width: 257px;
+        }
+      }
+
+      .accessorize {
+        display: flex;
+        flex-direction: column;
+
+        p {
+          margin: 10px 0;
+          font-size: 14px;
+          font-weight: bold;
+        }
+
+        .accessorize-item {
+          display: flex;
+          align-items: center;
+
+          img {
+            height: 50px;
+            width: 50px;
+            margin: 0 10px;
+          }
+
+          .item-text {
+            display: flex;
+            flex-direction: column;
+
+            p {
+              font-size: 14px;
+              margin: 0;
+              font-weight: normal;
+
+              &:first-of-type {
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

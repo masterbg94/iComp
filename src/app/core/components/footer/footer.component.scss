@@ -1,0 +1,61 @@
+.footer-container {
+  display: flex;
+  justify-content: center;
+  background: #F5F5F7;
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 740px;
+    width: 100%;
+
+    .footer-menu {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      padding: 30px 0 45px 0;
+
+      .footer-menu-item {
+        .footer-menu-heading {
+          font-weight: bold;
+          padding-bottom: 20px;
+          cursor: auto;
+        }
+
+        p {
+          line-height: 17px;
+          margin-bottom: 3px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .footer-copyrights {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #707070;
+      border-top: 2px solid #C9C9C9;
+      padding: 20px 0;
+
+      p {
+        padding: 0;
+        margin: 0;
+      }
+
+      .jezik {
+        a {
+          color: #707070;
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+        }
+
+        img {
+          margin-left: 10px;
+          height: 24px;
+        }
+      }
+    }
+  }
+}
