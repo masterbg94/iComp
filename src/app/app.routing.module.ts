@@ -9,6 +9,14 @@ const ROUTES: Routes = [
   {
     path: 'iphone',
     loadChildren: './modules/iphone/iphone.module#IphoneModule'
+  },
+  {
+    path: 'contact',
+    loadChildren: './modules/contact/contact.module#ContactModule'
+  },
+  {
+    path: 'service',
+    loadChildren: './modules/service/service.module#ServiceModule'
   }
 ];
 
