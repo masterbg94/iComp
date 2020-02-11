@@ -4,6 +4,8 @@
   background-image: url("../../../../assets/service-background.png");
   height: 120px;
   align-items: center;
+  background-position-x: center;
+  background-size: cover;
 
   .service-heading-content {
     max-width: 740px;
@@ -12,6 +14,7 @@
     .service-logo {
       display: flex;
       align-items: center;
+      mix-blend-mode: multiply;
 
       img {
         height: 45px;

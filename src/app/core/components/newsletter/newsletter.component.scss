@@ -1,27 +1,32 @@
-.newsletter-container{
+.newsletter-container {
   position: relative;
   display: flex;
   justify-content: center;
   background: #F4F4F4;
   box-shadow: 0px 3px 6px #00000029;
-  .newsletter-content{
+
+  .newsletter-content {
     display: flex;
     justify-content: space-between;
     max-width: 740px;
     width: 100%;
     padding: 18px 0;
-    .newsletter-text{
-      p{
+
+    .newsletter-text {
+      p {
         font-size: 12px;
         margin: 0;
-        &:first-child{
+
+        &:first-child {
           font-weight: bold;
         }
       }
     }
-    .newsletter-button{
+
+    .newsletter-button {
       display: flex;
-      input{
+
+      input {
         height: 32px;
         width: 216px;
         background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -30,7 +35,8 @@
         font-size: 14px;
         font-style: italic;
       }
-      button{
+
+      button {
         height: 32px;
         transform: matrix(1, 0, 0, 1, 0, 0);
         background: #D2A647 0% 0% no-repeat padding-box;
@@ -45,7 +51,3 @@
     }
   }
 }
-
-
-//background: #FFFFFF 0% 0% no-repeat padding-box;
-//border: 1px solid #DEDEDE;

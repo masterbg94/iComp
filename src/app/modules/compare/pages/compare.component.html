@@ -1,0 +1,255 @@
+<div class="heading-container">
+  <div class="heading-top">
+    <div class="top-content">
+      <p>Uporedni test iPhone modela</p>
+      <p class="more">Zameni proizvod</p>
+    </div>
+  </div>
+  <div class="heading-bottom">
+    <div class="bottom-content">
+      <p>iPhone 11 ili 11 Pro</p>
+      <p>Zelis saznati u cemu je razlika?</p>
+      <p class="more">Pogledaj uporedni test ></p>
+    </div>
+  </div>
+</div>
+
+<div class="compare-container">
+  <div class="compare-content">
+
+    <div class="compare-item">
+
+      <select (change)="phoneChange($event.target.value)" >
+        <option selected disabled>Izaberite uredjaj</option>
+        <option *ngFor="let t of telefoni" [value]="t.name">{{t.name}}</option>
+      </select>
+
+      <div class="phone-img">
+        <img [src]="phone1selected.img" alt="" class="img-fluid">
+      </div>
+
+      <div class="price">
+        <p>Vec od {{phone1selected.price}} Din</p>
+      </div>
+
+      <div class="screen">
+        <p>{{phone1selected.screen.size}}”</p>
+        <p>{{phone1selected.screen.desc}}</p>
+      </div>
+
+      <div class="body">
+        <p>{{phone1selected.body}}</p>
+      </div>
+
+      <div class="back-camera">
+        <img src="./assets/camera-back.png" alt="" class="img-fluid">
+        <p>{{phone1selected.kamere[0].desc}}</p>
+      </div>
+
+      <div class="front-camera">
+        <p>{{phone1selected.kamere[0].type}}</p>
+        <p>{{phone1selected.kamere[0].desc}}</p>
+      </div>
+
+      <div class="face-id">
+        <img src="./assets/face-id.png" alt="" class="img-fluid">
+        <p>{{phone1selected.lock}}</p>
+      </div>
+
+      <div class="chip">
+        <img src="./assets/chip.png" alt="" class="img-fluid">
+        <p>{{phone1selected.chip.desc}}</p>
+      </div>
+
+    </div>
+
+<!--    <div class="compare-item">-->
+
+<!--      <select>-->
+<!--        <option value="xr">iPhone XR</option>-->
+<!--        <option value="x">iPhone X</option>-->
+<!--        <option value="7">iPhone 7</option>-->
+<!--        <option value="11">iPhone 11 pro</option>-->
+<!--      </select>-->
+
+<!--      <div class="phone-img">-->
+<!--        <img src="./assets/compare2.png" alt="" class="img-fluid">-->
+<!--      </div>-->
+
+<!--      <div class="price">-->
+<!--        <p>Vec od 80.000 Din</p>-->
+<!--      </div>-->
+
+<!--      <div class="screen">-->
+<!--        <p>5.8”</p>-->
+<!--        <p>Super Retina HD display</p>-->
+<!--      </div>-->
+
+<!--      <div class="body">-->
+<!--        <p>Staklo i nerdajuci celik</p>-->
+<!--      </div>-->
+
+<!--      <div class="back-camera">-->
+<!--        <img src="./assets/camera-back1.png" alt="" class="img-fluid">-->
+<!--        <p>Jedna 12MP Wide camera</p>-->
+<!--      </div>-->
+
+<!--      <div class="front-camera">-->
+<!--        <p>TrueDepth</p>-->
+<!--        <p>7MP kamera sa 1080p HD video zapisom i do 60 fps</p>-->
+<!--      </div>-->
+
+<!--      <div class="face-id">-->
+<!--        <img src="./assets/face-id.png" alt="" class="img-fluid">-->
+<!--        <p>Face ID</p>-->
+<!--      </div>-->
+
+<!--      <div class="chip">-->
+<!--        <img src="./assets/chip.png" alt="" class="img-fluid">-->
+<!--        <p>A12 Bionic cip sa prirodnim procesorom druge generacije</p>-->
+<!--      </div>-->
+
+<!--    </div>-->
+
+<!--    <div class="compare-item">-->
+
+<!--      <select>-->
+<!--        <option value="xr">iPhone XR</option>-->
+<!--        <option value="x">iPhone X</option>-->
+<!--        <option value="7">iPhone 7</option>-->
+<!--        <option value="11">iPhone 11 pro</option>-->
+<!--      </select>-->
+
+<!--      <div class="phone-img">-->
+<!--        <img src="./assets/compare3.png" alt="" class="img-fluid">-->
+<!--      </div>-->
+
+<!--      <div class="price">-->
+<!--        <p>Vec od 70.000 Din</p>-->
+<!--      </div>-->
+
+<!--      <div class="screen">-->
+<!--        <p>5.8”</p>-->
+<!--        <p>Super Retina HD display</p>-->
+<!--      </div>-->
+
+<!--      <div class="body">-->
+<!--        <p>Staklo i nerdajuci celik</p>-->
+<!--      </div>-->
+
+<!--      <div class="back-camera">-->
+<!--        <img src="./assets/camera-back1.png" alt="" class="img-fluid">-->
+<!--        <p>Jedna 12MP Wide camera</p>-->
+<!--      </div>-->
+
+<!--      <div class="front-camera">-->
+<!--        <p>TrueDepth</p>-->
+<!--        <p>7MP kamera sa 1080p HD video zapisom i do 60 fps</p>-->
+<!--      </div>-->
+
+<!--      <div class="face-id">-->
+<!--        <img src="./assets/face-id.png" alt="" class="img-fluid">-->
+<!--        <p>Face ID</p>-->
+<!--      </div>-->
+
+<!--      <div class="chip">-->
+<!--        <img src="./assets/chip.png" alt="" class="img-fluid">-->
+<!--        <p>A12 Bionic cip sa prirodnim procesorom druge generacije</p>-->
+<!--      </div>-->
+
+<!--    </div>-->
+
+    <div class="compare-item">
+
+      <select (change)="phoneChange2($event.target.value)" >
+        <option selected disabled>Izaberite uredjaj</option>
+        <option *ngFor="let t of telefoni" [value]="t.name">{{t.name}}</option>
+      </select>
+
+      <div class="phone-img">
+        <img [src]="phone2selected.img" alt="" class="img-fluid">
+      </div>
+
+      <div class="price">
+        <p>Vec od {{phone2selected.price}} Din</p>
+      </div>
+
+      <div class="screen">
+        <p>{{phone2selected.screen.size}}”</p>
+        <p>{{phone2selected.screen.desc}}</p>
+      </div>
+
+      <div class="body">
+        <p>{{phone2selected.body}}</p>
+      </div>
+
+      <div class="back-camera">
+        <img src="./assets/camera-back.png" alt="" class="img-fluid">
+        <p>{{phone2selected.kamere[0].desc}}</p>
+      </div>
+
+      <div class="front-camera">
+        <p>{{phone2selected.kamere[0].type}}</p>
+        <p>{{phone2selected.kamere[0].desc}}</p>
+      </div>
+
+      <div class="face-id">
+        <img src="./assets/face-id.png" alt="" class="img-fluid">
+        <p>{{phone2selected.lock}}</p>
+      </div>
+
+      <div class="chip">
+        <img src="./assets/chip.png" alt="" class="img-fluid">
+        <p>{{phone2selected.chip.desc}}</p>
+      </div>
+
+    </div>
+
+    <div class="compare-item">
+
+      <select (change)="phoneChange3($event.target.value)" >
+        <option selected disabled>Izaberite uredjaj</option>
+        <option *ngFor="let t of telefoni" [value]="t.name">{{t.name}}</option>
+      </select>
+
+      <div class="phone-img">
+        <img [src]="phone3selected.img" alt="" class="img-fluid">
+      </div>
+
+      <div class="price">
+        <p>Vec od {{phone3selected.price}} Din</p>
+      </div>
+
+      <div class="screen">
+        <p>{{phone3selected.screen.size}}”</p>
+        <p>{{phone3selected.screen.desc}}</p>
+      </div>
+
+      <div class="body">
+        <p>{{phone3selected.body}}</p>
+      </div>
+
+      <div class="back-camera">
+        <img src="./assets/camera-back.png" alt="" class="img-fluid">
+        <p>{{phone3selected.kamere[0].desc}}</p>
+      </div>
+
+      <div class="front-camera">
+        <p>{{phone3selected.kamere[0].type}}</p>
+        <p>{{phone3selected.kamere[0].desc}}</p>
+      </div>
+
+      <div class="face-id">
+        <img src="./assets/face-id.png" alt="" class="img-fluid">
+        <p>{{phone3selected.lock}}</p>
+      </div>
+
+      <div class="chip">
+        <img src="./assets/chip2.png" alt="" class="img-fluid">
+        <p>{{phone3selected.chip.desc}}</p>
+      </div>
+
+    </div>
+
+  </div>
+</div>

@@ -4,6 +4,7 @@
 
   .iphone-short-content {
     display: flex;
+    justify-content: space-between;
     max-width: 740px;
     width: 100%;
     margin: 40px 0;
@@ -13,6 +14,7 @@
         font-size: 14px;
         max-width: 240px;
         margin-bottom: 20px;
+        line-height: 17px;
 
         &:first-of-type {
           font-size: 24px;
@@ -44,9 +46,12 @@
     .iphone-short-img {
       display: flex;
       flex-direction: column;
+      max-width: 426px;
+      width: 100%;
 
       .items-and-phone {
         display: flex;
+        justify-content: space-between;
         border-bottom: 1px solid darkgray;
 
         .items {
@@ -85,7 +90,11 @@
         }
 
         .phone {
-          max-width: 257px;
+          //max-width: 257px;
+          height: 168px;
+          img{
+            height: 100%;
+          }
         }
       }
 

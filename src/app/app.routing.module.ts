@@ -17,6 +17,18 @@ const ROUTES: Routes = [
   {
     path: 'service',
     loadChildren: './modules/service/service.module#ServiceModule'
+  },
+  {
+    path: 'product',
+    loadChildren: './modules/product/product.module#ProductModule'
+  },
+  {
+    path: 'privacy',
+    loadChildren: './modules/privacy/privacy.module#PrivacyModule'
+  },
+  {
+    path: 'compare',
+    loadChildren: './modules/compare/compare.module#CompareModule'
   }
 ];
 
