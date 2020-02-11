@@ -21,143 +21,48 @@
 
       <select (change)="phoneChange($event.target.value)" >
         <option selected disabled>Izaberite uredjaj</option>
-        <option *ngFor="let t of telefoni" [value]="t.name">{{t.name}}</option>
+        <option *ngFor="let t of telefoni" >{{t.name}}</option>
       </select>
 
-      <div class="phone-img">
-        <img [src]="phone1selected.img" alt="" class="img-fluid">
+      <div class="phone-img" *ngIf="phone1selected">
+        <img  [src]="phone1selected.img" alt="" class="img-fluid">
       </div>
 
-      <div class="price">
-        <p>Vec od {{phone1selected.price}} Din</p>
+      <div class="price" *ngIf="phone1selected">
+        <p>Vec od {{phone1selected?.price}} Din</p>
       </div>
 
-      <div class="screen">
-        <p>{{phone1selected.screen.size}}”</p>
-        <p>{{phone1selected.screen.desc}}</p>
+      <div class="screen" *ngIf="phone1selected">
+        <p>{{phone1selected?.screen.size}}”</p>
+        <p>{{phone1selected?.screen.desc}}</p>
       </div>
 
-      <div class="body">
-        <p>{{phone1selected.body}}</p>
+      <div class="body" *ngIf="phone1selected">
+        <p>{{phone1selected?.body}}</p>
       </div>
 
-      <div class="back-camera">
+      <div class="back-camera" *ngIf="phone1selected">
         <img src="./assets/camera-back.png" alt="" class="img-fluid">
-        <p>{{phone1selected.kamere[0].desc}}</p>
+        <p>{{phone1selected?.kamere[0].desc}}</p>
       </div>
 
-      <div class="front-camera">
-        <p>{{phone1selected.kamere[0].type}}</p>
-        <p>{{phone1selected.kamere[0].desc}}</p>
+      <div class="front-camera" *ngIf="phone1selected">
+        <p>{{phone1selected?.kamere[0].type}}</p>
+        <p>{{phone1selected?.kamere[0].desc}}</p>
       </div>
 
-      <div class="face-id">
+      <div class="face-id" *ngIf="phone1selected">
         <img src="./assets/face-id.png" alt="" class="img-fluid">
-        <p>{{phone1selected.lock}}</p>
+        <p>{{phone1selected?.lock}}</p>
       </div>
 
-      <div class="chip">
-        <img src="./assets/chip.png" alt="" class="img-fluid">
-        <p>{{phone1selected.chip.desc}}</p>
+      <div class="chip" *ngIf="phone1selected">
+        <img *ngIf="(phone1selected.chip.type)==='A12'" src="./assets/chip.png" alt="" class="img-fluid">
+        <img *ngIf="(phone1selected.chip.type)==='A11'" src="./assets/chip2.png" alt="" class="img-fluid">
+        <p>{{phone1selected?.chip.desc}}</p>
       </div>
 
     </div>
-
-<!--    <div class="compare-item">-->
-
-<!--      <select>-->
-<!--        <option value="xr">iPhone XR</option>-->
-<!--        <option value="x">iPhone X</option>-->
-<!--        <option value="7">iPhone 7</option>-->
-<!--        <option value="11">iPhone 11 pro</option>-->
-<!--      </select>-->
-
-<!--      <div class="phone-img">-->
-<!--        <img src="./assets/compare2.png" alt="" class="img-fluid">-->
-<!--      </div>-->
-
-<!--      <div class="price">-->
-<!--        <p>Vec od 80.000 Din</p>-->
-<!--      </div>-->
-
-<!--      <div class="screen">-->
-<!--        <p>5.8”</p>-->
-<!--        <p>Super Retina HD display</p>-->
-<!--      </div>-->
-
-<!--      <div class="body">-->
-<!--        <p>Staklo i nerdajuci celik</p>-->
-<!--      </div>-->
-
-<!--      <div class="back-camera">-->
-<!--        <img src="./assets/camera-back1.png" alt="" class="img-fluid">-->
-<!--        <p>Jedna 12MP Wide camera</p>-->
-<!--      </div>-->
-
-<!--      <div class="front-camera">-->
-<!--        <p>TrueDepth</p>-->
-<!--        <p>7MP kamera sa 1080p HD video zapisom i do 60 fps</p>-->
-<!--      </div>-->
-
-<!--      <div class="face-id">-->
-<!--        <img src="./assets/face-id.png" alt="" class="img-fluid">-->
-<!--        <p>Face ID</p>-->
-<!--      </div>-->
-
-<!--      <div class="chip">-->
-<!--        <img src="./assets/chip.png" alt="" class="img-fluid">-->
-<!--        <p>A12 Bionic cip sa prirodnim procesorom druge generacije</p>-->
-<!--      </div>-->
-
-<!--    </div>-->
-
-<!--    <div class="compare-item">-->
-
-<!--      <select>-->
-<!--        <option value="xr">iPhone XR</option>-->
-<!--        <option value="x">iPhone X</option>-->
-<!--        <option value="7">iPhone 7</option>-->
-<!--        <option value="11">iPhone 11 pro</option>-->
-<!--      </select>-->
-
-<!--      <div class="phone-img">-->
-<!--        <img src="./assets/compare3.png" alt="" class="img-fluid">-->
-<!--      </div>-->
-
-<!--      <div class="price">-->
-<!--        <p>Vec od 70.000 Din</p>-->
-<!--      </div>-->
-
-<!--      <div class="screen">-->
-<!--        <p>5.8”</p>-->
-<!--        <p>Super Retina HD display</p>-->
-<!--      </div>-->
-
-<!--      <div class="body">-->
-<!--        <p>Staklo i nerdajuci celik</p>-->
-<!--      </div>-->
-
-<!--      <div class="back-camera">-->
-<!--        <img src="./assets/camera-back1.png" alt="" class="img-fluid">-->
-<!--        <p>Jedna 12MP Wide camera</p>-->
-<!--      </div>-->
-
-<!--      <div class="front-camera">-->
-<!--        <p>TrueDepth</p>-->
-<!--        <p>7MP kamera sa 1080p HD video zapisom i do 60 fps</p>-->
-<!--      </div>-->
-
-<!--      <div class="face-id">-->
-<!--        <img src="./assets/face-id.png" alt="" class="img-fluid">-->
-<!--        <p>Face ID</p>-->
-<!--      </div>-->
-
-<!--      <div class="chip">-->
-<!--        <img src="./assets/chip.png" alt="" class="img-fluid">-->
-<!--        <p>A12 Bionic cip sa prirodnim procesorom druge generacije</p>-->
-<!--      </div>-->
-
-<!--    </div>-->
 
     <div class="compare-item">
 
@@ -166,41 +71,42 @@
         <option *ngFor="let t of telefoni" [value]="t.name">{{t.name}}</option>
       </select>
 
-      <div class="phone-img">
+      <div class="phone-img" *ngIf="phone2selected">
         <img [src]="phone2selected.img" alt="" class="img-fluid">
       </div>
 
-      <div class="price">
-        <p>Vec od {{phone2selected.price}} Din</p>
+      <div class="price" *ngIf="phone2selected">
+        <p>Vec od {{phone2selected?.price}} Din</p>
       </div>
 
-      <div class="screen">
-        <p>{{phone2selected.screen.size}}”</p>
-        <p>{{phone2selected.screen.desc}}</p>
+      <div class="screen" *ngIf="phone2selected">
+        <p>{{phone2selected?.screen.size}}”</p>
+        <p>{{phone2selected?.screen.desc}}</p>
       </div>
 
-      <div class="body">
-        <p>{{phone2selected.body}}</p>
+      <div class="body" *ngIf="phone2selected">
+        <p>{{phone2selected?.body}}</p>
       </div>
 
-      <div class="back-camera">
+      <div class="back-camera" *ngIf="phone2selected">
         <img src="./assets/camera-back.png" alt="" class="img-fluid">
-        <p>{{phone2selected.kamere[0].desc}}</p>
+        <p>{{phone2selected?.kamere[0].desc}}</p>
       </div>
 
-      <div class="front-camera">
-        <p>{{phone2selected.kamere[0].type}}</p>
-        <p>{{phone2selected.kamere[0].desc}}</p>
+      <div class="front-camera" *ngIf="phone2selected">
+        <p>{{phone2selected?.kamere[0].type}}</p>
+        <p>{{phone2selected?.kamere[0].desc}}</p>
       </div>
 
-      <div class="face-id">
+      <div class="face-id" *ngIf="phone2selected">
         <img src="./assets/face-id.png" alt="" class="img-fluid">
-        <p>{{phone2selected.lock}}</p>
+        <p>{{phone2selected?.lock}}</p>
       </div>
 
-      <div class="chip">
-        <img src="./assets/chip.png" alt="" class="img-fluid">
-        <p>{{phone2selected.chip.desc}}</p>
+      <div class="chip" *ngIf="phone2selected">
+        <img *ngIf="(phone2selected.chip.type)==='A12'" src="./assets/chip.png" alt="" class="img-fluid">
+        <img *ngIf="(phone2selected.chip.type)==='A11'" src="./assets/chip2.png" alt="" class="img-fluid">
+        <p>{{phone2selected?.chip.desc}}</p>
       </div>
 
     </div>
@@ -212,41 +118,42 @@
         <option *ngFor="let t of telefoni" [value]="t.name">{{t.name}}</option>
       </select>
 
-      <div class="phone-img">
+      <div class="phone-img" *ngIf="phone3selected">
         <img [src]="phone3selected.img" alt="" class="img-fluid">
       </div>
 
-      <div class="price">
-        <p>Vec od {{phone3selected.price}} Din</p>
+      <div class="price" *ngIf="phone3selected">
+        <p>Vec od {{phone3selected?.price}} Din</p>
       </div>
 
-      <div class="screen">
-        <p>{{phone3selected.screen.size}}”</p>
-        <p>{{phone3selected.screen.desc}}</p>
+      <div class="screen" *ngIf="phone3selected">
+        <p>{{phone3selected?.screen.size}}”</p>
+        <p>{{phone3selected?.screen.desc}}</p>
       </div>
 
-      <div class="body">
-        <p>{{phone3selected.body}}</p>
+      <div class="body" *ngIf="phone3selected">
+        <p>{{phone3selected?.body}}</p>
       </div>
 
-      <div class="back-camera">
+      <div class="back-camera" *ngIf="phone3selected">
         <img src="./assets/camera-back.png" alt="" class="img-fluid">
-        <p>{{phone3selected.kamere[0].desc}}</p>
+        <p>{{phone3selected?.kamere[0].desc}}</p>
       </div>
 
-      <div class="front-camera">
-        <p>{{phone3selected.kamere[0].type}}</p>
-        <p>{{phone3selected.kamere[0].desc}}</p>
+      <div class="front-camera" *ngIf="phone3selected">
+        <p>{{phone3selected?.kamere[0].type}}</p>
+        <p>{{phone3selected?.kamere[0].desc}}</p>
       </div>
 
-      <div class="face-id">
+      <div class="face-id" *ngIf="phone3selected">
         <img src="./assets/face-id.png" alt="" class="img-fluid">
-        <p>{{phone3selected.lock}}</p>
+        <p>{{phone3selected?.lock}}</p>
       </div>
 
-      <div class="chip">
-        <img src="./assets/chip2.png" alt="" class="img-fluid">
-        <p>{{phone3selected.chip.desc}}</p>
+      <div class="chip" *ngIf="phone3selected">
+        <img *ngIf="(phone3selected.chip.type)==='A12'" src="./assets/chip.png" alt="" class="img-fluid">
+        <img *ngIf="(phone3selected.chip.type)==='A11'" src="./assets/chip2.png" alt="" class="img-fluid">
+        <p>{{phone3selected?.chip.desc}}</p>
       </div>
 
     </div>

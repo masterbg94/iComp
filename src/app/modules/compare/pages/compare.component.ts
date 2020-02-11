@@ -49,7 +49,7 @@ export class CompareComponent {
         Black: '#000',
         Coral: '#eaa499'
       },
-      price: 'Vec od 79.999',
+      price: 'Vec od 70.000',
       screen: {
         size: '5.8',
         desc: 'Super Retina HD display'
@@ -80,7 +80,7 @@ export class CompareComponent {
         Black: '#000',
         Coral: '#eaa499'
       },
-      price: 'Vec od 69.999',
+      price: 'Vec od 80.000',
       screen: {
         size: '5.8',
         desc: 'Super Retina HD display'
@@ -118,13 +118,13 @@ export class CompareComponent {
   phoneChange2(v) {
     console.log(v);
     this.phone2selected = this.telefoni.find(x => x.name == v);
-    console.log(this.phone1selected);
+    console.log(this.phone2selected);
   }
 
   phoneChange3(v) {
     console.log(v);
     this.phone3selected = this.telefoni.find(x => x.name == v);
-    console.log(this.phone1selected);
+    console.log(this.phone3selected);
   }
 
 }
