@@ -19,13 +19,14 @@
         .footer-menu-heading {
           font-weight: bold;
           padding-bottom: 20px;
-          cursor: auto;
+          margin: 0;
         }
 
         p {
           line-height: 17px;
           margin-bottom: 3px;
           cursor: pointer;
+          color: #202020;
         }
       }
     }
@@ -39,8 +40,8 @@
       padding: 20px 0;
 
       p {
-        padding: 0;
-        margin: 0;
+        line-height: 16px;
+        font-size: 14px;
       }
 
       .jezik {
@@ -49,6 +50,8 @@
           text-decoration: none;
           display: flex;
           align-items: center;
+          line-height: 16px;
+          font-size: 14px;
         }
 
         img {

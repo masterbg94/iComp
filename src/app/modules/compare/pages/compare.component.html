@@ -42,13 +42,14 @@
       </div>
 
       <div class="back-camera" *ngIf="phone1selected">
-        <img src="./assets/camera-back.png" alt="" class="img-fluid">
+        <img *ngIf="phone1selected.kamere[0].type==='WideD'" src="./assets/camera-back1.png" alt="" class="img-fluid">
+        <img *ngIf="phone1selected.kamere[0].type==='Wide'" src="./assets/camera-back.png" alt="" class="img-fluid">
         <p>{{phone1selected?.kamere[0].desc}}</p>
       </div>
 
       <div class="front-camera" *ngIf="phone1selected">
-        <p>{{phone1selected?.kamere[0].type}}</p>
-        <p>{{phone1selected?.kamere[0].desc}}</p>
+        <p>{{phone1selected?.kamere[1].type}}</p>
+        <p>{{phone1selected?.kamere[1].desc}}</p>
       </div>
 
       <div class="face-id" *ngIf="phone1selected">
@@ -89,13 +90,14 @@
       </div>
 
       <div class="back-camera" *ngIf="phone2selected">
-        <img src="./assets/camera-back.png" alt="" class="img-fluid">
+        <img *ngIf="phone2selected.kamere[0].type==='WideD'" src="./assets/camera-back1.png" alt="" class="img-fluid">
+        <img *ngIf="phone2selected.kamere[0].type==='Wide'" src="./assets/camera-back.png" alt="" class="img-fluid">
         <p>{{phone2selected?.kamere[0].desc}}</p>
       </div>
 
       <div class="front-camera" *ngIf="phone2selected">
-        <p>{{phone2selected?.kamere[0].type}}</p>
-        <p>{{phone2selected?.kamere[0].desc}}</p>
+        <p>{{phone2selected?.kamere[1].type}}</p>
+        <p>{{phone2selected?.kamere[1].desc}}</p>
       </div>
 
       <div class="face-id" *ngIf="phone2selected">
@@ -136,13 +138,14 @@
       </div>
 
       <div class="back-camera" *ngIf="phone3selected">
-        <img src="./assets/camera-back.png" alt="" class="img-fluid">
+        <img *ngIf="phone3selected.kamere[0].type==='WideD'" src="./assets/camera-back1.png" alt="" class="img-fluid">
+        <img *ngIf="phone3selected.kamere[0].type==='Wide'" src="./assets/camera-back.png" alt="" class="img-fluid">
         <p>{{phone3selected?.kamere[0].desc}}</p>
       </div>
 
       <div class="front-camera" *ngIf="phone3selected">
-        <p>{{phone3selected?.kamere[0].type}}</p>
-        <p>{{phone3selected?.kamere[0].desc}}</p>
+        <p>{{phone3selected?.kamere[1].type}}</p>
+        <p>{{phone3selected?.kamere[1].desc}}</p>
       </div>
 
       <div class="face-id" *ngIf="phone3selected">

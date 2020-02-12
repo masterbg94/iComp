@@ -8,6 +8,8 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 23px;
 
     .featured-item {
       display: flex;
@@ -15,8 +17,22 @@
       flex-direction: column;
       align-items: center;
 
+      .item-pic {
+        max-height: 120px;
+        max-width: 120px
+      }
+
       p {
         margin: 0;
+        font-size: 14px;
+        line-height: 17px;
+      }
+
+      .more {
+        margin-top: 5px;
+        margin-bottom: 7px;
+        color: #D2A647;
+        cursor: pointer
       }
     }
   }

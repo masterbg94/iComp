@@ -15,9 +15,11 @@
         max-width: 240px;
         margin-bottom: 20px;
         line-height: 17px;
+        color: #4A4A4A;
 
         &:first-of-type {
           font-size: 24px;
+          line-height: 28px;
           font-weight: bold;
         }
       }
@@ -27,6 +29,7 @@
           width: 109px;
           height: 32px;
           font-size: 14px;
+          font-weight: bold;
 
           &#models {
             background: #D2A647 0% 0% no-repeat padding-box;
@@ -74,6 +77,8 @@
               p {
                 margin: 0;
                 font-size: 14px;
+                line-height: 17px;
+                color: #4A4A4A;
               }
 
               .name {
@@ -90,7 +95,6 @@
         }
 
         .phone {
-          //max-width: 257px;
           height: 168px;
           img{
             height: 100%;
@@ -105,7 +109,8 @@
         p {
           margin: 10px 0;
           font-size: 14px;
-          font-weight: bold;
+          line-height: 17px;
+          font-weight: 500;
         }
 
         .accessorize-item {
@@ -124,6 +129,8 @@
 
             p {
               font-size: 14px;
+              line-height: 17px;
+              color: #4A4A4A;
               margin: 0;
               font-weight: normal;
 

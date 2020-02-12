@@ -22,15 +22,18 @@
       color: white;
       font-weight: bold;
       font-size: 15px;
+      line-height: 18px;
       margin: 0;
 
       &:first-of-type {
         font-size: 25px;
-        padding-top: 15px;
+        line-height: 29px;
+        margin-top: 15px;
       }
 
       &:last-of-type {
-        padding-top: 15px;
+        margin-top: 15px;
+        line-height: 17px;
       }
     }
   }

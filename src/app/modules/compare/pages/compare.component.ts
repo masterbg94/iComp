@@ -34,7 +34,7 @@ export class CompareComponent {
           desc: '7MP kamera sa 1080p HD video zapisom i do 60 fps'
         }
       ],
-      lock: 'Face ID',
+      lock: 'Face ID 1',
       chip: {
         type: 'A12',
         desc: 'A12 Bionic cip sa prirodnim procesorom druge generacije'
@@ -57,7 +57,7 @@ export class CompareComponent {
       body: 'Glass & stainless steel',
       kamere: [
         {
-          type: 'Wide',
+          type: 'WideD',
           desc: 'Dupla 12MP Wide kao i Telephoto kamere'
         },
         {
@@ -88,7 +88,7 @@ export class CompareComponent {
       body: 'Glass & stainless steel',
       kamere: [
         {
-          type: 'Wide',
+          type: 'WideD',
           desc: 'Dupla 12MP Wide kao i Telephoto kamere'
         },
         {
