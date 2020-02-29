@@ -5,6 +5,7 @@ import {AppComponent} from './app.component';
 import {AppRoutingModule} from './app.routing.module';
 import {NavbarModule} from './core/components/navbar/navbar.module';
 import {FooterModule} from './core/components/footer/footer.module';
+import {CoreModule} from './core/core.module';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import {FooterModule} from './core/components/footer/footer.module';
   ],
   imports: [
     BrowserModule,
+    CoreModule,
     AppRoutingModule,
     NavbarModule,
     FooterModule

@@ -11,6 +11,14 @@ const ROUTES: Routes = [
     loadChildren: './modules/iphone/iphone.module#IphoneModule'
   },
   {
+    path: 'imac',
+    loadChildren: './modules/iphone/iphone.module#IphoneModule'
+  },
+  {
+    path: 'ipad',
+    loadChildren: './modules/iphone/iphone.module#IphoneModule'
+  },
+  {
     path: 'contact',
     loadChildren: './modules/contact/contact.module#ContactModule'
   },
@@ -29,6 +37,10 @@ const ROUTES: Routes = [
   {
     path: 'compare',
     loadChildren: './modules/compare/compare.module#CompareModule'
+  },
+  {
+    path: 'lager',
+    loadChildren: './modules/lager/lager.module#LagerModule'
   }
 ];
 

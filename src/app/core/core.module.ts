@@ -1,4 +1,5 @@
 import {NgModule, Optional, SkipSelf} from '@angular/core';
+import {ProductService} from './pruduct.service';
 
 /**
  * The core module is used to hold all root-level providers.
@@ -12,6 +13,7 @@ import {NgModule, Optional, SkipSelf} from '@angular/core';
   // Place all services/providers/injection tokens here
   providers: [
     // Provide your app wide services here
+      ProductService,
   ],
   declarations: []
 })

@@ -19,9 +19,9 @@
 
     <div class="compare-item">
 
-      <select (change)="phoneChange($event.target.value)" >
+      <select (change)="phoneChange($event)" >
         <option selected disabled>Izaberite uredjaj</option>
-        <option *ngFor="let t of telefoni" >{{t.name}}</option>
+        <option *ngFor="let t of iphones" >{{t.name}}</option>
       </select>
 
       <div class="phone-img" *ngIf="phone1selected">
@@ -53,7 +53,7 @@
       </div>
 
       <div class="face-id" *ngIf="phone1selected">
-        <img src="./assets/face-id.png" alt="" class="img-fluid">
+        <img src="./assets/face-id.png" alt="" width="81px" class="img-fluid">
         <p>{{phone1selected?.lock}}</p>
       </div>
 
@@ -67,9 +67,9 @@
 
     <div class="compare-item">
 
-      <select (change)="phoneChange2($event.target.value)" >
+      <select (change)="phoneChange2($event)" >
         <option selected disabled>Izaberite uredjaj</option>
-        <option *ngFor="let t of telefoni" [value]="t.name">{{t.name}}</option>
+        <option *ngFor="let t of iphones" [value]="t.name">{{t.name}}</option>
       </select>
 
       <div class="phone-img" *ngIf="phone2selected">
@@ -115,9 +115,9 @@
 
     <div class="compare-item">
 
-      <select (change)="phoneChange3($event.target.value)" >
+      <select (change)="phoneChange3($event)" >
         <option selected disabled>Izaberite uredjaj</option>
-        <option *ngFor="let t of telefoni" [value]="t.name">{{t.name}}</option>
+        <option *ngFor="let t of iphones" [value]="t.name">{{t.name}}</option>
       </select>
 
       <div class="phone-img" *ngIf="phone3selected">

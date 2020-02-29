@@ -1,12 +1,10 @@
 <div class="iphone-short-container">
   <div class="iphone-short-content">
     <div class="iphone-short-text">
-      <p>iPhone</p>
-      <p>The iPhone uses a touch-screen interface that was unique upon its release. Other smart phone manufacturers have
-        since added similar interfaces to their phones, but the iPhone is still the most common. Other smart phones
-        offer non-touch screen interfaces for users who prefer keypad or button navigation.</p>
+      <p>{{data.title}}</p>
+      <p>{{data.description}}</p>
       <div class="buttons">
-        <button id="models">Svi modeli</button>
+        <button id="models" routerLink="/lager">Svi modeli</button>
         <button id="service" routerLink="/service">Servis</button>
       </div>
     </div>
@@ -17,22 +15,22 @@
         <div class="items">
           <div class="item">
             <div class="item-img">
-              <img class="img-fluid" src="./assets/iPhone7.png" alt="">
+              <img class="img-fluid" [src]="data.item1.img" alt="">
             </div>
             <div class="item-text">
-              <p class="name">Apple iPhone 7s</p>
-              <p class="price">Vec od 55.000 Din</p>
-              <p class="more">Detaljnije</p>
+              <p class="name">{{data.item1.name}}</p>
+              <p class="price">{{data.item1.price}}</p>
+              <p class="more" routerLink="/product">Detaljnije</p>
             </div>
           </div>
           <div class="item">
             <div class="item-img">
-              <img class="img-fluid" src="./assets/iPhoneX.png" alt="">
+              <img class="img-fluid" [src]="data.item2.img" alt="">
             </div>
             <div class="item-text">
-              <p class="name">Apple iPhone XR</p>
-              <p class="price">Vec od 90.000 Din</p>
-              <p class="more">Detaljnije</p>
+              <p class="name">{{data.item2.name}}</p>
+              <p class="price">{{data.item2.price}}</p>
+              <p class="more" routerLink="/product">Detaljnije</p>
             </div>
           </div>
         </div>

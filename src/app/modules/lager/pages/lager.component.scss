@@ -1,0 +1,243 @@
+.lager-heading-container {
+  display: flex;
+  justify-content: center;
+
+  .lager-heading-content {
+    max-width: 740px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0 45px 0;
+
+    .heading-text {
+      display: flex;
+      flex-direction: column;
+
+      p {
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: 600;
+
+        &:first-of-type {
+          font-size: 24px;
+          line-height: 28px;
+          font-weight: 900;
+        }
+      }
+    }
+
+    button {
+      width: 123px;
+      height: 45px;
+      border: 1px solid #D2A647;
+      color: #D2A647;
+      background: transparent;
+    }
+  }
+}
+
+.products-container {
+  display: flex;
+  justify-content: center;
+
+  .products-content {
+    max-width: 740px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .iphones {
+      display: flex;
+      flex-direction: column;
+
+      .iphone-description {
+        display: flex;
+        justify-content: space-between;
+
+        .iphone-text {
+          display: flex;
+          flex-direction: column;
+          max-width: 360px;
+
+          p {
+            font-size: 14px;
+            line-height: 17px;
+
+            &:first-of-type {
+              font-size: 18px;
+              line-height: 21px;
+              font-weight: bold;
+              margin-bottom: 20px;
+            }
+          }
+        }
+
+        .iphone-picture {
+          max-width: 230px;
+
+          img {
+            max-height: 150px;
+          }
+        }
+      }
+
+      .iphone-items-list {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+
+        .item {
+          display: flex;
+          justify-content: space-between;
+          height: 80px;
+          margin-bottom: 10px;
+
+          .picture-details {
+            display: flex;
+            align-items: center;
+
+            img {
+              max-height: 80px;
+            }
+
+            .details {
+              display: flex;
+              flex-direction: column;
+
+              p {
+                font-size: 14px;
+                line-height: 17px;
+                font-weight: bold;
+                color: #4A4A4A;
+
+                &:nth-of-type(2){
+                  color: #D2A647;
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+
+          .price-button {
+            display: flex;
+            align-items: center;
+
+            p {
+              font-size: 24px;
+              line-height: 28px;
+              font-weight: lighter;
+              margin-right: 24px;
+            }
+
+            button {
+              height: 45px;
+              background: transparent;
+              border: 1px solid #D2A647;
+              color: #D2A647;
+              font-size: 14px;
+              width: 123px;
+            }
+          }
+        }
+      }
+    }
+
+
+    .imacs {
+      display: flex;
+      flex-direction: column;
+
+      .imac-description {
+        display: flex;
+        justify-content: space-between;
+
+        .imac-text {
+          display: flex;
+          flex-direction: column;
+          max-width: 360px;
+
+          p {
+            font-size: 14px;
+            line-height: 17px;
+
+            &:first-of-type {
+              font-size: 18px;
+              line-height: 21px;
+              font-weight: bold;
+              margin-bottom: 20px;
+            }
+          }
+        }
+
+        .imac-picture {
+          max-width: 230px;
+
+          img {
+            max-height: 150px;
+          }
+        }
+      }
+
+      .imac-items-list {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+
+        .item {
+          display: flex;
+          justify-content: space-between;
+          height: 80px;
+          margin-bottom: 10px;
+
+          .picture-details {
+            display: flex;
+            align-items: center;
+
+            img {
+              max-height: 80px;
+            }
+
+            .details {
+              display: flex;
+              flex-direction: column;
+
+              p {
+                font-size: 14px;
+                line-height: 17px;
+                font-weight: bold;
+                color: #4A4A4A;
+
+                &:nth-of-type(2){
+                  color: #D2A647;
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+
+          .price-button {
+            display: flex;
+            align-items: center;
+
+            p {
+              font-size: 24px;
+              line-height: 28px;
+              font-weight: lighter;
+              margin-right: 24px;
+            }
+
+            button {
+              height: 45px;
+              background: transparent;
+              border: 1px solid #D2A647;
+              color: #D2A647;
+              font-size: 14px;
+              width: 123px;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}
