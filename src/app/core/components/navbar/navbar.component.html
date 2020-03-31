@@ -1,18 +1,71 @@
-<div class="nav-container">
-  <div class="nav-content">
-    <div class="nav-logo" routerLink="/" style="cursor: pointer">
-      <img src="/assets/Logo.png"  alt="">
+<div class="nav-container" style="position: relative">
+    <div class="nav-content">
+        <div class="nav-logo" routerLink="/" style="cursor: pointer">
+            <img src="/assets/Logo.png" alt="">
+        </div>
+        <div class="nav-menu">
+            <ul>
+              <!--        bootstrap dd-->
+              <li  dropdown value="imac" (click)="selectedVal('iMac')">
+                <a id="button-basic" dropdownToggle type="button"
+                   aria-controls="dropdown-basic">
+                  iMac<span class="caret"></span>
+                </a>
+                <div id="dropdown-basic" *dropdownMenu class="dropdown-menu"
+                     role="menu" aria-labelledby="button-basic" style="width: 100vw">
+                  <app-iphone-short-component [data]="bindableData"></app-iphone-short-component>
+                </div>
+              </li>
+              <!--        bootstrap dd-->
+              <!--        bootstrap dd-->
+              <li  dropdown value="imac" (click)="selectedVal('iPhone')">
+                <a id="button-basic" dropdownToggle type="button"
+                   aria-controls="dropdown-basic">
+                  iPhone<span class="caret"></span>
+                </a>
+                <div id="dropdown-basic" *dropdownMenu class="dropdown-menu"
+                     role="menu" aria-labelledby="button-basic" style="width: 100vw">
+                  <app-iphone-short-component [data]="bindableData"></app-iphone-short-component>
+                </div>
+              </li>
+              <!--        bootstrap dd-->
+              <!--        bootstrap dd-->
+              <li  dropdown value="imac" (click)="selectedVal('iPad')">
+                <a id="button-basic" dropdownToggle type="button"
+                   aria-controls="dropdown-basic">
+                  iPad<span class="caret"></span>
+                </a>
+                <div id="dropdown-basic" *dropdownMenu class="dropdown-menu"
+                     role="menu" aria-labelledby="button-basic" style="width: 100vw">
+                  <app-iphone-short-component [data]="bindableData"></app-iphone-short-component>
+                </div>
+              </li>
+              <!--        bootstrap dd-->
+
+
+<!--                <li routerLink="/imac">Mac</li>-->
+<!--                <li routerLink="/ipad">iPad</li>-->
+<!--                <li routerLink="/iphone">iPhone</li>-->
+                <li routerLink="">Watch</li>
+                <li routerLink="">Oprema</li>
+                <li routerLink="/service">Servis</li>
+                <li routerLink="/contact">Podrska</li>
+            </ul>
+        </div>
     </div>
-    <div class="nav-menu">
-      <ul>
-        <li routerLink="/imac">Mac</li>
-        <li routerLink="/ipad">iPad</li>
-        <li routerLink="/iphone">iPhone</li>
-        <li routerLink="/iphone">Watch</li>
-        <li routerLink="/iphone">Oprema</li>
-        <li routerLink="/service">Servis</li>
-        <li routerLink="/contact">Podrska</li>
-      </ul>
-    </div>
-  </div>
 </div>
+
+<!--        bootstrap dd-->
+<!--<div class="btn-group" dropdown>-->
+<!--  <a id="button-basic" dropdownToggle type="button" class="btn btn-primary dropdown-toggle"-->
+<!--          aria-controls="dropdown-basic">-->
+<!--    Button dropdown <span class="caret"></span>-->
+<!--  </a>-->
+<!--  <div id="dropdown-basic" *dropdownMenu class="dropdown-menu"-->
+<!--      role="menu" aria-labelledby="button-basic" style="width: 100vw">-->
+<!--    <app-iphone-short-component [data]="data"></app-iphone-short-component>-->
+<!--  </div>-->
+<!--</div>-->
+<!--        bootstrap dd-->
+
+<!--<app-iphone-short-component [data]="data"></app-iphone-short-component>-->
