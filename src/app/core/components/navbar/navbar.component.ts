@@ -1,82 +1,120 @@
-import {Component, OnInit} from '@angular/core';
+import { animate, state, style, transition, trigger } from '@angular/animations';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
-    selector: 'app-navbar',
-    templateUrl: './navbar.component.html',
-    styleUrls: ['./navbar.component.scss']
+  animations: [
+    trigger('openCloseAnimation', [
+      state('open', style({ height: '*', opacity: 1, paddingTop: '48px' })),
+      state('closed', style({ height: '48px', opacity: 0 })),
+      transition('* => closed', animate('0.2s')),
+      transition('* => open', animate('0.3s')),
+    ]),
+  ],
+  selector: 'app-navbar',
+  templateUrl: './navbar.component.html',
+  styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
+  submenu = false;
+  menu: string;
 
-    public bindableData:any;
+  mecMenu = [
+    {
+      name: 'IMac',
+      image: '/assets/images/mac-menu/imac.png',
+      router: '/imac'
+    },
+    {
+      name: 'Mac Pro',
+      image: '/assets/images/mac-menu/mac-pro.png',
+      router: '/mac-pro'
+    },
+    {
+      name: 'Mac mini',
+      image: '/assets/images/mac-menu/mac-mini.png',
+      router: '/mac-mini'
+    },
+    {
+      name: 'MacBook Air',
+      image: '/assets/images/mac-menu/mac-air.png',
+      router: '/macbook-air'
+    },
+    {
+      name: 'MacBook Pro',
+      image: '/assets/images/mac-menu/mac-book.png',
+      router: '/macbook-pro'
+    },
+  ];
 
-    dataAll = [
-        {
-            title: 'iPhone',
-            description: 'The iPhone uses a touch-screen interface that was unique upon its release. Other smart phone manufacturers have\n' +
-                '        since added similar interfaces to their phones, but the iPhone is still the most common. Other smart phones\n' +
-                '        offer non-touch screen interfaces for users who prefer keypad or button navigation.',
-            item1: {
-                img: './assets/iPhone7.png',
-                name: 'iPhone 7',
-                price: 'Vec od 55.000 Din',
-                link: ''
-            },
-            item2: {
-                img: './assets/iPhone7.png',
-                name: 'iPhone X',
-                price: 'Vec od 75.000 Din',
-                link: ''
-            },
-            featuredimg: './assets/iphone11-pro.png'
-        },
-        {
-            title: 'iMac',
-            description: 'The iMac uses a touch-screen interface that was unique upon its release. Other smart phone manufacturers have\n' +
-                '        since added similar interfaces to their phones, but the iPhone is still the most common. Other smart phones\n' +
-                '        offer non-touch screen interfaces for users who prefer keypad or button navigation.',
-            item1: {
-                img: './assets/iPhoneX.png',
-                name: 'iMac 2019',
-                price: 'Vec od 155.000 Din',
-                link: ''
-            },
-            item2: {
-                img: './assets/iPhoneX.png',
-                name: 'iMac 2020',
-                price: 'Vec od 195.000 Din',
-                link: ''
-            },
-            featuredimg: './assets/iphone11-pro.png'
-        },
-        {
-            title: 'iPad',
-            description: 'The iPad uses a touch-screen interface that was unique upon its release. Other smart phone manufacturers have\n' +
-                '        since added similar interfaces to their phones, but the iPhone is still the most common. Other smart phones\n' +
-                '        offer non-touch screen interfaces for users who prefer keypad or button navigation.',
-            item1: {
-                img: './assets/iPhone7.png',
-                name: 'iPad 2019',
-                price: 'Vec od 89.000 Din',
-                link: ''
-            },
-            item2: {
-                img: './assets/iPhoneX.png',
-                name: 'iPad 2020',
-                price: 'Vec od 99.000 Din',
-                link: ''
-            },
-            featuredimg: './assets/iphone11-pro.png'
-        }
-    ];
+  iphoneMenu = [
+    {
+      name: 'iPhone 11 Pro',
+      image: '/assets/images/iphone-menu/iphone-11-pro.png',
+      route: '/iphones/details/31',
+    },
+    {
+      name: 'iPhone 11',
+      image: '/assets/images/iphone-menu/iphone-11.png',
+      route: '/iphones/details/32',
+    },
+    {
+      name: 'iPhone SE',
+      image: '/assets/images/iphone-menu/iphone-se.png',
+      route: '/iphones/details/33',
+    },
+    {
+      name: 'iPhone XR',
+      image: '/assets/images/iphone-menu/iphone-xr.png',
+      route: '/iphones/details/34',
+    },
+  ];
 
-    selectedVal(x){
-        this.bindableData = this.dataAll.find(data => data.title === x);
-        console.log(this.bindableData);
-    }
+  ipadMenu = [
+    {
+      name: 'iPad Pro (2020)',
+      image: '/assets/images/ipad-menu/ipad-pro-2020.png',
+      route: '/ipad-pro-2020',
+    },
+    {
+      name: 'iPad Pro (2018)',
+      image: '/assets/images/ipad-menu/ipad-pro-2018.png',
+      route: '/ipad-pro-2018',
+    },
+    {
+      name: 'iPad Air',
+      image: '/assets/images/ipad-menu/ipad-air.png',
+      route: '/ipad-air',
+    },
+    {
+      name: 'iPad',
+      image: '/assets/images/ipad-menu/ipad.png',
+      route: '/ipad',
+    },
+    {
+      name: 'iPad mini',
+      image: '/assets/images/ipad-menu/ipadMini.png',
+      route: '/ipad-mini',
+    },
+  ]
 
-    constructor() {
-    }
+  constructor() {
+  }
 
-    ngOnInit() {
-    }
+  ngOnInit() {
+  }
+
+  openMacMenu() {
+    this.submenu = true;
+    this.menu = 'MacMenu';
+  }
+
+  openIpadMenu() {
+    this.submenu = true;
+    this.menu = 'IpadMenu';
+  }
+
+  openIphoneMenu() {
+    this.submenu = true;
+    this.menu = 'IphoneMenu';
+  }
 }

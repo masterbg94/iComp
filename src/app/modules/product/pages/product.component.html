@@ -2,8 +2,8 @@
   <div class="product-heading-content">
 
     <div class="heading-logo">
-      <p>iPhone X🅁</p>
-      <p>Vec od 90.000 Din</p>
+      <p>{{ product.name }}</p>
+      <p>Vec od {{ getNumberWithDot(product.basePrace) }} {{ product.currency }}</p>
     </div>
 
     <div class="heading-share">
@@ -21,14 +21,30 @@
 
     <div class="product-details">
       <div class="product-details-top">
-        <div class="top-img">
-          <img src="./assets/iphone-xr-family.png" alt="" class="img-fluid">
+        <div class="magic"
+             style="position: relative;
+             
+              text-align: center;">
+          <a [href]="product.mainImage"  class="MagicZoom" id="product"
+             data-options="" data-mobile-options="zoomMode: magnifier;">
+            <img [src]="product.mainImage">
+          </a>
         </div>
-        <div class="top-text">
-          <p>Prikazi vise slika</p>
-          <div class="view-video"><img src="./assets/outline-keyboard_arrow_down-24px.svg" alt="">
-            <p>Prikazi video</p></div>
-          <p routerLink="/compare">Uporedi sa drugim modelom</p>
+        <div class="MagicScroll"
+             data-options="orientation:horizontal;
+         items:4;
+         height:110;
+         width:100%;step:1;
+         mode: animation;
+         scrollOnWheel: true;
+         autostart: false;
+         keyboard: true;arrows:outside;"
+        >
+          <a [href]="p.href"
+             *ngFor="let p of product.images"
+             data-zoom-id="product" [attr.data-image]="p.href">
+            <img alt="" [src]="p.href"/>
+          </a>
         </div>
       </div>
       <div class="product-details-bottom">
@@ -61,29 +77,13 @@
         <p>Odaberite boju</p>
         <div class="colors">
 
-          <div class="color-item">
-            <div class="color-background"></div>
-            <p>Bela</p>
-          </div>
-          <div class="color-item">
-            <div class="color-background" [ngStyle]="{'background': 'black'}"></div>
-            <p>Crna</p>
-          </div>
-          <div class="color-item">
-            <div class="color-background" [ngStyle]="{'background': '#47AFE6'}"></div>
-            <p>Plava</p>
-          </div>
-          <div class="color-item">
-            <div class="color-background" [ngStyle]="{'background': '#F9CE45'}"></div>
-            <p>Zuta</p>
-          </div>
-          <div class="color-item">
-            <div class="color-background" [ngStyle]="{'background': '#FF6E5B'}"></div>
-            <p>Koral</p>
-          </div>
-          <div class="color-item">
-            <div class="color-background" [ngStyle]="{'background': '#981411'}"></div>
-            <p>Product RED</p>
+          <div class="color-item"
+               (click)="onClick(color)"
+               [class.color-item--selected]="this.selectedColor === this.product.colors[i].name"
+               *ngFor="let color of product.colors; let i = index;">
+            <div class="color-background"
+                 [style.background]="color.background"></div>
+            <p> {{ color.name }}</p>
           </div>
 
         </div>
@@ -98,14 +98,21 @@
         <div class="storage">
           <p>Odaberite kapacitet</p>
           <div class="capacity-buttons">
-            <button>64GB</button>
-            <button>128GB</button>
+            <button class="capacity"
+                    (click)="onCapacitySelect(capacity)"
+                    [class.capacity--selected]="this.selectedCapacity === product.capacity[i].value"
+                    *ngFor="let capacity of product.capacity; let i = index;">
+              {{ capacity.value }}
+              
+              <p class="price"
+                 [style.marginTop]="0"> {{ getNumberWithDot(capacity.price) }} {{ capacity.currency }}</p>
+            </button>
           </div>
           <button id="next">NASTAVI</button>
         </div>
         <div class="terms">
           <p>Klikom na dugme NASTAVI potvrdjujete da ste saglasni sa nasim Pravilima Privatnosti kao i sa Pravilima
-            kupovine i povracaju novca</p>
+            kupovine i povracaju novca.</p>
         </div>
 
       </div>

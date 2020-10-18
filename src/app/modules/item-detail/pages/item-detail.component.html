@@ -1,0 +1,145 @@
+<div class="container-fluid">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 d-flex item-detail justify-content-between">
+                <div class="col-6 d-flex align-items-start justify-content-center item-detail-image">
+                    <div class="item-detail-image-sticky sticky-top" style="z-index: 1">
+                      <div class="product-details">
+                        <div class="product-details-top">
+                          <div class="magic"
+                               style="position: relative;
+             
+              text-align: center;">
+                            <a [href]="productItem.detailImg"  class="MagicZoom" id="product"
+                               data-options="" data-mobile-options="zoomMode: magnifier;">
+                              <img [src]="productItem.detailImg">
+                            </a>
+                          </div>
+                          <div class="MagicScroll"
+                               data-options="orientation:horizontal;
+                                             items:4;
+                                             height:110;
+                                             width:430;
+                                             step:1;
+                                             mode: animation;
+                                             scrollOnWheel: true;
+                                             autostart: false;
+                                             keyboard: true;arrows:outside;"
+                          >
+                            <a [href]="p"
+                               *ngFor="let p of productItem.images"
+                               data-zoom-id="product" [attr.data-image]="p">
+                              <img alt="" [src]="p"/>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="product-details-bottom">
+                          <div class="three-items">
+                            <div class="bottom-item">
+                              <img src="./assets/box.png" alt="">
+                              <p>Besplatna<br>dostava na teritoriji Srbije</p>
+                            </div>
+                            <div class="bottom-item" id="middle">
+                              <img src="./assets/gear.png" alt="">
+                              <p>Besplatna<br>personalizacija proizvoda</p>
+                            </div>
+                            <div class="bottom-item">
+                              <img src="./assets/box1.png" alt="">
+                              <p>Besplatan<br>povracaj prilikom reklamiranja</p>
+                            </div>
+                          </div>
+      
+                          <div class="question" style="display: flex">
+                            <img src="./assets/outline-message-24px.svg" alt="">
+                            <p>Imati li pitanje vezano za kupovinu? <br>
+                              <span routerLink="/service">Kontaktiraje nasu prodaju</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-5 d-flex flex-column item-detail-info">
+                    <!--<h3 class="mb-2">{{productItem.name}}</h3>
+                    <h4 class="mb-2"><b>{{getNumberWithDot(productItem.price)}} RSD</b></h4>
+                    <p class="mb-2"><b>Izabrana konfiguracija</b></p>
+                    <p>{{productItem.display}}</p>
+                    <p>{{productItem.cpu}}</p>
+                    <p>{{productItem.cpuTurbo}}</p>
+                    <p>{{productItem.ram}}</p>
+                    <p>{{productItem.storage}}</p>
+                    <p>{{productItem.gpu}}</p>
+                    <p>{{productItem.other}}</p>
+                    <button class="cart-button w-100 mt-2" (click)="addToCard()"><b>DODAJ U KORPU</b></button>-->
+                    <app-item-detail-specs [productItem]="productItem"></app-item-detail-specs>
+                    <!--<div class="custom-config" *ngIf="productItem.productConfig">
+
+                        <div class="cpu-config d-flex flex-column mt-2" *ngIf="productItem.productConfig.cpuConfig">
+                            <p><b>Procesor</b></p>
+                            <div class="other-info-item d-flex flex-row justify-content-between cursor-pointer"
+                                 *ngFor="let c of productItem.productConfig.cpuConfig"
+                                 (click)="passValue(c,'cpu')"
+
+                                 [ngClass]="{ 'other-info-selected': c.name === selectedCpu }"
+                            >
+                                <p class="d-flex"><b>{{c.name}}</b></p>
+                                <p class="d-flex"><b>+ {{getNumberWithDot(c.price)}} RSD</b></p>
+                            </div>
+                        </div>
+
+                        <div class="ram-config d-flex flex-column mt-2"
+                             *ngIf="productItem.productConfig.ramConfig">
+                            <p><b>Memorija</b></p>
+                            <div class="other-info-item d-flex flex-row justify-content-between cursor-pointer"
+                                 *ngFor="let r of productItem.productConfig.ramConfig; let i = index;"
+                                 (click)="passValue(r,'ram')"
+                                 [ngClass]="{ 'other-info-selected': r.name === selectedMemory }"
+                            >
+                                <p><b>{{r.name}}</b></p>
+                                <p><b>+ {{getNumberWithDot(r.price)}} RSD</b></p>
+                            </div>
+                        </div>
+
+                        <div class="cpu-config d-flex flex-column mt-2"
+                             *ngIf="productItem.productConfig.storageConfig">
+                            <p><b>Prostor</b></p>
+                            <div class="other-info-item d-flex flex-row justify-content-between cursor-pointer"
+                                 *ngFor="let c of productItem.productConfig.storageConfig"
+                                 (click)="passValue(c,'storage')"
+
+                                 [ngClass]="{ 'other-info-selected': c.name === selectedStorage }"
+                            >
+                                <p class="d-flex"><b>{{c.name}}</b></p>
+                                <p class="d-flex"><b>+ {{getNumberWithDot(c.price)}} RSD</b></p>
+                            </div>
+                        </div>
+
+                        <div class="mouse-config d-flex flex-column mt-2" *ngIf="productItem.productConfig.mouseConfig">
+                            <p><b>Mis ili trackpad</b></p>
+                            <div class="other-info-item d-flex flex-row justify-content-between cursor-pointer"
+                                 *ngFor="let r of productItem.productConfig.mouseConfig"
+                                 (click)="passValue(r,'mouse')"
+                                 [ngClass]="{ 'other-info-selected': r.name === selectedMouse }">
+                                <p><b>{{r.name}}</b></p>
+                                <p><b>+ {{getNumberWithDot(r.price)}} RSD</b></p>
+                            </div>
+                        </div>
+                        <div class="keyboard-config d-flex flex-column mt-2" *ngIf="productItem.productConfig.keyboardConfig">
+                            <p><b>Tastatura</b></p>
+                            <div class="other-info-item d-flex flex-row justify-content-between cursor-pointer"
+                                 *ngFor="let r of productItem.productConfig.keyboardConfig"
+                                 (click)="passValue(r,'keyboard')"
+                                 [ngClass]="{ 'other-info-selected': r.name === selectedKeyboard }">
+                                <p><b>{{r.name}}</b></p>
+                                <p><b>+ {{getNumberWithDot(r.price)}} RSD</b></p>
+                            </div>
+                        </div>
+                    </div>-->
+                    <app-item-detail-config [productItem]="productItem"></app-item-detail-config>
+                    <div class="other-info d-flex flex-column my-3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

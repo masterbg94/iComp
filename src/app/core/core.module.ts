@@ -1,4 +1,6 @@
+import { CommonModule } from '@angular/common';
 import {NgModule, Optional, SkipSelf} from '@angular/core';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import {ProductService} from './pruduct.service';
 
 /**
@@ -9,7 +11,10 @@ import {ProductService} from './pruduct.service';
  */
 @NgModule({
   // Place all forRoot() imports here
-  imports: [],
+  imports: [
+    CommonModule,
+    MatSnackBarModule,
+  ],
   // Place all services/providers/injection tokens here
   providers: [
     // Provide your app wide services here

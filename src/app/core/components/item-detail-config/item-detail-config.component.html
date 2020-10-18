@@ -1,0 +1,63 @@
+<div class="custom-config" *ngIf="productItem.productConfig">
+
+    <div class="cpu-config d-flex flex-column mt-2" *ngIf="productItem.productConfig.cpuConfig">
+        <p><b>Procesor</b></p>
+        <div class="other-info-item d-flex flex-row justify-content-between cursor-pointer"
+             *ngFor="let c of productItem.productConfig.cpuConfig"
+             (click)="passValue(c,'cpu')"
+
+             [ngClass]="{ 'other-info-selected': c.name === selectedCpu }"
+        >
+            <p class="d-flex"><b>{{c.name}}</b></p>
+            <p class="d-flex"><b>+ {{getNumberWithDot(c.price)}} RSD</b></p>
+        </div>
+    </div>
+
+    <div class="ram-config d-flex flex-column mt-2"
+         *ngIf="productItem.productConfig.ramConfig">
+        <p><b>Memorija</b></p>
+        <div class="other-info-item d-flex flex-row justify-content-between cursor-pointer"
+             *ngFor="let r of productItem.productConfig.ramConfig; let i = index;"
+             (click)="passValue(r,'ram')"
+             [ngClass]="{ 'other-info-selected': r.name === selectedMemory }"
+        >
+            <p><b>{{r.name}}</b></p>
+            <p><b>+ {{getNumberWithDot(r.price)}} RSD</b></p>
+        </div>
+    </div>
+
+    <div class="cpu-config d-flex flex-column mt-2"
+         *ngIf="productItem.productConfig.storageConfig">
+        <p><b>Prostor</b></p>
+        <div class="other-info-item d-flex flex-row justify-content-between cursor-pointer"
+             *ngFor="let c of productItem.productConfig.storageConfig"
+             (click)="passValue(c,'storage')"
+
+             [ngClass]="{ 'other-info-selected': c.name === selectedStorage }"
+        >
+            <p class="d-flex"><b>{{c.name}}</b></p>
+            <p class="d-flex"><b>+ {{getNumberWithDot(c.price)}} RSD</b></p>
+        </div>
+    </div>
+
+    <div class="mouse-config d-flex flex-column mt-2" *ngIf="productItem.productConfig.mouseConfig">
+        <p><b>Mis ili trackpad</b></p>
+        <div class="other-info-item d-flex flex-row justify-content-between cursor-pointer"
+             *ngFor="let r of productItem.productConfig.mouseConfig"
+             (click)="passValue(r,'mouse')"
+             [ngClass]="{ 'other-info-selected': r.name === selectedMouse }">
+            <p><b>{{r.name}}</b></p>
+            <p><b>+ {{getNumberWithDot(r.price)}} RSD</b></p>
+        </div>
+    </div>
+    <div class="keyboard-config d-flex flex-column mt-2" *ngIf="productItem.productConfig.keyboardConfig">
+        <p><b>Tastatura</b></p>
+        <div class="other-info-item d-flex flex-row justify-content-between cursor-pointer"
+             *ngFor="let r of productItem.productConfig.keyboardConfig"
+             (click)="passValue(r,'keyboard')"
+             [ngClass]="{ 'other-info-selected': r.name === selectedKeyboard }">
+            <p><b>{{r.name}}</b></p>
+            <p><b>+ {{getNumberWithDot(r.price)}} RSD</b></p>
+        </div>
+    </div>
+</div>

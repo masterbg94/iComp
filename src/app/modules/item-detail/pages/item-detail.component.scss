@@ -1,0 +1,243 @@
+.item-detail {
+  .item-detail-info {
+    p {
+      line-height: 25px;
+    }
+
+    .cart-button {
+      background-color: #d2a647 !important;
+      height: 40px;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        box-shadow: 0 4px 8px -2px #d2a647;
+        transition: 0.3s;
+      }
+    }
+
+    .custom-config {
+      .other-info-item {
+        //border-radius: 5px;
+        border: 1px solid #d2a647;
+        padding: 10px;
+        margin-bottom: 15px;
+
+        &.cursor-pointer {
+          cursor: pointer;
+        }
+      }
+
+      .other-info-selected {
+        background-color: #d2a647;
+        //border: none;
+        color: white;
+        box-shadow: 0 4px 8px -2px #d2a647;
+      }
+    }
+
+    .other-info {
+      border-top: 1px solid #d2a647;
+      padding-top: 30px;
+
+      .other-info-two-items {
+        .other-info-item {
+          width: calc(50% - 5px);
+        }
+      }
+
+      .other-info-item {
+        //border-radius: 5px;
+        border: 1px solid #d2a647;
+        padding: 10px;
+        margin-bottom: 15px;
+
+        img {
+          width: 20px;
+        }
+
+        p {
+          cursor: default;
+
+          &.link-more {
+            color: #d2a647;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+//// MAGIC ZOOM
+//.magic {
+//  height: 430px;
+//  width: 430px;
+//  margin: auto;
+//
+//  a {
+//    ::ng-deep figure {
+//      cursor: crosshair;
+//      font-weight: 700;
+//
+//      img {
+//        height: 400px;
+//      }
+//    }
+//
+//  }
+//}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  padding-right: 24px;
+  width: 100%;
+  
+  &-top {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #C7C7C7;
+  
+    ::ng-deep {
+      .mcs-items-container {
+        width: 100% !important;
+      }
+      
+      .mcs-item {
+        padding-right: 8px;
+      }
+      
+      .mcs-wrapper {
+        left: 0 !important;
+        right: 0 !important;
+      }
+      
+      .MagicScroll:before, .MagicScroll figcaption:before {
+        span {
+          a {
+            display: none !important;
+          }
+        }
+      }
+    }
+    
+    .magic {
+      height: 430px;
+      width: 430px;
+      margin: auto;
+      a {
+        ::ng-deep figure{
+          cursor: crosshair;
+          font-weight: 700;
+          img {
+            height: 400px;
+          }
+        }
+      }
+    }
+    
+    .tumbs {
+      display: flex;
+      flex-direction: column;
+      width: auto;
+      position: relative;
+      a {
+        img {
+          width: 150px;
+        }
+      }
+    }
+    
+    .top-text {
+      margin-top: 17px;
+      margin-bottom: 20px;
+      padding-left: 10px;
+      color: #C79E44;
+      font-weight: bold;
+      
+      p {
+        margin: 0;
+        font-size: 14px;
+        line-height: 17px;
+        cursor: pointer;
+      }
+      
+      .view-video {
+        display: flex;
+        height: 17px;
+        margin: 7px 0 8px 0;
+        cursor: pointer;
+        
+        img {
+          height: 17px;
+          width: 17px;
+          border: 1px solid #C79E44;
+          border-radius: 50%;
+        }
+        
+        p {
+          font-size: 14px;
+          line-height: 17px;
+          margin: 0;
+          margin-left: 3px;
+        }
+      }
+    }
+  }
+  
+  &-bottom {
+    display: flex;
+    flex-direction: column;
+    
+    .three-items {
+      border-bottom: 1px solid #C7C7C7;
+      padding: 20px 0 22px 0;
+      
+      .bottom-item {
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        
+        img {
+          width: 30px;
+          height: 30px;
+        }
+        
+        p {
+          margin: 0 0 0 10px;
+          font-size: 14px;
+          line-height: 17px;
+        }
+        
+        &#middle {
+          margin: 31px 0;
+        }
+      }
+    }
+    
+    .question {
+      display: flex;
+      align-items: center;
+      height: 102px;
+      padding-left: 10px;
+      
+      img {
+        height: 32px;
+      }
+      
+      p {
+        font-size: 14px;
+        line-height: 17px;
+        margin: 0 0 0 10px;
+        span{
+          color: #D2A647;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

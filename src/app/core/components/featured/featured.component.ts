@@ -8,34 +8,34 @@ import {Component} from '@angular/core';
 export class FeaturedComponent {
   featuredItems = [
     {
-      name: 'Apple iPhone 7s',
-      price: 'Vec od 55.000 Din',
-      img: './assets/iPhone7.png'
+      name: 'Apple iPhone 11 PRO',
+      price: 'Vec od 139.000 Din',
+      img: './assets/images/iphone/iphone11pro-green.png'
     },
     {
-      name: 'Apple iPhone XR',
+      name: 'Apple iPhone 11',
       price: 'Vec od 90.000 Din',
-      img: './assets/iPhoneX.png'
+      img: './assets/images/iphone/iphone11-purple.png'
     },
     {
-      name: 'Apple iMac',
-      price: 'Vec od 180.000 Din',
-      img: './assets/iMac.png'
+      name: 'Apple iMac 27"',
+      price: 'Vec od 220.000 Din',
+      img: './assets/images/imac/imac-27inch.png'
     },
     {
-      name: 'Apple iMac',
-      price: 'Vec od 45.000 Din',
-      img: './assets/iPad.png'
+      name: 'Apple iPad Pro',
+      price: 'Vec od 109.000 Din',
+      img: './assets/images/iPad/iPad-pro.png'
     },
     {
       name: 'Apple AirPods',
       price: 'Vec od 20.000 Din',
-      img: './assets/headphones.png'
+      img: './assets/images/airpods/airpods.png'
     },
     {
-      name: 'Magic Keyboard',
-      price: 'Vec od 10.000 Din',
-      img: './assets/keyboard.png'
+      name: 'Beats Solo 3',
+      price: 'Vec od 43.000 Din',
+      img: './assets/images/beats/beats-solo-3.png'
     }
   ];
 }

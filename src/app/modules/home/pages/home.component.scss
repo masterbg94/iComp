@@ -41,9 +41,16 @@
 .iphone-pro-container {
   display: flex;
   justify-content: center;
-  background: #000000;
+  background: url("/assets/images/home/home-background.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 330px;
 
   .iphone-pro-content {
+    max-width: 1100px;
+    width: 1100px;
     display: flex;
     color: white;
     padding-top: 50px;
@@ -60,6 +67,11 @@
 
     .iphone-pro-text {
       width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-bottom: 50px;
+      
       p{
         font-size: 14px;
         line-height: 17px;

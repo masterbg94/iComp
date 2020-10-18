@@ -7,6 +7,26 @@ const ROUTES: Routes = [
     loadChildren: './modules/home/home.module#HomeModule'
   },
   {
+    path: 'iphone',
+    loadChildren: './modules/iphone/iphone.module#IphoneModule'
+  },
+  {
+    path: 'imac',
+    loadChildren: './modules/iphone/iphone.module#IphoneModule'
+  },
+  {
+    path: 'macbook-air',
+    loadChildren: './modules/iphone/iphone.module#IphoneModule'
+  },
+  {
+    path: 'macbook-pro',
+    loadChildren: './modules/iphone/iphone.module#IphoneModule'
+  },
+  {
+    path: 'ipad',
+    loadChildren: './modules/iphone/iphone.module#IphoneModule'
+  },
+  {
     path: 'contact',
     loadChildren: './modules/contact/contact.module#ContactModule'
   },
@@ -29,6 +49,11 @@ const ROUTES: Routes = [
   {
     path: 'lager',
     loadChildren: './modules/lager/lager.module#LagerModule'
+  }
+  ,
+  {
+    path: ':item/details/:id',
+    loadChildren: './modules/item-detail/item-detail.module#ItemDetailModule'
   }
 ];
 

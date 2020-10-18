@@ -1,16 +1,18 @@
+import { CommonModule } from '@angular/common';
 import {NgModule} from '@angular/core';
+import { MatIconModule } from '@angular/material/icon';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {NavbarComponent} from './navbar.component';
 import {RouterModule} from '@angular/router';
-import {IphoneShortModule} from "../iphone-short/iphone-short.module";
-import {BsDropdownModule} from "ngx-bootstrap";
 
 @NgModule({
-    imports: [
-        RouterModule,
-        IphoneShortModule,
-        BsDropdownModule.forRoot()
-    ],
+  imports: [
+    RouterModule,
+    CommonModule,
+    BrowserAnimationsModule,
+    MatIconModule,
+  ],
   exports: [
     NavbarComponent
   ],

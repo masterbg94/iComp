@@ -1,0 +1,50 @@
+.custom-config {
+  .other-info-item {
+    //border-radius: 5px;
+    border: 1px solid #d2a647;
+    padding: 10px;
+    margin-bottom: 15px;
+
+    &.cursor-pointer {
+      cursor: pointer;
+    }
+  }
+
+  .other-info-selected {
+    background-color: #d2a647;
+    //border: none;
+    color: white;
+    box-shadow: 0 4px 8px -2px #d2a647;
+  }
+}
+
+.other-info {
+  border-top: 1px solid #d2a647;
+  padding-top: 30px;
+
+  .other-info-two-items {
+    .other-info-item {
+      width: calc(50% - 5px);
+    }
+  }
+
+  .other-info-item {
+    //border-radius: 5px;
+    border: 1px solid #d2a647;
+    padding: 10px;
+    margin-bottom: 15px;
+
+    img {
+      width: 20px;
+    }
+
+    p {
+      cursor: default;
+
+      &.link-more {
+        color: #d2a647;
+        cursor: pointer;
+      }
+    }
+  }
+}

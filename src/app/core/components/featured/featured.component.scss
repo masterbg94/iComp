@@ -3,7 +3,7 @@
   justify-content: center;
 
   .featured-content {
-    max-width: 740px;
+    max-width: 1100px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -18,8 +18,8 @@
       align-items: center;
 
       .item-pic {
-        max-height: 120px;
-        max-width: 120px
+        height: 220px;
+        margin-bottom: 10px;
       }
 
       p {
@@ -30,7 +30,7 @@
 
       .more {
         margin-top: 5px;
-        margin-bottom: 7px;
+        margin-bottom: 10px;
         color: #D2A647;
         cursor: pointer
       }

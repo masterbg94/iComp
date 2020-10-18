@@ -15,3 +15,12 @@ p{
 button{
   outline: none!important;
 }
+
+.warn-snack-bar {
+  .mat-button-base {
+    color: #C79E44;
+  }
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
