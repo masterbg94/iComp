@@ -816,7 +816,7 @@ export const AllProductsData = {
             storage: '128 GB SSD',
             gpu: 'Intel Iris Plus 645 grafika',
             other: 'Dva USB ulaza , Jedan Thunderbolt 2 ulaz, Čitač SDXC kartica',
-            price: '125.900',
+            price: 125900,
             detailImg: 'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/a/macbookairpure.jpg',
             images: [
                 'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/a/macbookairpure.jpg'
@@ -835,7 +835,7 @@ export const AllProductsData = {
             storage: '256 GB SSD',
             gpu: 'Intel Iris Plus',
             other: 'Dva USB ulaza , Touch ID',
-            price: '163.300 RSD',
+            price: 163300,
             detailImg: 'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/b/mb-air-2019-space-grey-1_2_6_2.jpeg',
             images: [
                 'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/b/mb-air-2019-space-grey-1_2_6_2.jpeg'
@@ -854,7 +854,7 @@ export const AllProductsData = {
             storage: '512 GB SSD',
             gpu: 'Intel Iris Plus',
             other: 'Dva Thunderbolt 3 ulaza , Touch ID',
-            price: '163.300 RSD',
+            price: 163300,
             detailImg: 'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/a/macbookairpure.jpg',
             images: [
                 'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/b/mb-air-2019-space-grey-1_2_6_2.jpeg'
@@ -875,7 +875,7 @@ export const AllProductsData = {
             storage: '128 GB SSD',
             gpu: 'Intel Iris Plus 645 grafika',
             other: 'Butterfly Keyboard , Touch Bar i Touch ID, Dva Thunderbolt 3 ulaza',
-            price: '159.900',
+            price: 159900,
             images: [
                 'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/b/mbp13touch-space-select-201807_1_5.jpeg',
                 'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/b/mbp13touch-space-select-201807_1_5.jpeg',
@@ -888,7 +888,7 @@ export const AllProductsData = {
             productConfig: {
                 ramConfig: [
                     {
-                        name: '8 GB 2133 MHz LPDDR3',
+                        name: '8GB 2133 MHz LPDDR3',
                         price: 0
                     },
                     {
@@ -906,7 +906,7 @@ export const AllProductsData = {
                 ],
                 storageConfig: [
                     {
-                        name: '256GB SSD',
+                        name: '128 GB SSD',
                         price: 0
                     },
                     {
@@ -932,10 +932,10 @@ export const AllProductsData = {
             cpu: '1,4 GHz dual-core Intel Core i5 5. generacije',
             cpuTurbo: 'Turbo Boost do 3,9 GHz',
             ram: '8GB 2133 MHz LPDDR3',
-            storage: '256 GB SSD',
+            storage: '256GB SSD',
             gpu: 'Intel Iris Plus 645',
             other: 'Butterfly Keyboard , Touch Bar , Dva Thunderbolt 2 ulaz',
-            price: '179.900',
+            price: 179900,
             detailImg: 'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/b/mbp13touch-space-select-201807_1_5.jpeg',
             images: [
                 'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/b/mbp13touch-space-select-201807_1_5.jpeg',
@@ -947,7 +947,7 @@ export const AllProductsData = {
             productConfig: {
                 ramConfig: [
                     {
-                        name: '8 GB 2133 MHz LPDDR3',
+                        name: '8GB 2133 MHz LPDDR3',
                         price: 0
                     },
                     {
@@ -991,10 +991,10 @@ export const AllProductsData = {
             cpu: '2,4 GHz 4-core procesor Intel Core i5 8. generacije',
             cpuTurbo: 'Turbo Boost do 4,1 GHz',
             ram: '8GB 2133 MHz LPDDR3',
-            storage: '256 GB SSD',
+            storage: '256GB SSD',
             gpu: 'Intel Iris Plus 655',
             other: 'Butterfly Keyboard , Touch Bar , Četiri Thunderbolt 3 ulaza',
-            price: '204.900',
+            price: 204900,
             detailImg: 'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/b/mbp13touch-silver-select-201807_1_.jpeg',
             images: [
                 'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/b/mbp13touch-space-select-201807_1_5.jpeg',
@@ -1006,7 +1006,7 @@ export const AllProductsData = {
             productConfig: {
                 ramConfig: [
                     {
-                        name: '8 GB 2133 MHz LPDDR3',
+                        name: '8GB 2133 MHz LPDDR3',
                         price: 0
                     },
                     {
@@ -1049,11 +1049,11 @@ export const AllProductsData = {
             display: 'True Tone Retina displej',
             cpu: '2,4 GHz 4-core procesor Intel Core i5 8. generacije',
             cpuTurbo: 'Turbo Boost do 4,1 GHz',
-            ram: '8GB 2133 MHz LPDDR3',
-            storage: '512 GB SSD',
+            ram: '8 GB 2133 MHz LPDDR3',
+            storage: '256GB SSD',
             gpu: 'Intel Iris Plus 655',
             other: 'Butterfly Keyboard , Touch Bar , Četiri Thunderbolt 3 ulaza',
-            price: '225.900',
+            price: 225900,
             detailImg: 'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/b/mbp13touch-silver-select-201807_1_.jpeg',
             images: [
                 'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/b/mbp13touch-space-select-201807_1_5.jpeg',
@@ -1109,10 +1109,10 @@ export const AllProductsData = {
             cpu: '2,6 GHz 6-core procesor Intel Core i7 9. generacije',
             cpuTurbo: 'Turbo Boost do 4,5 GHz',
             ram: '16GB 2666 MHz DDR4',
-            storage: '512 GB SSD',
+            storage: '256GB SSD',
             gpu: 'Radeon Pro 5300M sa 4 GB GDDR6',
             other: 'Dva USB ulaza , Jedan Thunderbolt 2 ulaz, Čitač SDXC kartica',
-            price: '373.600',
+            price: 373600,
             detailImg: 'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/b/mbp13touch-space-select-201807_1_5.jpeg',
             images: [
                 'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/b/mbp13touch-space-select-201807_1_5.jpeg',
@@ -1168,10 +1168,10 @@ export const AllProductsData = {
             cpu: '2,3 GHz 8-core procesor Intel Core i9 9. generacije',
             cpuTurbo: 'Turbo Boost do 4,8 GHz',
             ram: '16GB 2666 MHz DDR4',
-            storage: '1 TB SSD',
+            storage: '256GB SSD',
             gpu: 'Radeon Pro 5500M sa 4 GB GDDR6',
             other: 'Dva USB ulaza , Jedan Thunderbolt 2 ulaz, Čitač SDXC kartica',
-            price: '442.500',
+            price: 442500,
             detailImg: 'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/a/macbook_pro_16-in_touch_bar_pure_top_open_silver_wwen_screen-1_8_4.jpg',
             images: [
                 'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/b/mbp13touch-space-select-201807_1_5.jpeg',

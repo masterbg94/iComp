@@ -15,7 +15,7 @@
 
   <div *ngIf="productItem?.productConfig?.screenSizeConfig"
        class="cpu-config d-flex flex-column mt-2">
-    <p><b>Procesor</b></p>
+    <p><b>Ekran</b></p>
     <div (click)="passValue(ss,'screenSize')"
          *ngFor="let ss of productItem.productConfig.screenSizeConfig"
          [ngClass]="{ 'other-info-selected': ss.name === selectedScreen }"

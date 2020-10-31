@@ -15,16 +15,12 @@
 
   <!-- Only for music -->
   <div class="d-flex flex-column" *ngIf="productItem?.iMusicSpecs">
-
     <p class="my-2"><b>Audio Technology</b></p>
     <p *ngFor="let a of productItem?.iMusicSpecs?.audioTechnology">{{a}}</p>
-
     <p class="my-2"><b>Sensors</b></p>
     <p *ngFor="let s of productItem?.iMusicSpecs?.sensors">{{s}}</p>
-
     <p class="my-2"><b>Controls</b></p>
     <p *ngFor="let c of productItem?.iMusicSpecs?.controls">{{c}}</p>
-
   </div>
   <!--    <button class="cart-button w-100 mt-2" (click)="addToCard()"><b>DODAJ U KORPU</b></button>-->
 </div>
