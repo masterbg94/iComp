@@ -1,0 +1,24 @@
+<div class="header">
+  <div class="content">
+    <div class="title">
+      Pregledajte vasu torbu
+      
+      <div class="subtitle">
+        Besplatna isporuka i besplatno vracanje proizvoda prouzrokovano reklamacijom.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="content">
+  <div class="detail"
+       *ngFor="let product of products">
+    <div class="detail-content">
+      <img height="245px" [src]="product.image">
+      
+      <div class="configuration">
+      
+      </div>
+    </div>
+  </div>
+</div>

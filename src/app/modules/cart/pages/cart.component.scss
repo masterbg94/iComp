@@ -1,0 +1,43 @@
+.header {
+  height: 330px;
+  background: url("/assets/images/cart.jpg");
+  ackground-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  
+  .content {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 28px;
+      color: #fafafa;
+      
+      .subtitle {
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 8px;
+        color: #fafafa;
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+.content {
+  width: 100%;
+  max-width: 1100px;
+  margin: 24px auto;
+  
+  .detail {
+    display: flex;
+    border: 1px solid #C79E44;
+    margin-bottom: 24px;
+  }
+}
