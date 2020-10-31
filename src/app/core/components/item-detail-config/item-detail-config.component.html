@@ -15,14 +15,14 @@
 
   <div *ngIf="productItem?.productConfig?.screenSizeConfig"
        class="cpu-config d-flex flex-column mt-2">
-    <p><b>Ekran</b></p>
-    <div
-         *ngFor="let screen of productItem.productConfig.screenSizeConfig"
-
+    <p><b>Procesor</b></p>
+    <div (click)="passValue(ss,'screenSize')"
+         *ngFor="let ss of productItem.productConfig.screenSizeConfig"
+         [ngClass]="{ 'other-info-selected': ss.name === selectedScreen }"
          class="other-info-item d-flex flex-row justify-content-between cursor-pointer"
     >
-      <p class="d-flex"><b>{{screen.name}}</b></p>
-      <p class="d-flex"><b>+ {{getNumberWithDot(screen.price)}} RSD</b></p>
+      <p class="d-flex"><b>{{ss.name}}</b></p>
+      <p class="d-flex"><b>+ {{getNumberWithDot(ss.price)}} RSD</b></p>
     </div>
   </div>
   
@@ -64,7 +64,23 @@
       <p class="d-flex"><b>+ {{getNumberWithDot(c.price)}} RSD</b></p>
     </div>
   </div>
-  
+
+<!--   HOLER -->
+  <div *ngIf="productItem?.productConfig?.holderConfig"
+       class="cpu-config d-flex flex-column mt-2">
+    <p><b>Nosaci</b></p>
+    <div (click)="passValue(h,'holder')"
+         *ngFor="let h of productItem?.productConfig?.holderConfig"
+         [ngClass]="{ 'other-info-selected': h.name === selectedHolder }"
+         class="other-info-item d-flex flex-row justify-content-between cursor-pointer"
+    >
+      <p class="d-flex"><b>{{h.name}}</b></p>
+      <p class="d-flex"><b>+ {{getNumberWithDot(h.price)}} RSD</b></p>
+    </div>
+  </div>
+  <!--   HOLER -->
+
+
   <div *ngIf="productItem?.productConfig?.mouseConfig"
        class="mouse-config d-flex flex-column mt-2">
     <p><b>Mis ili trackpad</b></p>

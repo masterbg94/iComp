@@ -85,6 +85,8 @@ export class ItemDetailComponent implements OnInit, AfterViewInit, OnDestroy {
           this.productItem = this.allProducts.macPro.find(x => x.id === parseInt(params.id, 10));
         } else if (params.item === 'mac-mini') {
           this.productItem = this.allProducts.macMini.find(x => x.id === parseInt(params.id, 10));
+        } else if (params.item === 'imusic') {
+          this.productItem = this.allProducts.iMusic.find(x => x.id === parseInt(params.id, 10));
         }
 
         this.productImages.push(...this.productItem.images);

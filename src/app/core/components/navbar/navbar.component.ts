@@ -34,7 +34,7 @@ export class NavbarComponent implements OnInit {
     },
     {
       name: 'Mac Pro',
-      image: '/assets/images/mac-menu/mac-pro.png',
+      image: '/assets/images/mac-menu/mac-pro1.png',
       router: '/mac-pro'
     },
     {

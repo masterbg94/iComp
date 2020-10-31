@@ -1705,7 +1705,7 @@ export const AllProductsData = {
             id: 51,
             name: 'Apple Watch Series SE',
             screenSize: 1.78,
-            display: '1.78"',
+            display: '40mm (gps + cellular)',
             os: 'watchOS 7.0',
             cpu: 'Dual-core',
             storage: '32GB',
@@ -1780,7 +1780,7 @@ export const AllProductsData = {
             id: 52,
             name: 'Apple Watch Series 6',
             screenSize: 1.78,
-            display: '1.78"',
+            display: '40mm (gps + cellular)',
             os: 'watchOS 7.0',
             cpu: 'Dual-core',
             storage: '32GB',
@@ -1855,10 +1855,11 @@ export const AllProductsData = {
             name: 'Mac Pro',
             cpu: '3,6GHz 8-core Intel Xeon W',
             cpuTurbo: 'Turbo Boost do 4,0GHz',
-            ram: '32GB (4x8 GB) DDR4 EEC',
+            ram: '32GB (4x8GB) DDR4 EEC',
             storage: '256GB SSD',
             gpu: 'Radeon Pro 580X sa 8GB GDDR5 memorije',
-            other: 'Kućište od nerđajućeg čelika sa nožicama',
+            // other: 'Kućište od nerđajućeg čelika sa nožicama',
+            holder: 'Kućište od nerđajućeg čelika sa nožicama',
             price: 861800,
             img: 'https://istyle.cz/media/wysiwyg/CZ/content/preselection/mac-pro/mac-pro-3.jpg',
             available: true,
@@ -1898,7 +1899,7 @@ export const AllProductsData = {
                 ],
                 ramConfig: [
                     {
-                        name: '32GB (4x8GB) DDR4 ECC',
+                        name: '32GB (4x8GB) DDR4 EEC',
                         price: 0
                     },
                     {
@@ -2014,7 +2015,8 @@ export const AllProductsData = {
             ram: '32GB (4x8GB) DDR4 ECC',
             storage: '256GB SSD',
             gpu: 'Radeon Pro 580X sa 8GB GDDR5 memorije',
-            other: 'Kućište od nerđajućeg čelika sa nožicama',
+            // other: 'Kućište od nerđajućeg čelika sa nožicama',
+            holder: 'Kućište od nerđajućeg čelika sa nožicama',
             price: 861800,
             img: 'https://istyleprod.s3.amazonaws.com/RO/newdesign/mac-pro-4.jpg',
             available: true,
@@ -2164,14 +2166,8 @@ export const AllProductsData = {
         {
             id: 62,
             name: 'Pro Display XDR',
-            screenSize: 21,
-            display: 'Retina 4K 4096 x 2304 P3 displej',
-            // cpu: '3,5GHz 8-core Intel Xeon W',
-            // cpuTurbo: 'Turbo Boost do 4,0GHz',
-            // ram: '32GB (4x8 GB) DDR4 EEC',
-            // storage: '256GB SSD',
-            // gpu: 'Radeon Pro 580X sa 8GB GDDR5 memorije',
-            other: 'Kućište od nerđajućeg čelika sa nožicama',
+            screenSize: 32,
+            display: '6K Retina 6016×3384 32" IPS LCD',
             price: 861800,
             img: 'https://istyle.cz/media/wysiwyg/CZ/content/preselection/mac-pro/mac-pro-display.jpg',
             available: true,
@@ -2183,139 +2179,7 @@ export const AllProductsData = {
                 'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/p/r/pro-display-gallery3-201909_4_2.jpeg',
                 'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/p/r/pro-display-gallery4-201909_4_2.jpeg'
             ],
-            detailImg: 'https://istyle.rs/media/wysiwyg/CZ/categories/mac/m2-mac-pro.jpg',
-            productConfig: {
-                cpuConfig: [
-                    {
-                        name: '3,6GHz 8-core Intel Xeon W',
-                        price: 0
-                    },
-                    {
-                        name: '3,3GHz 12-core Intel Xeon W, Turbo Boost do 4,4GHz',
-                        price: 159665
-                    },
-                    {
-                        name: '3,2GHz 16-core Intel Xeon W, Turbo Boost do 4,4GHz',
-                        price: 319486
-                    },
-                    {
-                        name: '2,7GHz 24-core Intel Xeon W, Turbo Boost do 4,4GHz',
-                        price: 958300
-                    },
-                    {
-                        name: '2,5GHz 28-core Intel Xeon W, Turbo Boost do 4,4GHz',
-                        price: 1117962
-                    }
-                ],
-                ramConfig: [
-                    {
-                        name: '32GB (4x8GB) DDR4 ECC',
-                        price: 0
-                    },
-                    {
-                        name: '48GB (6x8GB) DDR4 ECC',
-                        price: 47932
-                    },
-                    {
-                        name: '96GB (6x16GB) DDR4 ECC',
-                        price: 159665
-                    },
-                    {
-                        name: '192GB (6x32GB) DDR4 ECC',
-                        price: 479149
-                    },
-                    {
-                        name: '384GB (6x64GB) DDR4 ECC',
-                        price: 958300
-                    },
-                    {
-                        name: '768GB (12x64GB) DDR4 ECC',
-                        price: 1597112
-                    },
-                    {
-                        name: '768GB (6x128GB) DDR4 ECC',
-                        price: 2235925
-                    },
-                    {
-                        name: '1,5TB (12x128GB) DDR4 ECC (zahteva procesor od 24 ili 28 jezgara)',
-                        price: 5110664
-                    }
-                ],
-                storageConfig: [
-                    {
-                        name: '256GB SSD',
-                        price: 0
-                    },
-                    {
-                        name: '1TB SSD',
-                        price: 63960
-                    },
-                    {
-                        name: '2TB SSD',
-                        price: 127764
-                    },
-                    {
-                        name: '4TB SSD',
-                        price: 223625
-                    }
-                ],
-                gpu: [
-                    {
-                        name: 'Radeon Pro 580X sa 8GB GDDR5 memorije',
-                        price: 0
-                    },
-                    {
-                        name: 'Radeon Pro Vega II 32GB HBM2',
-                        price: 383287
-                    },
-                    {
-                        name: '2x Radeon Pro Vega II sa 32GB HBM2 memorije svaka',
-                        price: 830537
-                    },
-                    {
-                        name: 'Radeon Pro Vega II Duo sa 2x32GB HBM2 memorije',
-                        price: 830537
-                    },
-                    {
-                        name: '2x Radeon Pro Vega II Duo sa 2x32GB HBM2 memorije svaka',
-                        price: 1724875
-                    }
-                ],
-                AfterburnerConfig: [
-                    {
-                        name: 'Ne, hvala.',
-                        price: 0
-                    },
-                    {
-                        name: 'Apple Afterburner',
-                        price: 319486
-                    }
-                ],
-                holderConfig: [
-                    {
-                        name: 'Kućište od nerđajućeg čelika sa nožicama',
-                        price: 0
-                    },
-                    {
-                        name: 'Kućište od nerđajućeg čelika sa točkićima',
-                        price: 63960
-                    }
-                ],
-                mouseConfig: [
-                    {
-                        name: 'Magic Mouse 2',
-                        price: 0
-                    },
-                    {
-                        name: 'Magic Trackpad 2',
-                        price: 9620
-                    },
-                    {
-                        name: 'Magic Mouse 2 + Magic Trackpad 2',
-                        price: 21587
-                    }
-                ]
-            }
+            detailImg: 'https://istyle.rs/media/wysiwyg/CZ/categories/mac/m2-mac-pro.jpg'
         }
     ],
     macMini: [
@@ -2475,7 +2339,7 @@ export const AllProductsData = {
             ram: '',
             storage: '',
             gpu: '',
-            other: 'Kućište od nerđajućeg čelika sa nožicama',
+            // other: 'Kućište od nerđajućeg čelika sa nožicama',
             price: 27400,
             img: '/assets/images/iMusic-menu/airpods-pro.png',
             available: true,
@@ -2490,16 +2354,41 @@ export const AllProductsData = {
                 '/assets/images/iMusic-menu/airpods-pro.png'
             ],
             detailImg: '/assets/images/iMusic-menu/airpods-pro.png',
+            iMusicSpecs: {
+                audioTechnology: [
+                    'Active Noise Cancellation',
+                    'Transparency mode',
+                    'Adaptive EQ',
+                    'Vent system for pressure equalization',
+                    'Custom high-excursion Apple driver',
+                    'Custom high dynamic range amplifier'
+                ],
+                sensors: [
+                    'Dual beamforming microphones',
+                    'Inward-facing microphone',
+                    'Dual optical sensors',
+                    'Motion-detecting accelerometer',
+                    'Speech-detecting accelerometer',
+                    'Force sensor'
+                ],
+                controls: [
+                    'Press the force sensor once to play, pause, or answer a phone call',
+                    'Press twice to skip forward',
+                    'Press three times to skip back',
+                    'Press and hold to switch between Active Noise Cancellation and Transparency mode',
+                    'Say “Hey Siri” to do things like play a song, make a call, or get directions'
+                ]
+            }
         },
         {
-            id: 81,
+            id: 82,
             name: 'Airpods Pro',
             cpu: '',
             cpuTurbo: '',
             ram: '',
             storage: '',
             gpu: '',
-            other: 'Kućište od nerđajućeg čelika sa nožicama',
+            // other: 'Kućište od nerđajućeg čelika sa nožicama',
             price: 27400,
             img: '/assets/images/iMusic-menu/airpods-pro.png',
             available: true,
@@ -2514,6 +2403,31 @@ export const AllProductsData = {
                 '/assets/images/iMusic-menu/airpods-pro.png'
             ],
             detailImg: '/assets/images/iMusic-menu/airpods-pro.png',
+            iMusicSpecs: {
+                audioTechnology: [
+                    'Active Noise Cancellation',
+                    'Transparency mode',
+                    'Adaptive EQ',
+                    'Vent system for pressure equalization',
+                    'Custom high-excursion Apple driver',
+                    'Custom high dynamic range amplifier'
+                ],
+                sensors: [
+                    'Dual beamforming microphones',
+                    'Inward-facing microphone',
+                    'Dual optical sensors',
+                    'Motion-detecting accelerometer',
+                    'Speech-detecting accelerometer',
+                    'Force sensor'
+                ],
+                controls: [
+                    'Press the force sensor once to play, pause, or answer a phone call',
+                    'Press twice to skip forward',
+                    'Press three times to skip back',
+                    'Press and hold to switch between Active Noise Cancellation and Transparency mode',
+                    'Say “Hey Siri” to do things like play a song, make a call, or get directions'
+                ]
+            }
         }
     ]
 };

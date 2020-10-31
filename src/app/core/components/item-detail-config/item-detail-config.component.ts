@@ -23,6 +23,11 @@ export class ItemDetailConfigComponent implements OnInit {
   gpuPrice = 0;
   mousePrice = 0;
   keyBoardPrice = 0;
+  selectedHolder: any = '';
+  selectedHolderPrice = 0;
+
+  selectedScreen: any = '';
+  selectedScreenPrice = 0;
 
   getNumberWithDot(number: number) {
     return `${ number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.') }`;
@@ -39,6 +44,12 @@ export class ItemDetailConfigComponent implements OnInit {
       this.selectedStorage = event.name;
       this.selectedStoragePrice = event.price;
       this.productItem.storage = this.selectedStorage;
+    }
+
+    if (x === 'holder') {
+      this.selectedHolder = event.name;
+      this.selectedHolderPrice = event.price;
+      this.productItem.storage = this.selectedHolder;
     }
 
     if (x === 'ram') {
@@ -65,7 +76,14 @@ export class ItemDetailConfigComponent implements OnInit {
       this.productItem.keyboard = this.selectedKeyboard;
     }
 
-    this.productItem.price = this.defaultProductPrice + this.selectedCpuPrice + this.selectedStoragePrice + this.selectedRamPrice + this.gpuPrice + this.mousePrice + this.keyBoardPrice;
+    // screen size
+    if (x === 'screenSize') {
+      this.selectedScreen = event.name;
+      this.selectedScreenPrice = event.price;
+      this.productItem.display = this.selectedScreen;
+    }
+
+    this.productItem.price = this.defaultProductPrice + this.selectedCpuPrice + this.selectedStoragePrice + this.selectedRamPrice + this.gpuPrice + this.mousePrice + this.keyBoardPrice + this.selectedHolderPrice + this.selectedScreenPrice;
   }
 
   public onClick(color: any) {
@@ -85,7 +103,9 @@ export class ItemDetailConfigComponent implements OnInit {
     this.selectedMouse = 'Magic Mouse 2';
     this.selectedKeyboard = 'Magic Keyboard';
     this.selectedStorage = this.productItem.storage;
+    this.selectedHolder = this.productItem.holder;
     this.defaultProductPrice = this.productItem.price;
+    this.selectedScreen = this.productItem.display;
   }
 
 }
