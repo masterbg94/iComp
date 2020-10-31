@@ -4,12 +4,12 @@
     border: 1px solid #d2a647;
     padding: 10px;
     margin-bottom: 15px;
-
+    
     &.cursor-pointer {
       cursor: pointer;
     }
   }
-
+  
   .other-info-selected {
     background-color: #d2a647;
     //border: none;
@@ -21,30 +21,70 @@
 .other-info {
   border-top: 1px solid #d2a647;
   padding-top: 30px;
-
+  
   .other-info-two-items {
     .other-info-item {
       width: calc(50% - 5px);
     }
   }
-
+  
   .other-info-item {
     //border-radius: 5px;
     border: 1px solid #d2a647;
     padding: 10px;
     margin-bottom: 15px;
-
+    
     img {
       width: 20px;
     }
-
+    
     p {
       cursor: default;
-
+      
       &.link-more {
         color: #d2a647;
         cursor: pointer;
       }
+    }
+  }
+}
+
+
+// bohja gore
+.color-config {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+  .color-item {
+    display: flex;
+    align-items: center;
+    height: 43px;
+    max-width: 174px;
+    width: 100%;
+    border: 1px solid black;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: .2s;
+    
+    &--selected {
+      background: #D2A647;
+      color: white;
+    }
+    
+    .color-background {
+      width: 38px;
+      background: white;
+      border-right: 1px solid black;
+      height: 100%;
+    }
+    
+    p {
+      margin: 0 0 0 10px;
+      font-size: 15px;
+      text-transform: capitalize;
+      line-height: 17px;
+      font-weight: normal;
     }
   }
 }

@@ -4,55 +4,69 @@
       <p>{{data.title}}</p>
       <p>{{data.description}}</p>
       <div class="buttons">
-        <button id="models" routerLink="/lager">Svi modeli</button>
-        <button id="service" routerLink="/service">Servis</button>
+        <button id="models"
+                routerLink="/lager">Svi modeli
+        </button>
+        <button id="service"
+                routerLink="/service">Servis
+        </button>
       </div>
     </div>
-
+    
     <div class="iphone-short-img">
-
+      
       <div class="items-and-phone">
         <div class="items">
           <div class="item">
             <div class="item-img">
-              <img class="img-fluid" [src]="data.item1.img" alt="">
+              <img [src]="data.item1.img"
+                   alt=""
+                   class="img-fluid">
             </div>
             <div class="item-text">
               <p class="name">{{data.item1.name}}</p>
               <p class="price">{{data.item1.price}}</p>
-              <p class="more" routerLink="/product">Detaljnije</p>
+              <p class="more"
+                 routerLink="/product">Detaljnije</p>
             </div>
           </div>
           <div class="item">
             <div class="item-img">
-              <img class="img-fluid" [src]="data.item2.img" alt="">
+              <img [src]="data.item2.img"
+                   alt=""
+                   class="img-fluid">
             </div>
             <div class="item-text">
               <p class="name">{{data.item2.name}}</p>
               <p class="price">{{data.item2.price}}</p>
-              <p class="more" routerLink="/product">Detaljnije</p>
+              <p class="more"
+                 routerLink="/product">Detaljnije</p>
             </div>
           </div>
         </div>
-
+        
         <div class="phone">
-          <img class="img-fluid" src="./assets/iphone11-pro.png" alt="">
+          <img alt=""
+               class="img-fluid"
+               src="./assets/iphone11-pro.png">
         </div>
       </div>
-
+      
       <div class="accessorize">
         <p>Dodatna oprema</p>
         <div class="accessorize-item">
-          <img class="img-fluid" src="./assets/headphones.png" alt="">
+          <img alt=""
+               class="img-fluid"
+               src="./assets/headphones.png">
           <div class="item-text">
             <p>Apple AirPods</p>
             <p>Vec od 20.000 Din</p>
           </div>
         </div>
       </div>
-
+    
     </div>
-
-
+  
+  
   </div>
 </div>

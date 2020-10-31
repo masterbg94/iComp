@@ -1,6 +1,6 @@
-import {NgModule} from '@angular/core';
+import { NgModule } from '@angular/core';
 
-import {NewsletterComponent} from './newsletter.component';
+import { NewsletterComponent } from './newsletter.component';
 
 @NgModule({
   imports: [],

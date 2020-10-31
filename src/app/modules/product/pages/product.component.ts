@@ -1,5 +1,4 @@
 import { AfterViewInit, Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 
 declare const MagicZoom: any;
 declare const MagicScroll: any;
@@ -7,7 +6,7 @@ declare const MagicScroll: any;
 @Component({
   selector: 'app-product',
   templateUrl: './product.component.html',
-  styleUrls: ['./product.component.scss']
+  styleUrls: [ './product.component.scss' ]
 })
 export class ProductComponent implements OnInit, AfterViewInit {
   selectedColor: string;
@@ -82,7 +81,7 @@ export class ProductComponent implements OnInit, AfterViewInit {
   }
 
   getNumberWithDot(number: number) {
-    return `${number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.')}`;
+    return `${ number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.') }`;
   }
 
   public onClick(color: any) {

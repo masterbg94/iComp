@@ -201,12 +201,18 @@ export const AllProductsData = {
             other: 'Dva Thunderbolt 3 ulaza',
             price: 177500,
             img: '/assets/images/imac/imac.png',
+            images: [
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/i/m/imac-21-retina-selection-hero-201903_4.jpeg',
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/i/m/imac-21-retina-selection-hero-201903_4.jpeg',
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/i/m/imac-21-retina-selection-hero-201903_4.jpeg',
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/i/m/imac-21-retina-selection-hero-201903_4.jpeg'
+            ],
             available: true,
             detailImg: 'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/i/m/imac-21-retina-selection-hero-201903_4.jpeg',
             productConfig: {
                 cpuConfig: [
                     {
-                        name: '3,0 GHz 6-core Intel Core i5 8. generacije Turbo Boost do 4,1 GHz',
+                        name: '2,3 GHz dual-core Intel Core i5 7. generacije',
                         price: 0
                     },
                     {
@@ -216,7 +222,7 @@ export const AllProductsData = {
                 ],
                 ramConfig: [
                     {
-                        name: '8GB 2666MHz DDR4',
+                        name: '8 GB 2133 MHz',
                         price: 0
                     },
                     {
@@ -283,12 +289,18 @@ export const AllProductsData = {
             screenSize: 21,
             display: 'Retina 4K 4096 x 2304 P3 displej',
             cpu: '3,6 GHz quad-core Intel Core i3 8. generacije',
-            ram: '8 GB 2400 MHz DDR4',
+            ram: '8GB 2666MHz DDR4',
             storage: '256GB SSD',
             gpu: 'Radeon Pro 555X sa 2GB GDDR5',
             other: 'Dva Thunderbolt 3 ulaza',
             price: 205100,
             img: '/assets/images/imac/imac.png',
+            images: [
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/i/m/imac-21-retina-selection-hero-201903_4.jpeg',
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/i/m/imac-21-retina-selection-hero-201903_4.jpeg',
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/i/m/imac-21-retina-selection-hero-201903_4.jpeg',
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/i/m/imac-21-retina-selection-hero-201903_4.jpeg'
+            ],
             available: false,
             detailImg: 'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/i/m/imac-21-retina-selection-hero-201903_4.jpeg',
             productConfig: {
@@ -360,6 +372,12 @@ export const AllProductsData = {
             other: 'Dva Thunderbolt 3 ulaza',
             price: 177500,
             img: '/assets/images/imac/imac.png',
+            images: [
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/i/m/imac-21-retina-selection-hero-201903_4.jpeg',
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/i/m/imac-21-retina-selection-hero-201903_4.jpeg',
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/i/m/imac-21-retina-selection-hero-201903_4.jpeg',
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/i/m/imac-21-retina-selection-hero-201903_4.jpeg'
+            ],
             available: true,
             detailImg: 'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/i/m/imac-21-retina-selection-hero-201903_4.jpeg'
         },
@@ -376,6 +394,12 @@ export const AllProductsData = {
             other: 'Dva Thunderbolt 3 ulaza',
             price: 299900,
             img: '/assets/images/imac/imac.png',
+            images: [
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/i/m/imac-21-retina-selection-hero-201903_4.jpeg',
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/i/m/imac-21-retina-selection-hero-201903_4.jpeg',
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/i/m/imac-21-retina-selection-hero-201903_4.jpeg',
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/i/m/imac-21-retina-selection-hero-201903_4.jpeg'
+            ],
             available: false,
             detailImg: 'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/i/m/imac-21-retina-selection-hero-201903_4.jpeg',
             productConfig: {
@@ -391,7 +415,7 @@ export const AllProductsData = {
                 ],
                 storageConfig: [
                     {
-                        name: '256GB SSD',
+                        name: '2 TB Fusion Drive',
                         price: 0
                     },
                     {
@@ -409,7 +433,7 @@ export const AllProductsData = {
                 ],
                 ramConfig: [
                     {
-                        name: '8GB 2666MHz DDR4',
+                        name: '8 GB 2666 MHz DDR4',
                         price: 0
                     },
                     {
@@ -472,18 +496,24 @@ export const AllProductsData = {
             display: 'Retina 5K 5120 x 2880 P3 displej',
             cpu: '3,1 GHz 6-core Intel Core i5 10. generacije',
             cpuTurbo: 'Turbo Boost do 4,5 GHz',
-            ram: '8 GB 2666 MHz DDR4',
-            storage: '256 GB SSD',
+            ram: '8GB 2666MHz DDR4',
+            storage: '256GB SSD',
             gpu: 'Radeon Pro 5300 sa 4 GB GDDR6',
             other: 'Dva Thunderbolt 3 ulaza',
             price: 290600,
             img: '/assets/images/imac/imac.png',
+            images: [
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/i/m/imac-21-retina-selection-hero-201903_4.jpeg',
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/i/m/imac-21-retina-selection-hero-201903_4.jpeg',
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/i/m/imac-21-retina-selection-hero-201903_4.jpeg',
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/i/m/imac-21-retina-selection-hero-201903_4.jpeg'
+            ],
             available: true,
             detailImg: 'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/i/m/imac-21-retina-selection-hero-201903_4.jpeg',
             productConfig: {
                 cpuConfig: [
                     {
-                        name: '3,7 GHz 6-core Intel Core i5 9. generacije Turbo Boost do 4,6 GHz',
+                        name: '3,1 GHz 6-core Intel Core i5 10. generacije',
                         price: 0
                     },
                     {
@@ -570,6 +600,12 @@ export const AllProductsData = {
             other: 'Dva Thunderbolt 3 ulaza',
             price: 318600,
             img: '/assets/images/imac/imac.png',
+            images: [
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/i/m/imac-21-retina-selection-hero-201903_4.jpeg',
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/i/m/imac-21-retina-selection-hero-201903_4.jpeg',
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/i/m/imac-21-retina-selection-hero-201903_4.jpeg',
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/i/m/imac-21-retina-selection-hero-201903_4.jpeg'
+            ],
             available: false,
             detailImg: 'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/i/m/imac-21-retina-selection-hero-201903_4.jpeg',
             productConfig: {
@@ -672,6 +708,12 @@ export const AllProductsData = {
             other: 'Dva Thunderbolt 3 ulaza',
             price: 358200,
             img: '/assets/images/imac/imac.png',
+            images: [
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/i/m/imac-21-retina-selection-hero-201903_4.jpeg',
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/i/m/imac-21-retina-selection-hero-201903_4.jpeg',
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/i/m/imac-21-retina-selection-hero-201903_4.jpeg',
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/i/m/imac-21-retina-selection-hero-201903_4.jpeg'
+            ],
             available: false,
             detailImg: 'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/i/m/imac-21-retina-selection-hero-201903_4.jpeg',
             productConfig: {
@@ -762,150 +804,6 @@ export const AllProductsData = {
             }
         }
     ],
-    iphones: [
-        {
-            id: 31,
-            name: 'iPhone Xʀ',
-            storage: '64GB',
-            price: 79700,
-            detailImg: 'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/i/p/iphone-xr-red-front_1_2_1.png',
-            productConfig: {
-                storageConfig: [
-                    {
-                        name: '64GB',
-                        price: 0
-                    },
-                    {
-                        name: '128GB',
-                        price: 6700
-                    }
-                ],
-                colorConfig: [
-                    {
-                        colorName: '(PRODUCT)RED'
-                    },
-                    {
-                        colorName: 'White'
-                    },
-                    {
-                        colorName: 'Black'
-                    },
-                    {
-                        colorName: 'Yellow'
-                    },
-                    {
-                        colorName: 'Coral'
-                    },
-                    {
-                        colorName: 'Blue'
-                    }
-                ]
-            }
-        },
-        {
-            id: 32,
-            name: 'iPhone Xs',
-            storage: '512GB',
-            price: 79700,
-            detailImg: 'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/i/m/img-_0001s_0001_iphone-xs-max-silver-select-2018_av2_5.jpg',
-            productConfig: {
-                storageConfig: [
-                    {
-                        name: '512GB',
-                        price: 0
-                    }
-                ],
-                colorConfig: [
-                    {
-                        colorName: 'Silver'
-                    }
-                ]
-            }
-        },
-        {
-            id: 33,
-            name: 'iPhone 11',
-            storage: '64GB',
-            price: 93400,
-            detailImg: 'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/a/p/apple_iphone_11_red_1_1_1.jpg',
-            productConfig: {
-                storageConfig: [
-                    {
-                        name: '128GB',
-                        price: 16700
-                    },
-                    {
-                        name: '256GB',
-                        price: 23600
-                    }
-                ],
-                colorConfig: [
-                    {
-                        colorName: '(PRODUCT)RED'
-                    },
-                    {
-                        colorName: 'White'
-                    },
-                    {
-                        colorName: 'Black'
-                    },
-                    {
-                        colorName: 'Yellow'
-                    },
-                    {
-                        colorName: 'Coral'
-                    },
-                    {
-                        colorName: 'Blue'
-                    }
-                ]
-            }
-        },
-        {
-            id: 34,
-            name: 'iPhone 11 Pro',
-            storage: '64GB',
-            price: 144300,
-            detailImg: 'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/a/p/apple_iphone_11_pro_gold_4.jpg',
-            productConfig: {
-                storageConfig: [
-                    {
-                        name: '64GB',
-                        price: 0
-                    },
-                    {
-                        name: '256GB',
-                        price: 22600
-                    },
-                    {
-                        name: '512GB',
-                        price: 45600
-                    }
-                ],
-                colorConfig: [
-                    {
-                        colorName: 'Space Gray'
-                    },
-                    {
-                        colorName: 'Silver'
-                    },
-                    {
-                        colorName: 'Gold'
-                    },
-                    {
-                        colorName: 'Midnight Green'
-                    }
-                ]
-            }
-        }
-    ],
-    ipads: [
-        {
-            name: 'ipad',
-            description: 'ipad1  description',
-            screenSize: 'number'
-        }
-    ],
     macbookAir: [
         {
             id: 10,
@@ -920,6 +818,9 @@ export const AllProductsData = {
             other: 'Dva USB ulaza , Jedan Thunderbolt 2 ulaz, Čitač SDXC kartica',
             price: '125.900',
             detailImg: 'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/a/macbookairpure.jpg',
+            images: [
+                'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/a/macbookairpure.jpg'
+            ],
             img: 'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/a/macbookairpure.jpg',
             available: false
         },
@@ -935,7 +836,10 @@ export const AllProductsData = {
             gpu: 'Intel Iris Plus',
             other: 'Dva USB ulaza , Touch ID',
             price: '163.300 RSD',
-            detailImg: 'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/a/macbookairpure.jpg',
+            detailImg: 'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/b/mb-air-2019-space-grey-1_2_6_2.jpeg',
+            images: [
+                'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/b/mb-air-2019-space-grey-1_2_6_2.jpeg'
+            ],
             img: 'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/b/mb-air-2019-space-grey-1_2_6_2.jpeg',
             available: true
         },
@@ -952,6 +856,9 @@ export const AllProductsData = {
             other: 'Dva Thunderbolt 3 ulaza , Touch ID',
             price: '163.300 RSD',
             detailImg: 'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/a/macbookairpure.jpg',
+            images: [
+                'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/b/mb-air-2019-space-grey-1_2_6_2.jpeg'
+            ],
             img: 'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/b/mb-air-2019-space-grey-1_2_6_2.jpeg',
             available: true
         }
@@ -1030,6 +937,11 @@ export const AllProductsData = {
             other: 'Butterfly Keyboard , Touch Bar , Dva Thunderbolt 2 ulaz',
             price: '179.900',
             detailImg: 'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/b/mbp13touch-space-select-201807_1_5.jpeg',
+            images: [
+                'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/b/mbp13touch-space-select-201807_1_5.jpeg',
+                'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/b/mbp13touch-space-select-201807_1_5.jpeg',
+                'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/b/mbp13touch-space-select-201807_1_5.jpeg',
+            ],
             img: 'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/b/mbp13touch-silver-select-201807_1_.jpeg',
             available: true,
             productConfig: {
@@ -1084,6 +996,11 @@ export const AllProductsData = {
             other: 'Butterfly Keyboard , Touch Bar , Četiri Thunderbolt 3 ulaza',
             price: '204.900',
             detailImg: 'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/b/mbp13touch-silver-select-201807_1_.jpeg',
+            images: [
+                'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/b/mbp13touch-space-select-201807_1_5.jpeg',
+                'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/b/mbp13touch-space-select-201807_1_5.jpeg',
+                'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/b/mbp13touch-space-select-201807_1_5.jpeg',
+            ],
             img: 'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/b/mbp13touch-silver-select-201807_1_.jpeg',
             available: false,
             productConfig: {
@@ -1138,6 +1055,11 @@ export const AllProductsData = {
             other: 'Butterfly Keyboard , Touch Bar , Četiri Thunderbolt 3 ulaza',
             price: '225.900',
             detailImg: 'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/b/mbp13touch-silver-select-201807_1_.jpeg',
+            images: [
+                'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/b/mbp13touch-space-select-201807_1_5.jpeg',
+                'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/b/mbp13touch-space-select-201807_1_5.jpeg',
+                'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/b/mbp13touch-space-select-201807_1_5.jpeg',
+            ],
             img: 'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/b/mbp13touch-silver-select-201807_1_.jpeg',
             available: true,
             productConfig: {
@@ -1192,6 +1114,11 @@ export const AllProductsData = {
             other: 'Dva USB ulaza , Jedan Thunderbolt 2 ulaz, Čitač SDXC kartica',
             price: '373.600',
             detailImg: 'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/b/mbp13touch-space-select-201807_1_5.jpeg',
+            images: [
+                'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/b/mbp13touch-space-select-201807_1_5.jpeg',
+                'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/b/mbp13touch-space-select-201807_1_5.jpeg',
+                'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/b/mbp13touch-space-select-201807_1_5.jpeg',
+            ],
             img: 'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/a/macbook_pro_16-in_touch_bar_pure_top_open_space_gray_wwen_screen-1_1_1_2_1_1.jpg',
             available: false,
             productConfig: {
@@ -1246,6 +1173,11 @@ export const AllProductsData = {
             other: 'Dva USB ulaza , Jedan Thunderbolt 2 ulaz, Čitač SDXC kartica',
             price: '442.500',
             detailImg: 'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/a/macbook_pro_16-in_touch_bar_pure_top_open_silver_wwen_screen-1_8_4.jpg',
+            images: [
+                'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/b/mbp13touch-space-select-201807_1_5.jpeg',
+                'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/b/mbp13touch-space-select-201807_1_5.jpeg',
+                'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/b/mbp13touch-space-select-201807_1_5.jpeg',
+            ],
             img: 'https://istyle.rs/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/m/a/macbook_pro_16-in_touch_bar_pure_top_open_silver_wwen_screen-1_8_4.jpg',
             available: true,
             productConfig: {
@@ -1286,6 +1218,1302 @@ export const AllProductsData = {
                     }
                 ],
             }
+        }
+    ],
+    iphones: [
+        {
+            id: 31,
+            name: 'iPhone Xʀ',
+            storage: '64GB',
+            price: 79700,
+            detailImg: 'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/i/p/iphone-xr-red-front_1_2_1.png',
+            productConfig: {
+                storageConfig: [
+                    {
+                        name: '64GB',
+                        price: 0
+                    },
+                    {
+                        name: '128GB',
+                        price: 6700
+                    }
+                ],
+                colorConfig: [
+                    {
+                        colorName: '(PRODUCT)RED',
+                        value: '#981411'
+                    },
+                    {
+                        colorName: 'White',
+                        value: '#fff'
+                    },
+                    {
+                        colorName: 'Black',
+                        value: '#000'
+                    },
+                    {
+                        colorName: 'Yellow',
+                        value: '#F9CE45'
+                    },
+                    {
+                        colorName: 'Coral',
+                        value: '#FF6E5B'
+                    },
+                    {
+                        colorName: 'Blue',
+                        value: '#47AFE6'
+                    }
+                ]
+            },
+            images: [
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/i/p/iphone-xr-red-front_1_2_1.png',
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/i/p/iphone-xr-red-back_1_2_1.png'
+            ]
+        },
+        {
+            id: 32,
+            name: 'iPhone Xs',
+            storage: '512GB',
+            price: 79700,
+            detailImg: 'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/i/m/img-_0001s_0001_iphone-xs-max-silver-select-2018_av2_5.jpg',
+            productConfig: {
+                storageConfig: [
+                    {
+                        name: '512GB',
+                        price: 0
+                    }
+                ],
+                colorConfig: [
+                    {
+                        colorName: 'Silver',
+                        value: '#D8DBDA'
+                    }
+                ]
+            },
+            images: [
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/i/m/img-_0001s_0001_iphone-xs-max-silver-select-2018_av2_5.jpg'
+            ]
+        },
+        {
+            id: 33,
+            name: 'iPhone 11',
+            storage: '64GB',
+            price: 93400,
+            detailImg: 'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/a/p/apple_iphone_11_red_1_1_1.jpg',
+            productConfig: {
+                storageConfig: [
+                    {
+                        name: '64GB',
+                        price: 0
+                    },
+                    {
+                        name: '128GB',
+                        price: 16700
+                    },
+                    {
+                        name: '256GB',
+                        price: 23600
+                    }
+                ],
+                colorConfig: [
+                    {
+                        colorName: '(PRODUCT)RED',
+                        value: '#981411'
+                    },
+                    {
+                        colorName: 'White',
+                        value: '#fff'
+                    },
+                    {
+                        colorName: 'Black',
+                        value: '#000'
+                    },
+                    {
+                        colorName: 'Yellow',
+                        value: '#F9CE45'
+                    },
+                    {
+                        colorName: 'Coral',
+                        value: '#FF6E5B'
+                    },
+                    {
+                        colorName: 'Blue',
+                        value: '#47AFE6'
+                    }
+                ]
+            },
+            images: [
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/a/p/apple_iphone_11_red_1_1_1.jpg',
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/a/p/apple_iphone_11_red_2_5.jpg'
+            ]
+        },
+        {
+            id: 34,
+            name: 'iPhone 11 Pro',
+            storage: '64GB',
+            price: 144300,
+            detailImg: 'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/a/p/apple_iphone_11_pro_gold_4.jpg',
+            productConfig: {
+                storageConfig: [
+                    {
+                        name: '64GB',
+                        price: 0
+                    },
+                    {
+                        name: '256GB',
+                        price: 22600
+                    },
+                    {
+                        name: '512GB',
+                        price: 45600
+                    }
+                ],
+                colorConfig: [
+                    {
+                        colorName: 'Space Gray',
+                        value: '#a2a6aa'
+                    },
+                    {
+                        colorName: 'Silver',
+                        value: '#D8DBDA'
+                    },
+                    {
+                        colorName: 'Gold',
+                        value: '#dec9af'
+                    },
+                    {
+                        colorName: 'Midnight Green',
+                        value: '#6d7a70'
+                    }
+                ]
+            },
+            images: [
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/a/p/apple_iphone_11_pro_gold_4.jpg'
+            ]
+        }
+    ],
+    ipads: [
+        {
+            id: 41,
+            name: 'iPad mini (2019)',
+            screenSize: 7.9,
+            display: '7,9-inčni ekran rezolucije 2048*1536 piksela pri 326 ppi\n',
+            cpu: 'A12X Bionic chip with 64-bit architecture',
+            storage: '64GB',
+            price: 69900,
+            images: [
+                'https://www.icentar.me/wp-content/uploads/2019/03/ipadmini2019c-gold-1-600x600.jpg',
+            ],
+            detailImg: 'https://www.icentar.me/wp-content/uploads/2019/03/ipadmini2019c-gold-1-600x600.jpg',
+            img: 'https://www.icentar.me/wp-content/uploads/2019/05/m2-ipad-mini-2019.png',
+            isAvailable: true,
+            available: true,
+            productConfig: {
+                storageConfig: [
+                    {
+                        name: '64GB',
+                        price: 0
+                    },
+                    {
+                        name: '128GB',
+                        price: 6700
+                    }
+                ],
+                colorConfig: [
+                    {
+                        colorName: 'Space Gray',
+                        value: '#a2a6aa'
+                    },
+                    {
+                        colorName: 'Silver',
+                        value: '#D8DBDA'
+                    },
+                    {
+                        colorName: 'Gold',
+                        value: '#dec9af'
+                    }
+                ],
+                networkConfig: [
+                    {
+                        name: 'Wi-Fi',
+                        price: 0
+                    },
+                    {
+                        name: 'Wi-Fi + Cellular',
+                        price: 18400
+                    }
+                ]
+            },
+        },
+        {
+            id: 42,
+            name: 'iPad (2020)',
+            screenSize: 10.2,
+            display: '10,2-inčni ekran rezolucije 2160*1620 piksela pri 264 ppi',
+            cpu: 'A12 Bionic čip sa 64-bitnom arhitekturom Neural Engine',
+            storage: '32GB',
+            price: 86900,
+            images: [
+                'https://www.icentar.me/wp-content/uploads/2020/10/ipad-2020-gold-600x600.jpg',
+                'https://www.icentar.me/wp-content/uploads/2020/10/ipad-2020-gold-01-600x600.jpg',
+                'https://www.icentar.me/wp-content/uploads/2020/10/ipad-2020-gold-02-600x600.jpg',
+                'https://www.icentar.me/wp-content/uploads/2020/10/ipad-2020-gold-03-600x600.jpg',
+            ],
+            detailImg: 'https://www.icentar.me/wp-content/uploads/2020/10/ipad-2020-gold-600x600.jpg',
+            img: 'https://www.icentar.me/wp-content/uploads/2020/10/m4-ipad2020.png',
+            isAvailable: true,
+            available: true,
+            productConfig: {
+                storageConfig: [
+                    {
+                        name: '32GB',
+                        price: 0
+                    },
+                    {
+                        name: '128GB',
+                        price: 9700
+                    }
+                ],
+                colorConfig: [
+                    {
+                        colorName: 'Space Gray',
+                        value: '#a2a6aa'
+                    },
+                    {
+                        colorName: 'Silver',
+                        value: '#D8DBDA'
+                    },
+                    {
+                        colorName: 'Gold',
+                        value: '#dec9af'
+                    }
+                ],
+                networkConfig: [
+                    {
+                        name: 'Wi-Fi',
+                        price: 0
+                    },
+                    {
+                        name: 'Wi-Fi + Cellular',
+                        price: 18400
+                    }
+                ]
+            },
+        },
+        {
+            id: 43,
+            name: 'iPad Air (2019)',
+            screenSize: 10.5,
+            display: '10,2-inčni ekran rezolucije 2160*1620 piksela pri 264 ppi',
+            cpu: 'A12 Bionic čip sa 64-bitnom arhitekturom Neural Engine',
+            storage: '64GB',
+            price: 109900,
+            images: [
+                'https://www.icentar.me/wp-content/uploads/2019/04/ipadair2019c-gold-1-600x600.jpg',
+                'https://www.icentar.me/wp-content/uploads/2019/04/ipadair2019c-gold-2-600x600.jpg',
+            ],
+            detailImg: 'https://www.icentar.me/wp-content/uploads/2019/04/ipadair2019c-gold-1-600x600.jpg',
+            img: 'https://www.icentar.me/wp-content/uploads/2019/05/m2-ipad-air-2019.png',
+            isAvailable: true,
+            available: true,
+            productConfig: {
+                storageConfig: [
+                    {
+                        name: '64GB',
+                        price: 0
+                    },
+                    {
+                        name: '256GB',
+                        price: 11400
+                    }
+                ],
+                colorConfig: [
+                    {
+                        colorName: 'Space Gray',
+                        value: '#a2a6aa'
+                    },
+                    {
+                        colorName: 'Silver',
+                        value: '#D8DBDA'
+                    },
+                    {
+                        colorName: 'Gold',
+                        value: '#dec9af'
+                    }
+                ],
+                networkConfig: [
+                    {
+                        name: 'Wi-Fi',
+                        price: 0
+                    },
+                    {
+                        name: 'Wi-Fi + Cellular',
+                        price: 18400
+                    }
+                ]
+            },
+        },
+        {
+            id: 44,
+            name: 'iPad Pro (2018)',
+            screenSize: 11,
+            display: '11-inčni ekran rezolucije 2388×1668 piksela pri 264 ppi',
+            cpu: 'A12X Bionic chip with 64-bit architecture',
+            storage: '64GB',
+            price: 129900,
+            images: [
+                'https://www.icentar.me/wp-content/uploads/2020/03/ipadpro-11-2020-spaceg-1-600x600.jpg',
+                'https://www.icentar.me/wp-content/uploads/2020/03/ipadpro-129-2020-spaceg-2-600x600.jpg',
+                'https://www.icentar.me/wp-content/uploads/2020/03/ipadpro-129-2020-spaceg-3-600x600.jpg',
+                'https://www.icentar.me/wp-content/uploads/2020/03/ipadpro-129-2020-spaceg-4-600x600.jpg',
+                'https://www.icentar.me/wp-content/uploads/2020/03/ipadpro-129-2020-spaceg-5-600x600.jpg',
+                'https://www.icentar.me/wp-content/uploads/2020/03/ipadpro-129-2020-spaceg-6-600x600.jpg',
+            ],
+            detailImg: 'https://www.icentar.me/wp-content/uploads/2020/03/ipadpro-11-2020-spaceg-1-600x600.jpg',
+            img: 'https://www.icentar.me/wp-content/uploads/2020/03/ipadpro-11-2020-spaceg-1-600x600.jpg',
+            isAvailable: true,
+            available: true,
+            productConfig: {
+                screenSizeConfig: [
+                    {
+                        name: '11"',
+                        price: 0,
+                        display: '11-inčni ekran rezolucije 2388×1668 piksela pri 264 ppi'
+                    },
+                    {
+                        name: '12.9"',
+                        price: 13670,
+                        display: '12,9-inčni ekran rezolucije 2732×2048 piksela pri 264 ppi'
+                    }
+                ],
+                storageConfig: [
+                    {
+                        name: '64GB',
+                        price: 0
+                    },
+                    {
+                        name: '256GB',
+                        price: 11400
+                    },
+                    {
+                        name: '512GB',
+                        price: 41400
+                    },
+                    {
+                        name: '1TB',
+                        price: 81400
+                    }
+                ],
+                colorConfig: [
+                    {
+                        colorName: 'Space Gray',
+                        value: '#a2a6aa'
+                    },
+                    {
+                        colorName: 'Silver',
+                        value: '#D8DBDA'
+                    }
+                ],
+                networkConfig: [
+                    {
+                        name: 'Wi-Fi',
+                        price: 0
+                    },
+                    {
+                        name: 'Wi-Fi + Cellular',
+                        price: 22400
+                    }
+                ]
+            }
+        },
+        {
+            id: 45,
+            name: 'iPad Pro (2020)',
+            screenSize: 11,
+            display: '11-inčni ekran rezolucije 2388×1668 piksela pri 264 ppi',
+            cpu: 'A12X Bionic chip with 64-bit architecture',
+            storage: '64GB',
+            price: 145900,
+            images: [
+                'https://www.icentar.me/wp-content/uploads/2020/03/ipadpro-11-2020-spaceg-1-600x600.jpg',
+                'https://www.icentar.me/wp-content/uploads/2020/03/ipadpro-129-2020-spaceg-2-600x600.jpg',
+                'https://www.icentar.me/wp-content/uploads/2020/03/ipadpro-129-2020-spaceg-3-600x600.jpg',
+                'https://www.icentar.me/wp-content/uploads/2020/03/ipadpro-129-2020-spaceg-4-600x600.jpg',
+                'https://www.icentar.me/wp-content/uploads/2020/03/ipadpro-129-2020-spaceg-5-600x600.jpg',
+                'https://www.icentar.me/wp-content/uploads/2020/03/ipadpro-129-2020-spaceg-6-600x600.jpg',
+            ],
+            detailImg: 'https://www.icentar.me/wp-content/uploads/2020/03/ipadpro-11-2020-spaceg-1-600x600.jpg',
+            img: 'https://www.icentar.me/wp-content/uploads/2020/03/ipadpro-11-2020-spaceg-1-600x600.jpg',
+            isAvailable: true,
+            available: true,
+            productConfig: {
+                screenSizeConfig: [
+                    {
+                        name: '11"',
+                        price: 0,
+                        display: '11-inčni ekran rezolucije 2388×1668 piksela pri 264 ppi'
+                    },
+                    {
+                        name: '12.9"',
+                        price: 13670,
+                        display: '12,9-inčni ekran rezolucije 2732×2048 piksela pri 264 ppi'
+                    }
+                ],
+                storageConfig: [
+                    {
+                        name: '64GB',
+                        price: 0
+                    },
+                    {
+                        name: '256GB',
+                        price: 13400
+                    },
+                    {
+                        name: '512GB',
+                        price: 46400
+                    },
+                    {
+                        name: '1TB',
+                        price: 91400
+                    }
+                ],
+                colorConfig: [
+                    {
+                        colorName: 'Space Gray',
+                        value: '#a2a6aa'
+                    },
+                    {
+                        colorName: 'Silver',
+                        value: '#D8DBDA'
+                    }
+                ],
+                networkConfig: [
+                    {
+                        name: 'Wi-Fi',
+                        price: 0
+                    },
+                    {
+                        name: 'Wi-Fi + Cellular',
+                        price: 21900
+                    }
+                ]
+            }
+        }
+    ],
+    iwatch: [
+        {
+            id: 51,
+            name: 'Apple Watch Series SE',
+            screenSize: 1.78,
+            display: '1.78"',
+            os: 'watchOS 7.0',
+            cpu: 'Dual-core',
+            storage: '32GB',
+            ram: '1GB',
+            price: 88900,
+            images: [
+                'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MYW62_VW_34FR+watch-44-alum-gold-cell-se_VW_34FR_WF_CO_GEO_US?wid=700&hei=700&trim=1,0&fmt=p-jpg&qlt=95&op_usm=0.5,0.5&.v=1599072412000,1602199058000',
+                'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MYTK2_VW_34FR+watch-44-alum-gold-cell-se_VW_34FR_WF_CO_GEO_US?wid=700&hei=700&trim=1,0&fmt=p-jpg&qlt=95&op_usm=0.5,0.5&.v=1599071329000,1602199058000',
+                'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MYWT2_VW_34FR+watch-44-alum-gold-cell-se_VW_34FR_WF_CO_GEO_US?wid=700&hei=700&trim=1,0&fmt=p-jpg&qlt=95&op_usm=0.5,0.5&.v=1599073157000,1602199058000',
+                'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MYTV2_VW_34FR+watch-44-alum-gold-cell-se_VW_34FR_WF_CO_GEO_US?wid=700&hei=700&trim=1,0&fmt=p-jpg&qlt=95&op_usm=0.5,0.5&.v=1599071862000,1602199058000'
+            ],
+            detailImg: './assets/images/iwatch-menu/watch-series-se.jpg',
+            img: './assets/images/iwatch-menu/watch-series-se.jpg',
+            isAvailable: true,
+            available: true,
+            productConfig: {
+                screenSizeConfig: [
+                    {
+                        name: '40mm (gps + cellular)',
+                        price: 0,
+                        screenSize: 1.57
+                    },
+                    {
+                        name: '40mm (gps)',
+                        price: 13670,
+                        screenSize: 1.57
+                    },
+                    {
+                        name: '44mm (gps + cellular)',
+                        price: 13670,
+                        screenSize: 1.78
+                    },
+                    {
+                        name: '44mm (gps)',
+                        price: 13670,
+                        screenSize: 1.78
+                    }
+                ],
+                colorConfig: [
+                    {
+                        colorName: 'Deep Navy',
+                        value: '#33384B'
+                    },
+                    {
+                        colorName: 'Ginger',
+                        value: '#EBCE68'
+                    },
+                    {
+                        colorName: 'Cyprus Green',
+                        value: '#373F32'
+                    },
+                    {
+                        colorName: 'Pink Citrus',
+                        value: '#EB6258'
+                    },
+                    {
+                        colorName: 'White',
+                        value: '#FBF7F4'
+                    },
+                    {
+                        colorName: 'Black',
+                        value: '#313131'
+                    },
+                    {
+                        colorName: '(PRODUCT RED)',
+                        value: '#D74248'
+                    }
+                ]
+            }
+        },
+        {
+            id: 52,
+            name: 'Apple Watch Series 6',
+            screenSize: 1.78,
+            display: '1.78"',
+            os: 'watchOS 7.0',
+            cpu: 'Dual-core',
+            storage: '32GB',
+            ram: '1GB',
+            price: 34900,
+            images: [
+                './assets/images/iwatch-menu/watch-series-6.jpg',
+                'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MYAU2_VW_34FR+watch-40-alum-spacegray-nc-6s_VW_34FR_WF_CO?wid=700&hei=700&trim=1,0&fmt=p-jpg&qlt=95&op_usm=0.5,0.5&.v=1599010468000,1599523448000',
+                'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MGQR3_VW_34FR+watch-40-alum-spacegray-nc-6s_VW_34FR_WF_CO?wid=700&hei=700&trim=1,0&fmt=p-jpg&qlt=95&op_usm=0.5,0.5&.v=1599010407000,1599523448000',
+                'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MG423_VW_34FR+watch-40-alum-spacegray-nc-6s_VW_34FR_WF_CO?wid=700&hei=700&trim=1,0&fmt=p-jpg&qlt=95&op_usm=0.5,0.5&.v=1599010412000,1599523448000',
+                'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MG423_VW_34FR+watch-40-alum-spacegray-nc-6s_VW_34FR_WF_CO?wid=700&hei=700&trim=1,0&fmt=p-jpg&qlt=95&op_usm=0.5,0.5&.v=1599010412000,1599523448000',
+                'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MTP72_VW_34FR+watch-40-alum-spacegray-nc-6s_VW_34FR_WF_CO?wid=700&hei=700&trim=1,0&fmt=p-jpg&qlt=95&op_usm=0.5,0.5&.v=1566449884261,1599523448000',
+                'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MTP62_VW_34FR+watch-40-alum-spacegray-nc-6s_VW_34FR_WF_CO?wid=700&hei=700&trim=1,0&fmt=p-jpg&qlt=95&op_usm=0.5,0.5&.v=1566449863965,1599523448000'
+            ],
+            detailImg: './assets/images/iwatch-menu/watch-series-6.jpg',
+            img: './assets/images/iwatch-menu/watch-series-6.jpg',
+            isAvailable: true,
+            available: true,
+            productConfig: {
+                screenSizeConfig: [
+                    {
+                        name: '40mm (gps + cellular)',
+                        price: 0,
+                        screenSize: 1.57
+                    },
+                    {
+                        name: '44mm (gps + cellular)',
+                        price: 13670,
+                        screenSize: 1.78
+                    }
+                ],
+                colorConfig: [
+                    {
+                        colorName: 'Deep Navy',
+                        value: '#33384B'
+                    },
+                    {
+                        colorName: 'Ginger',
+                        value: '#EBCE68'
+                    },
+                    {
+                        colorName: 'Cyprus Green',
+                        value: '#373F32'
+                    },
+                    {
+                        colorName: 'Pink Citrus',
+                        value: '#EB6258'
+                    },
+                    {
+                        colorName: 'Pink Sand',
+                        value: '#F2D7CE'
+                    },
+                    {
+                        colorName: 'White',
+                        value: '#FBF7F4'
+                    },
+                    {
+                        colorName: 'Black',
+                        value: '#313131'
+                    },
+                    {
+                        colorName: '(PRODUCT RED)',
+                        value: '#D74248'
+                    }
+                ]
+            }
+        }
+    ],
+    macPro: [
+        {
+            id: 60,
+            name: 'Mac Pro',
+            cpu: '3,6GHz 8-core Intel Xeon W',
+            cpuTurbo: 'Turbo Boost do 4,0GHz',
+            ram: '32GB (4x8 GB) DDR4 EEC',
+            storage: '256GB SSD',
+            gpu: 'Radeon Pro 580X sa 8GB GDDR5 memorije',
+            other: 'Kućište od nerđajućeg čelika sa nožicama',
+            price: 861800,
+            img: 'https://istyle.cz/media/wysiwyg/CZ/content/preselection/mac-pro/mac-pro-3.jpg',
+            available: true,
+            isNew: true,
+            images: [
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/m/a/mac-pro-2019-gallery1_5.jpeg',
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/m/a/mac-pro-2019-gallery2_5.jpeg',
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/m/a/mac-pro-2019-gallery3_3.jpeg',
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/m/a/mac-pro-2019-gallery4_3.jpeg',
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/m/a/mac-pro-2019-gallery5_3.jpeg',
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/m/a/mac-pro-2019-gallery6_3.jpeg',
+                '',
+            ],
+            detailImg: 'https://istyle.rs/media/wysiwyg/CZ/categories/mac/m2-mac-pro.jpg',
+            productConfig: {
+                cpuConfig: [
+                    {
+                        name: '3,6GHz 8-core Intel Xeon W',
+                        price: 0
+                    },
+                    {
+                        name: '3,3GHz 12-core Intel Xeon W, Turbo Boost do 4,4GHz',
+                        price: 159665
+                    },
+                    {
+                        name: '3,2GHz 16-core Intel Xeon W, Turbo Boost do 4,4GHz',
+                        price: 319486
+                    },
+                    {
+                        name: '2,7GHz 24-core Intel Xeon W, Turbo Boost do 4,4GHz',
+                        price: 958300
+                    },
+                    {
+                        name: '2,5GHz 28-core Intel Xeon W, Turbo Boost do 4,4GHz',
+                        price: 1117962
+                    }
+                ],
+                ramConfig: [
+                    {
+                        name: '32GB (4x8GB) DDR4 ECC',
+                        price: 0
+                    },
+                    {
+                        name: '48GB (6x8GB) DDR4 ECC',
+                        price: 47932
+                    },
+                    {
+                        name: '96GB (6x16GB) DDR4 ECC',
+                        price: 159665
+                    },
+                    {
+                        name: '192GB (6x32GB) DDR4 ECC',
+                        price: 479149
+                    },
+                    {
+                        name: '384GB (6x64GB) DDR4 ECC',
+                        price: 958300
+                    },
+                    {
+                        name: '768GB (12x64GB) DDR4 ECC',
+                        price: 1597112
+                    },
+                    {
+                        name: '768GB (6x128GB) DDR4 ECC',
+                        price: 2235925
+                    },
+                    {
+                        name: '1,5TB (12x128GB) DDR4 ECC (zahteva procesor od 24 ili 28 jezgara)',
+                        price: 5110664
+                    }
+                ],
+                storageConfig: [
+                    {
+                        name: '256GB SSD',
+                        price: 0
+                    },
+                    {
+                        name: '1TB SSD',
+                        price: 63960
+                    },
+                    {
+                        name: '2TB SSD',
+                        price: 127764
+                    },
+                    {
+                        name: '4TB SSD',
+                        price: 223625
+                    }
+                ],
+                gpu: [
+                    {
+                        name: 'Radeon Pro 580X sa 8GB GDDR5 memorije',
+                        price: 0
+                    },
+                    {
+                        name: 'Radeon Pro Vega II 32GB HBM2',
+                        price: 383287
+                    },
+                    {
+                        name: '2x Radeon Pro Vega II sa 32GB HBM2 memorije svaka',
+                        price: 830537
+                    },
+                    {
+                        name: 'Radeon Pro Vega II Duo sa 2x32GB HBM2 memorije',
+                        price: 830537
+                    },
+                    {
+                        name: '2x Radeon Pro Vega II Duo sa 2x32GB HBM2 memorije svaka',
+                        price: 1724875
+                    }
+                ],
+                AfterburnerConfig: [
+                    {
+                        name: 'Ne, hvala.',
+                        price: 0
+                    },
+                    {
+                        name: 'Apple Afterburner',
+                        price: 319486
+                    }
+                ],
+                holderConfig: [
+                    {
+                        name: 'Kućište od nerđajućeg čelika sa nožicama',
+                        price: 0
+                    },
+                    {
+                        name: 'Kućište od nerđajućeg čelika sa točkićima',
+                        price: 63960
+                    }
+                ],
+                mouseConfig: [
+                    {
+                        name: 'Magic Mouse 2',
+                        price: 0
+                    },
+                    {
+                        name: 'Magic Trackpad 2',
+                        price: 9620
+                    },
+                    {
+                        name: 'Magic Mouse 2 + Magic Trackpad 2',
+                        price: 21587
+                    }
+                ]
+            }
+        },
+        {
+            id: 61,
+            name: 'Mac Pro Rack',
+            cpu: '3,5GHz 8-core Intel Xeon W',
+            cpuTurbo: 'Turbo Boost do 4,0GHz',
+            ram: '32GB (4x8GB) DDR4 ECC',
+            storage: '256GB SSD',
+            gpu: 'Radeon Pro 580X sa 8GB GDDR5 memorije',
+            other: 'Kućište od nerđajućeg čelika sa nožicama',
+            price: 861800,
+            img: 'https://istyleprod.s3.amazonaws.com/RO/newdesign/mac-pro-4.jpg',
+            available: true,
+            isNew: true,
+            images: [
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/m/a/mac-pro-2019-gallery1_5.jpeg',
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/m/a/mac-pro-2019-gallery2_5.jpeg',
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/m/a/mac-pro-2019-gallery3_3.jpeg',
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/m/a/mac-pro-2019-gallery4_3.jpeg',
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/m/a/mac-pro-2019-gallery5_3.jpeg',
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/m/a/mac-pro-2019-gallery6_3.jpeg'
+            ],
+            detailImg: 'https://istyle.rs/media/wysiwyg/CZ/categories/mac/m2-mac-pro.jpg',
+            productConfig: {
+                cpuConfig: [
+                    {
+                        name: '3,5GHz 8-core Intel Xeon W',
+                        price: 0
+                    },
+                    {
+                        name: '3,3GHz 12-core Intel Xeon W, Turbo Boost do 4,4GHz',
+                        price: 159665
+                    },
+                    {
+                        name: '3,2GHz 16-core Intel Xeon W, Turbo Boost do 4,4GHz',
+                        price: 319486
+                    },
+                    {
+                        name: '2,7GHz 24-core Intel Xeon W, Turbo Boost do 4,4GHz',
+                        price: 958300
+                    },
+                    {
+                        name: '2,5GHz 28-core Intel Xeon W, Turbo Boost do 4,4GHz',
+                        price: 1117962
+                    }
+                ],
+                ramConfig: [
+                    {
+                        name: '32GB (4x8GB) DDR4 ECC',
+                        price: 0
+                    },
+                    {
+                        name: '48GB (6x8GB) DDR4 ECC',
+                        price: 47932
+                    },
+                    {
+                        name: '96GB (6x16GB) DDR4 ECC',
+                        price: 159665
+                    },
+                    {
+                        name: '192GB (6x32GB) DDR4 ECC',
+                        price: 479149
+                    },
+                    {
+                        name: '384GB (6x64GB) DDR4 ECC',
+                        price: 958300
+                    },
+                    {
+                        name: '768GB (12x64GB) DDR4 ECC',
+                        price: 1597112
+                    },
+                    {
+                        name: '768GB (6x128GB) DDR4 ECC',
+                        price: 2235925
+                    },
+                    {
+                        name: '1,5TB (12x128GB) DDR4 ECC (zahteva procesor od 24 ili 28 jezgara)',
+                        price: 5110664
+                    }
+                ],
+                storageConfig: [
+                    {
+                        name: '256GB SSD',
+                        price: 0
+                    },
+                    {
+                        name: '1TB SSD',
+                        price: 63960
+                    },
+                    {
+                        name: '2TB SSD',
+                        price: 127764
+                    },
+                    {
+                        name: '4TB SSD',
+                        price: 223625
+                    }
+                ],
+                gpu: [
+                    {
+                        name: 'Radeon Pro 580X sa 8GB GDDR5 memorije',
+                        price: 0
+                    },
+                    {
+                        name: 'Radeon Pro Vega II 32GB HBM2',
+                        price: 383287
+                    },
+                    {
+                        name: '2x Radeon Pro Vega II sa 32GB HBM2 memorije svaka',
+                        price: 830537
+                    },
+                    {
+                        name: 'Radeon Pro Vega II Duo sa 2x32GB HBM2 memorije',
+                        price: 830537
+                    },
+                    {
+                        name: '2x Radeon Pro Vega II Duo sa 2x32GB HBM2 memorije svaka',
+                        price: 1724875
+                    }
+                ],
+                AfterburnerConfig: [
+                    {
+                        name: 'Ne, hvala.',
+                        price: 0
+                    },
+                    {
+                        name: 'Apple Afterburner',
+                        price: 319486
+                    }
+                ],
+                holderConfig: [
+                    {
+                        name: 'Kućište od nerđajućeg čelika sa nožicama',
+                        price: 0
+                    },
+                    {
+                        name: 'Kućište od nerđajućeg čelika sa točkićima',
+                        price: 63960
+                    }
+                ],
+                mouseConfig: [
+                    {
+                        name: 'Magic Mouse 2',
+                        price: 0
+                    },
+                    {
+                        name: 'Magic Trackpad 2',
+                        price: 9620
+                    },
+                    {
+                        name: 'Magic Mouse 2 + Magic Trackpad 2',
+                        price: 21587
+                    }
+                ]
+            }
+        },
+        {
+            id: 62,
+            name: 'Pro Display XDR',
+            screenSize: 21,
+            display: 'Retina 4K 4096 x 2304 P3 displej',
+            // cpu: '3,5GHz 8-core Intel Xeon W',
+            // cpuTurbo: 'Turbo Boost do 4,0GHz',
+            // ram: '32GB (4x8 GB) DDR4 EEC',
+            // storage: '256GB SSD',
+            // gpu: 'Radeon Pro 580X sa 8GB GDDR5 memorije',
+            other: 'Kućište od nerđajućeg čelika sa nožicama',
+            price: 861800,
+            img: 'https://istyle.cz/media/wysiwyg/CZ/content/preselection/mac-pro/mac-pro-display.jpg',
+            available: true,
+            isNew: true,
+            images: [
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/p/r/pro-display-hero_fv1_4_2.jpeg',
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/p/r/pro-display-gallery1-201909_4_2.jpeg',
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/p/r/pro-display-gallery2-201909_4_2.jpeg',
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/p/r/pro-display-gallery3-201909_4_2.jpeg',
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/p/r/pro-display-gallery4-201909_4_2.jpeg'
+            ],
+            detailImg: 'https://istyle.rs/media/wysiwyg/CZ/categories/mac/m2-mac-pro.jpg',
+            productConfig: {
+                cpuConfig: [
+                    {
+                        name: '3,6GHz 8-core Intel Xeon W',
+                        price: 0
+                    },
+                    {
+                        name: '3,3GHz 12-core Intel Xeon W, Turbo Boost do 4,4GHz',
+                        price: 159665
+                    },
+                    {
+                        name: '3,2GHz 16-core Intel Xeon W, Turbo Boost do 4,4GHz',
+                        price: 319486
+                    },
+                    {
+                        name: '2,7GHz 24-core Intel Xeon W, Turbo Boost do 4,4GHz',
+                        price: 958300
+                    },
+                    {
+                        name: '2,5GHz 28-core Intel Xeon W, Turbo Boost do 4,4GHz',
+                        price: 1117962
+                    }
+                ],
+                ramConfig: [
+                    {
+                        name: '32GB (4x8GB) DDR4 ECC',
+                        price: 0
+                    },
+                    {
+                        name: '48GB (6x8GB) DDR4 ECC',
+                        price: 47932
+                    },
+                    {
+                        name: '96GB (6x16GB) DDR4 ECC',
+                        price: 159665
+                    },
+                    {
+                        name: '192GB (6x32GB) DDR4 ECC',
+                        price: 479149
+                    },
+                    {
+                        name: '384GB (6x64GB) DDR4 ECC',
+                        price: 958300
+                    },
+                    {
+                        name: '768GB (12x64GB) DDR4 ECC',
+                        price: 1597112
+                    },
+                    {
+                        name: '768GB (6x128GB) DDR4 ECC',
+                        price: 2235925
+                    },
+                    {
+                        name: '1,5TB (12x128GB) DDR4 ECC (zahteva procesor od 24 ili 28 jezgara)',
+                        price: 5110664
+                    }
+                ],
+                storageConfig: [
+                    {
+                        name: '256GB SSD',
+                        price: 0
+                    },
+                    {
+                        name: '1TB SSD',
+                        price: 63960
+                    },
+                    {
+                        name: '2TB SSD',
+                        price: 127764
+                    },
+                    {
+                        name: '4TB SSD',
+                        price: 223625
+                    }
+                ],
+                gpu: [
+                    {
+                        name: 'Radeon Pro 580X sa 8GB GDDR5 memorije',
+                        price: 0
+                    },
+                    {
+                        name: 'Radeon Pro Vega II 32GB HBM2',
+                        price: 383287
+                    },
+                    {
+                        name: '2x Radeon Pro Vega II sa 32GB HBM2 memorije svaka',
+                        price: 830537
+                    },
+                    {
+                        name: 'Radeon Pro Vega II Duo sa 2x32GB HBM2 memorije',
+                        price: 830537
+                    },
+                    {
+                        name: '2x Radeon Pro Vega II Duo sa 2x32GB HBM2 memorije svaka',
+                        price: 1724875
+                    }
+                ],
+                AfterburnerConfig: [
+                    {
+                        name: 'Ne, hvala.',
+                        price: 0
+                    },
+                    {
+                        name: 'Apple Afterburner',
+                        price: 319486
+                    }
+                ],
+                holderConfig: [
+                    {
+                        name: 'Kućište od nerđajućeg čelika sa nožicama',
+                        price: 0
+                    },
+                    {
+                        name: 'Kućište od nerđajućeg čelika sa točkićima',
+                        price: 63960
+                    }
+                ],
+                mouseConfig: [
+                    {
+                        name: 'Magic Mouse 2',
+                        price: 0
+                    },
+                    {
+                        name: 'Magic Trackpad 2',
+                        price: 9620
+                    },
+                    {
+                        name: 'Magic Mouse 2 + Magic Trackpad 2',
+                        price: 21587
+                    }
+                ]
+            }
+        }
+    ],
+    macMini: [
+        {
+            id: 71,
+            name: 'Mac mini 256GB',
+            cpu: '3,6GHz quad-core 8th-generation Intel Core i3 procesor',
+            // cpuTurbo: 'Turbo Boost do 4,0GHz',
+            ram: '8GB 2666MHz DDR4',
+            storage: '256GB SSD',
+            other: 'Gigabit Ethernet (10/100/1000BASE-T Gigabit Ethernet sa RJ-45 konektorom)',
+            price: 126100,
+            img: 'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/m/a/macmini-pf-spgry-screen_3_2_1_2.jpg',
+            available: true,
+            isNew: true,
+            images: [
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/m/a/macmini-pf-spgry-screen_3_2_1_2.jpg'
+            ],
+            detailImg: 'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/m/a/macmini-pf-spgry-screen_3_2_1_2.jpg',
+            productConfig: {
+                cpuConfig: [
+                    {
+                        name: '3,6GHz quad-core 8th-generation Intel Core i3 procesor',
+                        price: 0
+                    },
+                    {
+                        name: '3,2GHz 6-core 8th-generation Intel Core i7 procesor',
+                        price: 48402
+                    }
+                ],
+                ramConfig: [
+                    {
+                        name: '8GB 2666MHz DDR4',
+                        price: 0
+                    },
+                    {
+                        name: '16GB 2666MHz DDR4',
+                        price: 47932
+                    },
+                    {
+                        name: '32GB 2666MHz DDR4',
+                        price: 100768
+                    },
+                    {
+                        name: '64GB 2666MHz DDR4',
+                        price: 167834
+                    }
+                ],
+                storageConfig: [
+                    {
+                        name: '256GB SSD',
+                        price: 0
+                    },
+                    {
+                        name: '512GB SSD',
+                        price: 33534
+                    },
+                    {
+                        name: '1TB SSD',
+                        price: 67234
+                    },
+                    {
+                        name: '2TB SSD',
+                        price: 134302
+                    }
+                ],
+                ethernetConfig: [
+                    {
+                        name: 'Gigabit Ethernet (10/100/1000BASE-T Gigabit Ethernet sa RJ-45 konektorom)',
+                        price: 0
+                    },
+                    {
+                        name: '10 Gigabit Ethernet (Nbase-T Ethernet sa podrškom za 1Gb, 2.5Gb, 5Gb i 10Gb Ethernet sa RJ-45 konektorom)',
+                        price: 16850
+                    }
+                ]
+            }
+        },
+        {
+            id: 72,
+            name: 'Mac mini 512GB',
+            cpu: '3,0GHz 6-core 8th-generation Intel Core i5',
+            cpuTurbo: 'Turbo Boost do 4,1GHz',
+            ram: '8GB 2666MHz DDR4',
+            storage: '512GB SSD',
+            other: 'Gigabit Ethernet (10/100/1000BASE-T Gigabit Ethernet sa RJ-45 konektorom)',
+            price: 172685,
+            img: 'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/m/a/macmini-pf-spgry-screen_3_2_1_2.jpg',
+            available: true,
+            isNew: true,
+            images: [
+                'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/m/a/macmini-pf-spgry-screen_3_2_1_2.jpg'
+            ],
+            detailImg: 'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/m/a/macmini-pf-spgry-screen_3_2_1_2.jpg',
+            productConfig: {
+                cpuConfig: [
+                    {
+                        name: '3,0GHz 6-core 8th-generation Intel Core i5',
+                        price: 0
+                    },
+                    {
+                        name: '3,2GHz 6-core 8th-generation Intel Core i7',
+                        price: 48402
+                    }
+                ],
+                ramConfig: [
+                    {
+                        name: '8GB 2666MHz DDR4',
+                        price: 0
+                    },
+                    {
+                        name: '16GB 2666MHz DDR4',
+                        price: 47932
+                    },
+                    {
+                        name: '32GB 2666MHz DDR4',
+                        price: 100768
+                    },
+                    {
+                        name: '64GB 2666MHz DDR4',
+                        price: 167834
+                    }
+                ],
+                storageConfig: [
+                    {
+                        name: '512GB SSD',
+                        price: 0
+                    },
+                    {
+                        name: '1TB SSD',
+                        price: 33641
+                    },
+                    {
+                        name: '2TB SSD',
+                        price: 100765
+                    }
+                ],
+                ethernetConfig: [
+                    {
+                        name: 'Gigabit Ethernet (10/100/1000BASE-T Gigabit Ethernet sa RJ-45 konektorom)',
+                        price: 0
+                    },
+                    {
+                        name: '10 Gigabit Ethernet (Nbase-T Ethernet sa podrškom za 1Gb, 2.5Gb, 5Gb i 10Gb Ethernet sa RJ-45 konektorom)',
+                        price: 16850
+                    }
+                ]
+            }
+        }
+    ],
+    iMusic: [
+        {
+            id: 81,
+            name: 'Airpods',
+            cpu: '',
+            cpuTurbo: '',
+            ram: '',
+            storage: '',
+            gpu: '',
+            other: 'Kućište od nerđajućeg čelika sa nožicama',
+            price: 27400,
+            img: '/assets/images/iMusic-menu/airpods-pro.png',
+            available: true,
+            isNew: true,
+            images: [
+                'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MWP22_AV1?wid=572&hei=572&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1591634652000',
+                'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MWP22_AV2?wid=572&hei=572&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1591634643000',
+                'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MWP22_AV3?wid=572&hei=572&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1591634662000',
+                'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MWP22_AV4_GEO_US?wid=572&hei=572&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1591634724000',
+                'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MWP22_AV5_GEO_US?wid=572&hei=572&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1591634793000',
+                'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MWP22?wid=572&hei=572&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1591634795000',
+                '/assets/images/iMusic-menu/airpods-pro.png'
+            ],
+            detailImg: '/assets/images/iMusic-menu/airpods-pro.png',
+        },
+        {
+            id: 81,
+            name: 'Airpods Pro',
+            cpu: '',
+            cpuTurbo: '',
+            ram: '',
+            storage: '',
+            gpu: '',
+            other: 'Kućište od nerđajućeg čelika sa nožicama',
+            price: 27400,
+            img: '/assets/images/iMusic-menu/airpods-pro.png',
+            available: true,
+            isNew: true,
+            images: [
+                'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MWP22_AV1?wid=572&hei=572&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1591634652000',
+                'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MWP22_AV2?wid=572&hei=572&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1591634643000',
+                'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MWP22_AV3?wid=572&hei=572&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1591634662000',
+                'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MWP22_AV4_GEO_US?wid=572&hei=572&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1591634724000',
+                'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MWP22_AV5_GEO_US?wid=572&hei=572&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1591634793000',
+                'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MWP22?wid=572&hei=572&fmt=jpeg&qlt=95&op_usm=0.5,0.5&.v=1591634795000',
+                '/assets/images/iMusic-menu/airpods-pro.png'
+            ],
+            detailImg: '/assets/images/iMusic-menu/airpods-pro.png',
         }
     ]
 };

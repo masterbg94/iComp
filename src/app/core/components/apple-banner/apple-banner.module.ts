@@ -1,6 +1,6 @@
-import {NgModule} from '@angular/core';
+import { NgModule } from '@angular/core';
 
-import {AppleBannerComponent} from './apple-banner.component';
+import { AppleBannerComponent } from './apple-banner.component';
 
 @NgModule({
   imports: [],

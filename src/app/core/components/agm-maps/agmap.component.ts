@@ -1,9 +1,9 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-agmap-component',
   templateUrl: './agmap.component.html',
-  styleUrls: ['./agmap.component.scss']
+  styleUrls: [ './agmap.component.scss' ]
 })
 export class AgmapComponent {
   lat = 43.851752;

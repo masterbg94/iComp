@@ -1,6 +1,6 @@
-import {NgModule} from '@angular/core';
+import { NgModule } from '@angular/core';
 
-import {ArcadeComponent} from './arcade.component';
+import { ArcadeComponent } from './arcade.component';
 
 @NgModule({
   imports: [],

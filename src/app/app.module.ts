@@ -1,15 +1,15 @@
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
-import {BrowserModule} from '@angular/platform-browser';
-import {NgModule} from '@angular/core';
-
-import {AppComponent} from './app.component';
-import {AppRoutingModule} from './app.routing.module';
-import {NavbarModule} from './core/components/navbar/navbar.module';
-import {FooterModule} from './core/components/footer/footer.module';
-import {CoreModule} from './core/core.module';
+import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app.routing.module';
+import { FooterModule } from './core/components/footer/footer.module';
+import { NavbarModule } from './core/components/navbar/navbar.module';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
@@ -27,7 +27,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserAnimationsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [ AppComponent ]
 })
 export class AppModule {
 }

@@ -1,7 +1,7 @@
-import {NgModule} from '@angular/core';
-import {CommonModule} from '@angular/common';
+import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 
-import {FeaturedComponent} from './featured.component';
+import { FeaturedComponent } from './featured.component';
 
 @NgModule({
   imports: [

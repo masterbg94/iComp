@@ -1,7 +1,7 @@
-import {NgModule} from '@angular/core';
-import {RouterModule, Routes} from '@angular/router';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
-import {IphoneComponent} from './pages/iphone.component';
+import { IphoneComponent } from './pages/iphone.component';
 
 const ROUTES: Routes = [
   {

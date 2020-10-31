@@ -4,33 +4,33 @@
   justify-content: center;
   background: #F4F4F4;
   box-shadow: 0px 3px 6px #00000029;
-
+  
   .newsletter-content {
     display: flex;
     justify-content: space-between;
     max-width: 1100px;
     width: 100%;
     padding: 18px 0;
-
+    
     .newsletter-text {
       display: flex;
       flex-direction: column;
-
+      
       p {
         font-size: 12px;
         line-height: 17px;
         margin: 0;
         color: #4A4A4A;
-
+        
         &:first-child {
           font-weight: bold;
         }
       }
     }
-
+    
     .newsletter-button {
       display: flex;
-
+      
       input {
         height: 32px;
         width: 216px;
@@ -40,7 +40,7 @@
         font-size: 14px;
         font-style: italic;
       }
-
+      
       button {
         height: 32px;
         transform: matrix(1, 0, 0, 1, 0, 0);

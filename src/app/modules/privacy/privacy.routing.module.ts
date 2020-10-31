@@ -1,7 +1,7 @@
-import {NgModule} from '@angular/core';
-import {RouterModule, Routes} from '@angular/router';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
-import {PrivacyComponent} from './pages/privacy.component';
+import { PrivacyComponent } from './pages/privacy.component';
 
 const ROUTES: Routes = [
   {
@@ -11,8 +11,8 @@ const ROUTES: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(ROUTES)],
-  exports: [RouterModule]
+  imports: [ RouterModule.forChild(ROUTES) ],
+  exports: [ RouterModule ]
 })
 export class PrivacyRoutingModule {
 }

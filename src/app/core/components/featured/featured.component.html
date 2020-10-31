@@ -1,9 +1,14 @@
 <div class="featured-container">
   <div class="featured-content">
-
-    <div class="featured-item" *ngFor="let i of featuredItems">
-      <div class="item-pic" [style.width]="i.name.includes('iPhone') ? '150px' : '200px'">
-        <img src="{{i.img}}" alt="" height="100%" width="100%">
+    
+    <div *ngFor="let i of featuredItems"
+         class="featured-item">
+      <div [style.width]="i.name.includes('iPhone') ? '150px' : '200px'"
+           class="item-pic">
+        <img alt=""
+             height="100%"
+             src="{{i.img}}"
+             width="100%">
       </div>
       <p class="item-name">
         <b>{{i.name}}</b>

@@ -1,10 +1,10 @@
-import {NgModule} from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
+import { MatTabsModule } from '@angular/material';
 import { MatChipsModule } from '@angular/material/chips';
+import { RouterModule } from '@angular/router';
 
-import {ImacSubpageComponent} from './imac-subpage.component';
-import {MatTabsModule} from '@angular/material';
-import {CommonModule} from '@angular/common';
-import {RouterModule} from '@angular/router';
+import { ImacSubpageComponent } from './imac-subpage.component';
 
 @NgModule({
   imports: [
@@ -13,8 +13,8 @@ import {RouterModule} from '@angular/router';
     RouterModule,
     MatChipsModule
   ],
-    exports: [ImacSubpageComponent],
-    declarations: [ImacSubpageComponent]
+  exports: [ ImacSubpageComponent ],
+  declarations: [ ImacSubpageComponent ]
 })
 export class ImacSubpageModule {
 }

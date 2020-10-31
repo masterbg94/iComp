@@ -16,150 +16,231 @@
 
 <div class="compare-container">
   <div class="compare-content">
-
+    
     <div class="compare-item">
-
-      <select (change)="phoneChange($event)" >
-        <option selected disabled>Izaberite uredjaj</option>
-        <option *ngFor="let t of iphones" >{{t.name}}</option>
+      
+      <select (change)="phoneChange($event)">
+        <option disabled
+                selected>Izaberite uredjaj
+        </option>
+        <option *ngFor="let t of iphones">{{t.name}}</option>
       </select>
-
-      <div class="phone-img" *ngIf="phone1selected">
-        <img  [src]="phone1selected.img" alt="" class="img-fluid">
+      
+      <div *ngIf="phone1selected"
+           class="phone-img">
+        <img [src]="phone1selected.img"
+             alt=""
+             class="img-fluid">
       </div>
-
-      <div class="price" *ngIf="phone1selected">
+      
+      <div *ngIf="phone1selected"
+           class="price">
         <p>Vec od {{phone1selected?.price}} Din</p>
       </div>
-
-      <div class="screen" *ngIf="phone1selected">
+      
+      <div *ngIf="phone1selected"
+           class="screen">
         <p>{{phone1selected?.screen.size}}”</p>
         <p>{{phone1selected?.screen.desc}}</p>
       </div>
-
-      <div class="body" *ngIf="phone1selected">
+      
+      <div *ngIf="phone1selected"
+           class="body">
         <p>{{phone1selected?.body}}</p>
       </div>
-
-      <div class="back-camera" *ngIf="phone1selected">
-        <img *ngIf="phone1selected.kamere[0].type==='WideD'" src="./assets/camera-back1.png" alt="" class="img-fluid">
-        <img *ngIf="phone1selected.kamere[0].type==='Wide'" src="./assets/camera-back.png" alt="" class="img-fluid">
+      
+      <div *ngIf="phone1selected"
+           class="back-camera">
+        <img *ngIf="phone1selected.kamere[0].type==='WideD'"
+             alt=""
+             class="img-fluid"
+             src="./assets/camera-back1.png">
+        <img *ngIf="phone1selected.kamere[0].type==='Wide'"
+             alt=""
+             class="img-fluid"
+             src="./assets/camera-back.png">
         <p>{{phone1selected?.kamere[0].desc}}</p>
       </div>
-
-      <div class="front-camera" *ngIf="phone1selected">
+      
+      <div *ngIf="phone1selected"
+           class="front-camera">
         <p>{{phone1selected?.kamere[1].type}}</p>
         <p>{{phone1selected?.kamere[1].desc}}</p>
       </div>
-
-      <div class="face-id" *ngIf="phone1selected">
-        <img src="./assets/face-id.png" alt="" width="81px" class="img-fluid">
+      
+      <div *ngIf="phone1selected"
+           class="face-id">
+        <img alt=""
+             class="img-fluid"
+             src="./assets/face-id.png"
+             width="81px">
         <p>{{phone1selected?.lock}}</p>
       </div>
-
-      <div class="chip" *ngIf="phone1selected">
-        <img *ngIf="(phone1selected.chip.type)==='A12'" src="./assets/chip.png" alt="" class="img-fluid">
-        <img *ngIf="(phone1selected.chip.type)==='A11'" src="./assets/chip2.png" alt="" class="img-fluid">
+      
+      <div *ngIf="phone1selected"
+           class="chip">
+        <img *ngIf="(phone1selected.chip.type)==='A12'"
+             alt=""
+             class="img-fluid"
+             src="./assets/chip.png">
+        <img *ngIf="(phone1selected.chip.type)==='A11'"
+             alt=""
+             class="img-fluid"
+             src="./assets/chip2.png">
         <p>{{phone1selected?.chip.desc}}</p>
       </div>
-
+    
     </div>
-
+    
     <div class="compare-item">
-
-      <select (change)="phoneChange2($event)" >
-        <option selected disabled>Izaberite uredjaj</option>
-        <option *ngFor="let t of iphones" [value]="t.name">{{t.name}}</option>
+      
+      <select (change)="phoneChange2($event)">
+        <option disabled
+                selected>Izaberite uredjaj
+        </option>
+        <option *ngFor="let t of iphones"
+                [value]="t.name">{{t.name}}</option>
       </select>
-
-      <div class="phone-img" *ngIf="phone2selected">
-        <img [src]="phone2selected.img" alt="" class="img-fluid">
+      
+      <div *ngIf="phone2selected"
+           class="phone-img">
+        <img [src]="phone2selected.img"
+             alt=""
+             class="img-fluid">
       </div>
-
-      <div class="price" *ngIf="phone2selected">
+      
+      <div *ngIf="phone2selected"
+           class="price">
         <p>Vec od {{phone2selected?.price}} Din</p>
       </div>
-
-      <div class="screen" *ngIf="phone2selected">
+      
+      <div *ngIf="phone2selected"
+           class="screen">
         <p>{{phone2selected?.screen.size}}”</p>
         <p>{{phone2selected?.screen.desc}}</p>
       </div>
-
-      <div class="body" *ngIf="phone2selected">
+      
+      <div *ngIf="phone2selected"
+           class="body">
         <p>{{phone2selected?.body}}</p>
       </div>
-
-      <div class="back-camera" *ngIf="phone2selected">
-        <img *ngIf="phone2selected.kamere[0].type==='WideD'" src="./assets/camera-back1.png" alt="" class="img-fluid">
-        <img *ngIf="phone2selected.kamere[0].type==='Wide'" src="./assets/camera-back.png" alt="" class="img-fluid">
+      
+      <div *ngIf="phone2selected"
+           class="back-camera">
+        <img *ngIf="phone2selected.kamere[0].type==='WideD'"
+             alt=""
+             class="img-fluid"
+             src="./assets/camera-back1.png">
+        <img *ngIf="phone2selected.kamere[0].type==='Wide'"
+             alt=""
+             class="img-fluid"
+             src="./assets/camera-back.png">
         <p>{{phone2selected?.kamere[0].desc}}</p>
       </div>
-
-      <div class="front-camera" *ngIf="phone2selected">
+      
+      <div *ngIf="phone2selected"
+           class="front-camera">
         <p>{{phone2selected?.kamere[1].type}}</p>
         <p>{{phone2selected?.kamere[1].desc}}</p>
       </div>
-
-      <div class="face-id" *ngIf="phone2selected">
-        <img src="./assets/face-id.png" alt="" class="img-fluid">
+      
+      <div *ngIf="phone2selected"
+           class="face-id">
+        <img alt=""
+             class="img-fluid"
+             src="./assets/face-id.png">
         <p>{{phone2selected?.lock}}</p>
       </div>
-
-      <div class="chip" *ngIf="phone2selected">
-        <img *ngIf="(phone2selected.chip.type)==='A12'" src="./assets/chip.png" alt="" class="img-fluid">
-        <img *ngIf="(phone2selected.chip.type)==='A11'" src="./assets/chip2.png" alt="" class="img-fluid">
+      
+      <div *ngIf="phone2selected"
+           class="chip">
+        <img *ngIf="(phone2selected.chip.type)==='A12'"
+             alt=""
+             class="img-fluid"
+             src="./assets/chip.png">
+        <img *ngIf="(phone2selected.chip.type)==='A11'"
+             alt=""
+             class="img-fluid"
+             src="./assets/chip2.png">
         <p>{{phone2selected?.chip.desc}}</p>
       </div>
-
+    
     </div>
-
+    
     <div class="compare-item">
-
-      <select (change)="phoneChange3($event)" >
-        <option selected disabled>Izaberite uredjaj</option>
-        <option *ngFor="let t of iphones" [value]="t.name">{{t.name}}</option>
+      
+      <select (change)="phoneChange3($event)">
+        <option disabled
+                selected>Izaberite uredjaj
+        </option>
+        <option *ngFor="let t of iphones"
+                [value]="t.name">{{t.name}}</option>
       </select>
-
-      <div class="phone-img" *ngIf="phone3selected">
-        <img [src]="phone3selected.img" alt="" class="img-fluid">
+      
+      <div *ngIf="phone3selected"
+           class="phone-img">
+        <img [src]="phone3selected.img"
+             alt=""
+             class="img-fluid">
       </div>
-
-      <div class="price" *ngIf="phone3selected">
+      
+      <div *ngIf="phone3selected"
+           class="price">
         <p>Vec od {{phone3selected?.price}} Din</p>
       </div>
-
-      <div class="screen" *ngIf="phone3selected">
+      
+      <div *ngIf="phone3selected"
+           class="screen">
         <p>{{phone3selected?.screen.size}}”</p>
         <p>{{phone3selected?.screen.desc}}</p>
       </div>
-
-      <div class="body" *ngIf="phone3selected">
+      
+      <div *ngIf="phone3selected"
+           class="body">
         <p>{{phone3selected?.body}}</p>
       </div>
-
-      <div class="back-camera" *ngIf="phone3selected">
-        <img *ngIf="phone3selected.kamere[0].type==='WideD'" src="./assets/camera-back1.png" alt="" class="img-fluid">
-        <img *ngIf="phone3selected.kamere[0].type==='Wide'" src="./assets/camera-back.png" alt="" class="img-fluid">
+      
+      <div *ngIf="phone3selected"
+           class="back-camera">
+        <img *ngIf="phone3selected.kamere[0].type==='WideD'"
+             alt=""
+             class="img-fluid"
+             src="./assets/camera-back1.png">
+        <img *ngIf="phone3selected.kamere[0].type==='Wide'"
+             alt=""
+             class="img-fluid"
+             src="./assets/camera-back.png">
         <p>{{phone3selected?.kamere[0].desc}}</p>
       </div>
-
-      <div class="front-camera" *ngIf="phone3selected">
+      
+      <div *ngIf="phone3selected"
+           class="front-camera">
         <p>{{phone3selected?.kamere[1].type}}</p>
         <p>{{phone3selected?.kamere[1].desc}}</p>
       </div>
-
-      <div class="face-id" *ngIf="phone3selected">
-        <img src="./assets/face-id.png" alt="" class="img-fluid">
+      
+      <div *ngIf="phone3selected"
+           class="face-id">
+        <img alt=""
+             class="img-fluid"
+             src="./assets/face-id.png">
         <p>{{phone3selected?.lock}}</p>
       </div>
-
-      <div class="chip" *ngIf="phone3selected">
-        <img *ngIf="(phone3selected.chip.type)==='A12'" src="./assets/chip.png" alt="" class="img-fluid">
-        <img *ngIf="(phone3selected.chip.type)==='A11'" src="./assets/chip2.png" alt="" class="img-fluid">
+      
+      <div *ngIf="phone3selected"
+           class="chip">
+        <img *ngIf="(phone3selected.chip.type)==='A12'"
+             alt=""
+             class="img-fluid"
+             src="./assets/chip.png">
+        <img *ngIf="(phone3selected.chip.type)==='A11'"
+             alt=""
+             class="img-fluid"
+             src="./assets/chip2.png">
         <p>{{phone3selected?.chip.desc}}</p>
       </div>
-
+    
     </div>
-
+  
   </div>
 </div>

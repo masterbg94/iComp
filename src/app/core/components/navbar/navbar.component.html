@@ -1,7 +1,10 @@
 <div class="nav-container">
   <div class="nav-content">
-    <div class="nav-logo" routerLink="/" style="cursor: pointer">
-      <img src="/assets/Logo.png"  alt="">
+    <div class="nav-logo"
+         routerLink="/"
+         style="cursor: pointer">
+      <img alt=""
+           src="/assets/Logo.png">
     </div>
     <div class="nav-menu">
       <ul>
@@ -11,6 +14,12 @@
         <li routerLink="/iphone">Oprema</li>
         <li routerLink="/service">Servis</li>
         <li routerLink="/contact">Podrska</li>
+        <li (click)="openIwatchMenu()">iWatch</li>
+        <li (click)="openImusicMenu()">iMusic</li>
+        <li routerLink="/cart">
+          <mat-icon>shopping_bag</mat-icon>
+          <div class="badge"> {{ numberOfItemsInLocalStorage() }}</div>
+        </li>
       </ul>
     </div>
     
@@ -20,58 +29,88 @@
   </div>
 </div>
 
-<div class="submenu"
-     [@openCloseAnimation]="submenu ? 'open' : 'closed'">
+<div [@openCloseAnimation]="submenu ? 'open' : 'closed'"
+     class="submenu">
   <div class="submenu-content">
     <ng-container [ngSwitch]="menu">
       <ng-template [ngSwitchCase]="'MacMenu'">
-        <div class="macs"
+        <div (click)="pageChanged(mac?.router)"
              *ngFor="let mac of mecMenu"
-             [routerLink]="mac.router">
+             class="macs">
           <img
-            width="165"
+            [src]="mac.image"
             height="145"
-            [src]="mac.image">
+            width="165">
           
           <div class="title">
             {{ mac.name }}
           </div>
         </div>
       </ng-template>
-  
+      
       <ng-template [ngSwitchCase]="'IphoneMenu'">
-        <div class="macs"
+        <div (click)="pageChanged(iphone?.route)"
              *ngFor="let iphone of iphoneMenu"
-             [routerLink]="iphone.route">
+             class="macs">
           <img
-            width="165"
+            [src]="iphone.image"
             height="145"
-            [src]="iphone.image">
-    
+            width="165">
+          
           <div class="title">
             {{ iphone.name }}
           </div>
         </div>
       </ng-template>
-  
-      <ng-template [ngSwitchCase]="'IpadMenu'">
-        <div class="macs"
-             *ngFor="let ipad of ipadMenu"
-             [routerLink]="ipad.route">
-          <img
-            width="165"
-            height="145"
-            [src]="ipad.image">
       
+      <ng-template [ngSwitchCase]="'IpadMenu'">
+        <div (click)="pageChanged(ipad?.route)"
+             *ngFor="let ipad of ipadMenu"
+             class="macs">
+          <img
+            [src]="ipad.image"
+            height="145"
+            width="165">
+          
           <div class="title">
             {{ ipad.name }}
           </div>
         </div>
       </ng-template>
+      
+      <ng-template [ngSwitchCase]="'IwatchMenu'">
+        <div (click)="pageChanged(iwatch?.route)"
+             *ngFor="let iwatch of iwatchMenu"
+             class="macs">
+          <img
+            [src]="iwatch.image"
+            height="145"
+            width="165">
+          
+          <div class="title">
+            {{ iwatch.name }}
+          </div>
+        </div>
+      </ng-template>
+
+        <ng-template [ngSwitchCase]="'iMusicMenu'">
+            <div (click)="pageChanged(imusic?.route)"
+                 *ngFor="let imusic of iMusicMenu"
+                 class="macs">
+                <img
+                        [src]="imusic.image"
+                        height="145"
+                        width="165">
+
+                <div class="title">
+                    {{ imusic.name }}
+                </div>
+            </div>
+        </ng-template>
     </ng-container>
-  
-    <div class="close"
-         (click)="submenu = false">
+    
+    <div (click)="submenu = false"
+         class="close">
       <mat-icon>
         close
       </mat-icon>

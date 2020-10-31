@@ -6,30 +6,30 @@
   align-items: center;
   background-position-x: center;
   background-size: cover;
-
+  
   .service-heading-content {
     max-width: 1100px;
     width: 100%;
-
+    
     .service-logo {
       display: flex;
       align-items: center;
       mix-blend-mode: multiply;
-
+      
       img {
         height: 45px;
       }
-
+      
       .logo-text {
         display: flex;
         flex-direction: column;
         margin-left: 10px;
-
+        
         p {
           font-size: 14px;
           line-height: 17px;
           margin: 0;
-
+          
           &:first-of-type {
             font-size: 24px;
             font-weight: bold;
@@ -44,7 +44,7 @@
 .service-banner {
   display: flex;
   justify-content: center;
-
+  
   .banner-content {
     max-width: 1100px;
     width: 100%;
@@ -52,11 +52,11 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
-
+    
     .banner-text {
       display: flex;
       flex-direction: column;
-
+      
       p {
         font-size: 14px;
         line-height: 17px;
@@ -64,7 +64,7 @@
         color: #4A4A4A;
       }
     }
-
+    
     .banner-logo {
       img {
         height: 33px;
@@ -76,7 +76,7 @@
 .service-info-container {
   display: flex;
   justify-content: center;
-
+  
   .service-info-content {
     max-width: 1100px;
     width: 100%;
@@ -84,27 +84,27 @@
     font-size: 14px;
     margin: 40px 0;
     justify-content: space-between;
-
+    
     .info-left {
       display: flex;
       flex-direction: column;
       max-width: 270px;
       width: 100%;
       justify-content: space-between;
-
+      
       .info-left-question {
         display: flex;
-
+        
         .question-text {
           display: flex;
           flex-direction: column;
           margin-left: 10px;
-
+          
           p {
             line-height: 17px;
             font-size: 14px;
             color: #222222;
-
+            
             &:last-of-type {
               color: #D2A647;
             }
@@ -112,17 +112,17 @@
         }
       }
     }
-
+    
     .info-right {
       max-width: 426px;
       width: 100%;
-
+      
       p {
         text-align: justify;
         line-height: 17px;
         color: #222222;
       }
-
+      
       .heading {
         margin: 20px 0;
         font-weight: bold;
@@ -135,78 +135,79 @@
 .apple-care-container {
   display: flex;
   justify-content: center;
-
+  
   .apple-care-content {
     max-width: 1100px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    
     .care-devices {
       max-width: 400px;
       text-align: center;
       font-size: 14px;
-
+      
       p {
         line-height: 17px;
         color: #222222;
-        &:first-child{
+        
+        &:first-child {
           color: #4A4A4A;
         }
       }
-
+      
       img {
         margin: 28px 0 20px 0;
       }
     }
-
+    
     .care-description {
       display: flex;
       width: 100%;
       justify-content: space-between;
       padding: 40px 0;
-
+      
       .description-left {
         display: flex;
         justify-content: space-between;
         max-width: 363px;
         width: 100%;
-
+        
         .left-text {
           display: flex;
           flex-direction: column;
           max-width: 237px;
           width: 100%;
-
+          
           p {
             margin: 0;
             font-size: 14px;
             line-height: 17px;
             color: #222222;
-
+            
             &:first-of-type {
               margin-bottom: 10px;
               color: #4A4A4A;
             }
           }
         }
-
+        
         .left-image {
           width: 111px;
         }
       }
-
+      
       .description-right {
         max-width: 363px;
         width: 100%;
-
+        
         p {
           text-align: justify;
           margin: 0;
           font-size: 14px;
           line-height: 17px;
-
+          
           &:first-of-type {
             margin-bottom: 10px;
             color: #4A4A4A;
@@ -214,13 +215,13 @@
         }
       }
     }
-
+    
     .care-buttons {
       display: flex;
       flex-direction: column;
       align-items: center;
       width: 100%;
-
+      
       button {
         max-width: 363px;
         width: 100%;
@@ -232,7 +233,7 @@
         cursor: pointer;
         outline: none;
       }
-
+      
       p {
         margin: 20px 0;
         color: #D2A647;

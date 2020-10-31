@@ -2,60 +2,60 @@
   display: flex;
   justify-content: center;
   height: 300px;
-
+  
   .featured-content {
     display: flex;
     width: 100%;
-
+    
     .featured-first {
       font-size: 24px;
       line-height: 28px;
       font-weight: bold;
     }
-
+    
     .featured-second {
       font-size: 18px;
       line-height: 22px;
       font-weight: bold;
       margin: 6px 0 10px 0;
     }
-
+    
     .featured-third {
       font-size: 14px;
     }
-
+    
     p {
       line-height: 17px;
     }
-
+    
     .more {
       display: flex;
       justify-content: flex-start;
-
+      
       p {
         color: #D2A647;
         font-weight: bold;
         margin-top: 10px;
         font-size: 14px;
         cursor: pointer;
-
+        
         &:first-child {
           margin-right: 15px;
         }
       }
-
+      
       &#beats {
         justify-content: flex-end;
       }
     }
-
+    
     .featured-left {
       background-image: url("../../../../assets/featured-iphone-background.png");
       background-size: cover;
       width: 100%;
       display: flex;
       justify-content: flex-end;
-
+      
       &-content {
         padding: 50px 0;
         display: flex;
@@ -65,7 +65,7 @@
         width: 100%;
       }
     }
-
+    
     .featured-right {
       background: url("../../../../assets/beats.png") #0D0D0D 0% 0% no-repeat padding-box;
       background-size: contain;
@@ -74,7 +74,7 @@
       display: flex;
       justify-content: flex-start;
       text-align: right;
-
+      
       &-content {
         color: white;
         max-width: 550px;

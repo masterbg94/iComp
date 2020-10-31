@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
-import {NgModule, Optional, SkipSelf} from '@angular/core';
+import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
-import {ProductService} from './pruduct.service';
+import { ProductService } from './pruduct.service';
 
 /**
  * The core module is used to hold all root-level providers.
@@ -18,7 +18,7 @@ import {ProductService} from './pruduct.service';
   // Place all services/providers/injection tokens here
   providers: [
     // Provide your app wide services here
-      ProductService,
+    ProductService,
   ],
   declarations: []
 })

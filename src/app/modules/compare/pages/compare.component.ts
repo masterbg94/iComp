@@ -1,11 +1,11 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
-import {ProductService} from '../../../core/pruduct.service';
+import { ProductService } from '../../../core/pruduct.service';
 
 @Component({
   selector: 'app-compare',
   templateUrl: './compare.component.html',
-  styleUrls: ['./compare.component.scss']
+  styleUrls: [ './compare.component.scss' ]
 })
 export class CompareComponent implements OnInit {
 
@@ -18,12 +18,11 @@ export class CompareComponent implements OnInit {
 
   public ngOnInit(): void {
     this.productService.getIphones()
-        .subscribe((data: any) => {
-          this.iphones = data;
-          console.log(this.iphones);
-        });
+      .subscribe((data: any) => {
+        this.iphones = data;
+        console.log(this.iphones);
+      });
   }
-
 
   phoneChange(event: any) {
     this.phone1selected = this.iphones.find(x => x.name === event.target.value);

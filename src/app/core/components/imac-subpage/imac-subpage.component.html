@@ -1,144 +1,295 @@
 <div>
-    <div class="d-flex heading" style="">
-        <h2>Izaberi {{subpageData.key}}</h2>
-    </div>
-    <div class="mac-select" *ngIf="subpageData.key === 'imac'">
-        <mat-tab-group>
-            <mat-tab label="21.5">
-                <div class="mac-details d-flex flex-wrap justify-content-center mt-3">
-                    <div class="d-flex align-items-center mac-details-item flex-column justify-content-center mb-3"
-                         *ngFor="let m of returnScreenSize(21)">
-                        <div class="mac-item-border d-flex align-items-center flex-column justify-content-center">
-                          <div class="available"
-                               *ngIf="m.available === false">
-                            <mat-chip-list>
-                              <mat-chip color="warn"
-                                        selected>Nema na stanju</mat-chip>
-                            </mat-chip-list>
-                          </div>
-                            <img [src]="m.img" alt="" class="img-fluid my-3" style="height: auto;">
-                            <p><b>{{m.name}}</b></p>
-                            <p>{{m.cpu}}</p>
-                            <p>{{m.cpuTurbo}}</p>
-                            <p>{{m.ram}}</p>
-                            <p>{{m.storage}}</p>
-                            <p>{{m.gpu}}</p>
-                            <p>{{m.other}}</p>
-                            <p class="mt-2"><b>{{getNumberWithDot(m.price)}} RSD</b></p>
-                            <button type="button" class="btn-detailed" [routerLink]="'/imac/details/' + m.id">Detaljnije</button>
-                        </div>
-                    </div>
-                </div>
-            </mat-tab>
-            <mat-tab label="27">
-                <div class="mac-details d-flex flex-wrap justify-content-center mt-3">
-                    <div class="d-flex align-items-center mac-details-item flex-column justify-content-center mb-3"
-                         *ngFor="let m of returnScreenSize(27)">
-                        <div class="mac-item-border d-flex align-items-center flex-column justify-content-center">
-                            <img [src]="m.img" alt="" class="img-fluid my-3" style="height: auto;">
-                            <p><b>{{m.name}}</b></p>
-                            <p>{{m.cpu}}</p>
-                            <p>{{m.cpuTurbo}}</p>
-                            <p>{{m.ram}}</p>
-                            <p>{{m.storage}}</p>
-                            <p>{{m.gpu}}</p>
-                            <p>{{m.other}}</p>
-                            <p class="mt-2"><b>{{getNumberWithDot(m.price)}} RSD</b></p>
-                            <button type="button" class="btn-detailed" [routerLink]="'/imac/details/' + m.id">Detaljnije</button>
-                        </div>
-                    </div>
-                </div>
-            </mat-tab>
-        </mat-tab-group>
-    </div>
-
-    <div class="mac-select" *ngIf="subpageData.key === 'macbook air'">
-<!--        <mat-tab-group>-->
-<!--            <mat-tab label="13">-->
-<!--                -->
-<!--            </mat-tab>-->
-<!--            <mat-tab label="16">-->
-<!--                <div class="mac-details d-flex flex-wrap justify-content-center mt-3">-->
-<!--                    <div class="d-flex align-items-center mac-details-item flex-column justify-content-center mb-3"-->
-<!--                         *ngFor="let m of returnScreenSize(16)">-->
-<!--                        <div class="mac-item-border d-flex align-items-center flex-column justify-content-center">-->
-<!--                            <img [src]="m.img" alt="" class="img-fluid my-3" style="height: auto;">-->
-<!--                            <p><b>{{m.name}}</b></p>-->
-<!--                            <p>{{m.cpu}}</p>-->
-<!--                            <p>{{m.cpuTurbo}}</p>-->
-<!--                            <p>{{m.ram}}</p>-->
-<!--                            <p>{{m.storage}}</p>-->
-<!--                            <p>{{m.gpu}}</p>-->
-<!--                            <p>{{m.other}}</p>-->
-<!--                            <p class="mt-2"><b>{{m.price}} RSD</b></p>-->
-<!--                            <button type="button" class="btn-detailed">Detaljnije</button>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </mat-tab>-->
-<!--        </mat-tab-group>-->
-        <div class="mac-details d-flex flex-wrap justify-content-center mt-3 container">
-            <div class="d-flex align-items-center mac-details-item flex-column justify-content-center mb-3"
-                 *ngFor="let m of subpageData">
-                <div class="mac-item-border d-flex align-items-center flex-column justify-content-center p-3">
-                    <img [src]="m.img" alt="" class="img-fluid my-3" style="height: auto;">
-                    <p><b>{{m.name}}</b></p>
-                    <p>{{m.cpu}}</p>
-                    <p>{{m.cpuTurbo}}</p>
-                    <p>{{m.ram}}</p>
-                    <p>{{m.storage}}</p>
-                    <p>{{m.gpu}}</p>
-                    <p>{{m.other}}</p>
-                    <p class="mt-2"><b>{{getNumberWithDot(m.price)}} RSD</b></p>
-                    <button type="button" class="btn-detailed" [routerLink]="'/macbook-air/details/' + m.id">Detaljnije</button>
-                </div>
+  <div class="d-flex heading" style="">
+    <h2>Izaberi {{ subpageData?.key }}</h2>
+  </div>
+  <div *ngIf="subpageData?.key === 'imac'" class="mac-select">
+    <mat-tab-group>
+      <mat-tab label="21.5">
+        <div class="mac-details d-flex flex-wrap justify-content-center mt-3">
+          <div
+            *ngFor="let m of returnScreenSize(21)"
+            class="d-flex align-items-center mac-details-item flex-column justify-content-center mb-3"
+          >
+            <div
+              class="mac-item-border d-flex align-items-center flex-column justify-content-center"
+            >
+              <div *ngIf="m.available === false" class="available">
+                <mat-chip-list>
+                  <mat-chip color="warn" selected>Nema na stanju </mat-chip>
+                </mat-chip-list>
+              </div>
+              <img
+                [src]="m?.img"
+                alt=""
+                class="img-fluid my-3"
+                style="height: auto;"
+              />
+              <p>
+                <b>{{ m.name }}</b>
+              </p>
+              <p>{{ m.cpu }}</p>
+              <p>{{ m.cpuTurbo }}</p>
+              <p>{{ m.ram }}</p>
+              <p>{{ m.storage }}</p>
+              <p>{{ m.gpu }}</p>
+              <p>{{ m.other }}</p>
+              <p class="mt-2">
+                <b>{{ getNumberWithDot(m.price) }} RSD</b>
+              </p>
+              <button
+                [routerLink]="'/imac/details/' + m.id"
+                class="btn-detailed"
+                type="button"
+              >
+                Detaljnije
+              </button>
             </div>
+          </div>
         </div>
+      </mat-tab>
+      <mat-tab label="27">
+        <div class="mac-details d-flex flex-wrap justify-content-center mt-3">
+          <div
+            *ngFor="let m of returnScreenSize(27)"
+            class="d-flex align-items-center mac-details-item flex-column justify-content-center mb-3"
+          >
+            <div
+              class="mac-item-border d-flex align-items-center flex-column justify-content-center"
+            >
+              <img
+                [src]="m?.img"
+                alt=""
+                class="img-fluid my-3"
+                style="height: auto;"
+              />
+              <p>
+                <b>{{ m.name }}</b>
+              </p>
+              <p>{{ m.cpu }}</p>
+              <p>{{ m.cpuTurbo }}</p>
+              <p>{{ m.ram }}</p>
+              <p>{{ m.storage }}</p>
+              <p>{{ m.gpu }}</p>
+              <p>{{ m.other }}</p>
+              <p class="mt-2">
+                <b>{{ getNumberWithDot(m.price) }} RSD</b>
+              </p>
+              <button
+                [routerLink]="'/imac/details/' + m.id"
+                class="btn-detailed"
+                type="button"
+              >
+                Detaljnije
+              </button>
+            </div>
+          </div>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+  <div *ngIf="subpageData?.key === 'macbook air'" class="mac-select">
+    <div
+      class="mac-details d-flex flex-wrap justify-content-center mt-3 container"
+    >
+      <div
+        *ngFor="let m of subpageData"
+        class="d-flex align-items-center mac-details-item flex-column justify-content-center mb-3"
+      >
+        <div
+          class="mac-item-border d-flex align-items-center flex-column justify-content-center p-3"
+        >
+          <img
+            [src]="m?.img"
+            alt=""
+            class="img-fluid my-3"
+            style="height: auto;"
+          />
+          <p>
+            <b>{{ m.name }}</b>
+          </p>
+          <p>{{ m.cpu }}</p>
+          <p>{{ m.cpuTurbo }}</p>
+          <p>{{ m.ram }}</p>
+          <p>{{ m.storage }}</p>
+          <p>{{ m.gpu }}</p>
+          <p>{{ m.other }}</p>
+          <p class="mt-2">
+            <b>{{ getNumberWithDot(m.price) }} RSD</b>
+          </p>
+          <button
+            [routerLink]="'/macbook-air/details/' + m.id"
+            class="btn-detailed"
+            type="button"
+          >
+            Detaljnije
+          </button>
+        </div>
+      </div>
     </div>
-
-
-    <div class="mac-select" *ngIf="subpageData.key === 'macbook pro'">
-                <mat-tab-group>
-                    <mat-tab label="13">
-                        <div class="mac-details d-flex flex-wrap justify-content-center mt-3 container">
-                            <div class="d-flex align-items-center mac-details-item flex-column justify-content-center mb-3"
-                                 *ngFor="let m of returnScreenSize(13)">
-                                <div class="mac-item-border d-flex align-items-center flex-column justify-content-center p-3">
-                                    <img [src]="m.img" alt="" class="img-fluid my-3" style="height: auto;">
-                                    <p><b>{{m.name}}</b></p>
-                                    <p>{{m.cpu}}</p>
-                                    <p>{{m.cpuTurbo}}</p>
-                                    <p>{{m.ram}}</p>
-                                    <p>{{m.storage}}</p>
-                                    <p>{{m.gpu}}</p>
-                                    <p>{{m.other}}</p>
-                                    <p class="mt-2"><b>{{getNumberWithDot(m.price)}} RSD</b></p>
-                                    <button type="button" class="btn-detailed" [routerLink]="'/macbook-pro/details/' + m.id">Detaljnije</button>
-                                </div>
-                            </div>
-                        </div>
-                    </mat-tab>
-                    <mat-tab label="16">
-                        <div class="mac-details d-flex flex-wrap justify-content-center mt-3 container">
-                            <div class="d-flex align-items-center mac-details-item flex-column justify-content-center mb-3"
-                                 *ngFor="let m of returnScreenSize(16)">
-                                <div class="mac-item-border d-flex align-items-center flex-column justify-content-center p-3">
-                                    <img [src]="m.img" alt="" class="img-fluid my-3" style="height: auto;">
-                                    <p><b>{{m.name}}</b></p>
-                                    <p>{{m.cpu}}</p>
-                                    <p>{{m.cpuTurbo}}</p>
-                                    <p>{{m.ram}}</p>
-                                    <p>{{m.storage}}</p>
-                                    <p>{{m.gpu}}</p>
-                                    <p>{{m.other}}</p>
-                                    <p class="mt-2"><b>{{getNumberWithDot(m.price)}} RSD</b></p>
-                                    <button type="button" class="btn-detailed" [routerLink]="'/macbook-pro/details/' + m.id">Detaljnije</button>
-                                </div>
-                            </div>
-                        </div>
-                    </mat-tab>
-                </mat-tab-group>
-
+  </div>
+  <div *ngIf="subpageData?.key === 'macbook pro'" class="mac-select">
+    <mat-tab-group>
+      <mat-tab label="13">
+        <div
+          class="mac-details d-flex flex-wrap justify-content-center mt-3 container"
+        >
+          <div
+            *ngFor="let m of returnScreenSize(13)"
+            class="d-flex align-items-center mac-details-item flex-column justify-content-center mb-3"
+          >
+            <div
+              class="mac-item-border d-flex align-items-center flex-column justify-content-center p-3"
+            >
+              <img
+                [src]="m.img"
+                alt=""
+                class="img-fluid my-3"
+                style="height: auto;"
+              />
+              <p>
+                <b>{{ m.name }}</b>
+              </p>
+              <p>{{ m.cpu }}</p>
+              <p>{{ m.cpuTurbo }}</p>
+              <p>{{ m.ram }}</p>
+              <p>{{ m.storage }}</p>
+              <p>{{ m.gpu }}</p>
+              <p>{{ m.other }}</p>
+              <p class="mt-2">
+                <b>{{ getNumberWithDot(m.price) }} RSD</b>
+              </p>
+              <button
+                [routerLink]="'/macbook-pro/details/' + m.id"
+                class="btn-detailed"
+                type="button"
+              >
+                Detaljnije
+              </button>
+            </div>
+          </div>
+        </div>
+      </mat-tab>
+      <mat-tab label="16">
+        <div
+          class="mac-details d-flex flex-wrap justify-content-center mt-3 container"
+        >
+          <div
+            *ngFor="let m of returnScreenSize(16)"
+            class="d-flex align-items-center mac-details-item flex-column justify-content-center mb-3"
+          >
+            <div
+              class="mac-item-border d-flex align-items-center flex-column justify-content-center p-3"
+            >
+              <img
+                [src]="m.img"
+                alt=""
+                class="img-fluid my-3"
+                style="height: auto;"
+              />
+              <p>
+                <b>{{ m.name }}</b>
+              </p>
+              <p>{{ m.cpu }}</p>
+              <p>{{ m.cpuTurbo }}</p>
+              <p>{{ m.ram }}</p>
+              <p>{{ m.storage }}</p>
+              <p>{{ m.gpu }}</p>
+              <p>{{ m.other }}</p>
+              <p class="mt-2">
+                <b>{{ getNumberWithDot(m.price) }} RSD</b>
+              </p>
+              <button
+                [routerLink]="'/macbook-pro/details/' + m.id"
+                class="btn-detailed"
+                type="button"
+              >
+                Detaljnije
+              </button>
+            </div>
+          </div>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+  <div *ngIf="subpageData?.key === 'mac pro'" class="mac-select">
+    <div
+            class="mac-details d-flex flex-wrap justify-content-center mt-3 container"
+    >
+      <div
+              *ngFor="let m of subpageData"
+              class="d-flex align-items-center mac-details-item flex-column justify-content-center mb-3"
+      >
+        <div
+                class="mac-item-border d-flex align-items-center flex-column justify-content-center p-3"
+        >
+          <img
+                  [src]="m?.img"
+                  alt=""
+                  class="img-fluid my-3"
+                  style="height: auto;"
+          />
+          <p>
+            <b>{{ m.name }}</b>
+          </p>
+          <p>{{ m.cpu }}</p>
+          <p>{{ m.cpuTurbo }}</p>
+          <p>{{ m.ram }}</p>
+          <p>{{ m.storage }}</p>
+          <p>{{ m.gpu }}</p>
+          <p>{{ m.other }}</p>
+          <p class="mt-2">
+            <b>{{ getNumberWithDot(m.price) }} RSD</b>
+          </p>
+          <button
+                  [routerLink]="'/mac-pro/details/' + m.id"
+                  class="btn-detailed"
+                  type="button"
+          >
+            Detaljnije
+          </button>
+        </div>
+      </div>
     </div>
+  </div>
 
+  <div *ngIf="subpageData?.key === 'mac mini'" class="mac-select">
+    <div
+            class="mac-details d-flex flex-wrap justify-content-center mt-3 container"
+    >
+      <div
+              *ngFor="let m of subpageData"
+              class="d-flex align-items-center mac-details-item flex-column justify-content-center mb-3"
+      >
+        <div
+                class="mac-item-border d-flex align-items-center flex-column justify-content-center p-3"
+        >
+          <img
+                  [src]="m?.img"
+                  alt=""
+                  class="img-fluid my-3"
+                  style="height: auto;"
+          />
+          <p>
+            <b>{{ m.name }}</b>
+          </p>
+          <p>{{ m.cpu }}</p>
+          <p>{{ m?.cpuTurbo }}</p>
+          <p>{{ m.ram }}</p>
+          <p>{{ m.storage }}</p>
+          <p>{{ m?.gpu }}</p>
+          <p>{{ m?.other }}</p>
+          <p class="mt-2">
+            <b>{{ getNumberWithDot(m.price) }} RSD</b>
+          </p>
+          <button
+                  [routerLink]="'/mac-mini/details/' + m.id"
+                  class="btn-detailed"
+                  type="button"
+          >
+            Detaljnije
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

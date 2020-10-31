@@ -1,32 +1,37 @@
 <div class="product-heading-container">
   <div class="product-heading-content">
-
+    
     <div class="heading-logo">
       <p>{{ product.name }}</p>
       <p>Vec od {{ getNumberWithDot(product.basePrace) }} {{ product.currency }}</p>
     </div>
-
+    
     <div class="heading-share">
       <button id="share">
-        <img src="./assets/outline-share-24px.svg" alt="" class="img-fluid">
+        <img alt=""
+             class="img-fluid"
+             src="./assets/outline-share-24px.svg">
       </button>
       <button id="pdf">Izvezi u PDF</button>
     </div>
-
+  
   </div>
 </div>
 
 <div class="product-container">
   <div class="product-content">
-
+    
     <div class="product-details">
       <div class="product-details-top">
         <div class="magic"
              style="position: relative;
              
               text-align: center;">
-          <a [href]="product.mainImage"  class="MagicZoom" id="product"
-             data-options="" data-mobile-options="zoomMode: magnifier;">
+          <a [href]="product.mainImage"
+             class="MagicZoom"
+             data-mobile-options="zoomMode: magnifier;"
+             data-options=""
+             id="product">
             <img [src]="product.mainImage">
           </a>
         </div>
@@ -40,84 +45,94 @@
          autostart: false;
          keyboard: true;arrows:outside;"
         >
-          <a [href]="p.href"
-             *ngFor="let p of product.images"
-             data-zoom-id="product" [attr.data-image]="p.href">
-            <img alt="" [src]="p.href"/>
+          <a *ngFor="let p of product.images"
+             [attr.data-image]="p.href"
+             [href]="p.href"
+             data-zoom-id="product">
+            <img [src]="p.href"
+                 alt=""/>
           </a>
         </div>
       </div>
       <div class="product-details-bottom">
         <div class="three-items">
           <div class="bottom-item">
-            <img src="./assets/box.png" alt="">
+            <img alt=""
+                 src="./assets/box.png">
             <p>Besplatna<br>dostava na teritoriji Srbije</p>
           </div>
-          <div class="bottom-item" id="middle">
-            <img src="./assets/gear.png" alt="">
+          <div class="bottom-item"
+               id="middle">
+            <img alt=""
+                 src="./assets/gear.png">
             <p>Besplatna<br>personalizacija proizvoda</p>
           </div>
           <div class="bottom-item">
-            <img src="./assets/box1.png" alt="">
+            <img alt=""
+                 src="./assets/box1.png">
             <p>Besplatan<br>povracaj prilikom reklamiranja</p>
           </div>
         </div>
-
-        <div class="question" style="display: flex">
-          <img src="./assets/outline-message-24px.svg" alt="">
+        
+        <div class="question"
+             style="display: flex">
+          <img alt=""
+               src="./assets/outline-message-24px.svg">
           <p>Imati li pitanje vezano za kupovinu? <br>
             <span routerLink="/service">Kontaktiraje nasu prodaju</span>
           </p>
         </div>
       </div>
     </div>
-
+    
     <div class="product-options">
       <div class="product-options-top">
         <p>Odaberite boju</p>
         <div class="colors">
-
-          <div class="color-item"
-               (click)="onClick(color)"
+          
+          <div (click)="onClick(color)"
+               *ngFor="let color of product.colors; let i = index;"
                [class.color-item--selected]="this.selectedColor === this.product.colors[i].name"
-               *ngFor="let color of product.colors; let i = index;">
-            <div class="color-background"
-                 [style.background]="color.background"></div>
+               class="color-item">
+            <div [style.background]="color.background"
+                 class="color-background"></div>
             <p> {{ color.name }}</p>
           </div>
-
+        
         </div>
         <div class="product-red-info">
-          <img src="./assets/product-red-logo.png" alt="" class="img-fluid">
+          <img alt=""
+               class="img-fluid"
+               src="./assets/product-red-logo.png">
           <p>Apple predstavlja iPhone XR (PRODUCT) RED Svaka kupovina ucestvuje u doniranju Globalnoj
-            Fondaciji za borbu protiv AIDS</p>
+             Fondaciji za borbu protiv AIDS</p>
         </div>
       </div>
       <div class="product-options-bottom">
-
+        
         <div class="storage">
           <p>Odaberite kapacitet</p>
           <div class="capacity-buttons">
-            <button class="capacity"
-                    (click)="onCapacitySelect(capacity)"
+            <button (click)="onCapacitySelect(capacity)"
+                    *ngFor="let capacity of product.capacity; let i = index;"
                     [class.capacity--selected]="this.selectedCapacity === product.capacity[i].value"
-                    *ngFor="let capacity of product.capacity; let i = index;">
+                    class="capacity">
               {{ capacity.value }}
               
-              <p class="price"
-                 [style.marginTop]="0"> {{ getNumberWithDot(capacity.price) }} {{ capacity.currency }}</p>
+              <p [style.marginTop]="0"
+                 class="price"> {{ getNumberWithDot(capacity.price) }} {{ capacity.currency }}</p>
             </button>
           </div>
           <button id="next">NASTAVI</button>
         </div>
         <div class="terms">
           <p>Klikom na dugme NASTAVI potvrdjujete da ste saglasni sa nasim Pravilima Privatnosti kao i sa Pravilima
-            kupovine i povracaju novca.</p>
+             kupovine i povracaju novca.</p>
         </div>
-
+      
       </div>
     </div>
-
+  
   </div>
 </div>
 

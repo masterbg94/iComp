@@ -1,5 +1,5 @@
-import {NgModule} from '@angular/core';
-import {RouterModule, Routes} from '@angular/router';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
 const ROUTES: Routes = [
   {
@@ -24,6 +24,14 @@ const ROUTES: Routes = [
   },
   {
     path: 'ipad',
+    loadChildren: './modules/iphone/iphone.module#IphoneModule'
+  },
+  {
+    path: 'mac-pro',
+    loadChildren: './modules/iphone/iphone.module#IphoneModule'
+  },
+  {
+    path: 'mac-mini',
     loadChildren: './modules/iphone/iphone.module#IphoneModule'
   },
   {
@@ -54,12 +62,16 @@ const ROUTES: Routes = [
   {
     path: ':item/details/:id',
     loadChildren: './modules/item-detail/item-detail.module#ItemDetailModule'
+  },
+  {
+    path: 'cart',
+    loadChildren: './modules/cart/cart.module#CartModule'
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(ROUTES)],
-  exports: [RouterModule]
+  imports: [ RouterModule.forRoot(ROUTES) ],
+  exports: [ RouterModule ]
 })
 export class AppRoutingModule {
 }

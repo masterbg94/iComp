@@ -1,10 +1,10 @@
-import {NgModule} from '@angular/core';
-import {CommonModule} from '@angular/common';
+import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
+import { NewsletterModule } from '../../core/components/newsletter/newsletter.module';
 
-import {ProductComponent} from './pages/product.component';
-import {ProductRoutingModule} from './product.routing.module';
-import {NewsletterModule} from '../../core/components/newsletter/newsletter.module';
+import { ProductComponent } from './pages/product.component';
+import { ProductRoutingModule } from './product.routing.module';
 
 @NgModule({
   imports: [

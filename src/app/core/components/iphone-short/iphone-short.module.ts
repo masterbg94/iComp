@@ -1,12 +1,12 @@
-import {NgModule} from '@angular/core';
+import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
-import {IphoneShortComponent} from './iphone-short.component';
-import {RouterModule} from '@angular/router';
+import { IphoneShortComponent } from './iphone-short.component';
 
 @NgModule({
-    imports: [
-        RouterModule
-    ],
+  imports: [
+    RouterModule
+  ],
   exports: [
     IphoneShortComponent
   ],
