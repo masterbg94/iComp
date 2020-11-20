@@ -16,6 +16,20 @@ button{
   outline: none!important;
 }
 
+.cart-button {
+  background-color: #d2a647 !important;
+  height: 40px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    box-shadow: 0 4px 8px -2px #d2a647;
+    transition: 0.3s;
+  }
+}
+
 .warn-snack-bar {
   .mat-button-base {
     color: #C79E44;

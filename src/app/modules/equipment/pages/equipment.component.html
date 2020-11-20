@@ -1,0 +1,69 @@
+<div class="accessorizes-container">
+    <div class="accessorizes-content">
+
+        <mat-sidenav-container class="example-container" >
+            <mat-sidenav
+
+                    mode="over"
+                    [opened]="isSidenavOpened()"
+                    #sidenav
+            >
+                <p class="py-2"><b>Choose category</b></p>
+                <mat-nav-list (click)="sidenav.toggle()">
+                    <mat-list-item (click)="toggleSelectedAcc('mac')">
+                        <a matLine>Mac</a>
+                        <button mat-icon-button>
+                            <mat-icon>desktop_mac</mat-icon>
+                        </button>
+                    </mat-list-item>
+                    <mat-list-item (click)="toggleSelectedAcc('iphone')">
+                        <a matLine>iPhone</a>
+                        <button mat-icon-button>
+                            <mat-icon>phone_iphone</mat-icon>
+                        </button>
+                    </mat-list-item>
+                    <mat-list-item (click)="toggleSelectedAcc('ipad')">
+                        <a matLine>iPad</a>
+                        <button mat-icon-button>
+                            <mat-icon>tablet_mac</mat-icon>
+                        </button>
+                    </mat-list-item>
+                    <mat-list-item (click)="toggleSelectedAcc('audio')">
+                        <a matLine>Audio</a>
+                        <button mat-icon-button>
+                            <mat-icon>headset</mat-icon>
+                        </button>
+                    </mat-list-item>
+                </mat-nav-list>
+            </mat-sidenav>
+
+            <mat-sidenav-content>
+                <mat-toolbar style="border-bottom: 1px solid #eeeeee">
+                    <button
+                            type="button"
+                            aria-label="Toggle sidenav"
+                            mat-icon-button
+                            (click)="sidenav.toggle()"
+                    >
+                        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+                    </button>
+                    <p class="w-100 d-flex justify-content-center">Oprema</p>
+                </mat-toolbar>
+
+               <div class="filtered-accessorizes">
+                   <div class="filtered-accessorizes-content col-12 d-flex flex-wrap">
+
+                       <div class="accessorize-item d-flex flex-column align-items-center col-lg-4 col-md-4 col-md-6" *ngFor="let item of selectedAcc">
+                           <img [src]="item.img" alt="" class="img-fluid accessorize-item-img">
+                           <p><b>{{item.name}}</b></p>
+                           <p><b>{{item.price}} RSD</b></p>
+                           <button class="cart-button px-5">Dodaj u korpu</button>
+                       </div>
+                   </div>
+               </div>
+
+            </mat-sidenav-content>
+        </mat-sidenav-container>
+
+    </div>
+</div>

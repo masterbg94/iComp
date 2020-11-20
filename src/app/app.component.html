@@ -1,5 +1,130 @@
-<app-navbar></app-navbar>
-<div class="content">
-  <router-outlet></router-outlet>
+<div *ngIf="innerWidth>=1024">
+    <app-navbar></app-navbar>
+    <div class="content">
+        <router-outlet></router-outlet>
+    </div>
+    <app-footer></app-footer>
 </div>
-<app-footer></app-footer>
+
+
+<mat-sidenav-container class="sidenav-container" *ngIf="innerWidth<1024">
+  <mat-sidenav
+          #drawer class="sidenav" fixedInViewport="true"
+          [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+          [mode]="'over'"
+          [opened]="false">
+    <mat-toolbar>
+      <img src="../../../../assets/Logo.png" alt="" height="20px">
+<!--      <p>iComp</p>-->
+    </mat-toolbar>
+    <mat-nav-list >
+
+      <mat-list-item (click)="showSubmenu = !showSubmenu" >
+        <span class="full-width" *ngIf="isExpanded || isShowing">Mac</span>
+        <mat-icon mat-list-icon>home</mat-icon>
+        <mat-icon class="menu-button" [ngClass]="{'rotated' : showSubmenu}" *ngIf="isExpanded || isShowing">expand_more</mat-icon>
+      </mat-list-item>
+
+      <div class="submenu" [ngClass]="{'expanded' : showSubmenu}" *ngIf="isShowing || isExpanded">
+        <div class="d-flex align-items-center" *ngFor="let item of macMenu">
+          <img [src]="item.image" alt="" style="width: 40px">
+          <a mat-list-item
+             [routerLinkActive]="['active']"
+             routerLink="{{item.router}}"
+             [routerLinkActiveOptions]="{exact:true}">{{item.name}}
+          </a>
+        </div>
+      </div>
+
+      <mat-list-item
+              [routerLinkActive]="['active']"
+              [routerLinkActiveOptions]="{exact:true}"
+              routerLink="/"
+      >
+        <a matLine>ipad</a>
+        <button mat-icon-button>
+          <mat-icon>home</mat-icon>
+        </button>
+      </mat-list-item>
+      <mat-list-item
+              [routerLinkActive]="['active']"
+              [routerLinkActiveOptions]="{exact:true}"
+              routerLink="/"
+      >
+        <a matLine>iPhone</a>
+        <button mat-icon-button>
+          <mat-icon>home</mat-icon>
+        </button>
+      </mat-list-item>
+      <mat-list-item
+              [routerLinkActive]="['active']"
+              [routerLinkActiveOptions]="{exact:true}"
+              routerLink="/"
+      >
+        <a matLine>Oprema</a>
+        <button mat-icon-button>
+          <mat-icon>home</mat-icon>
+        </button>
+      </mat-list-item>
+      <mat-list-item
+              [routerLinkActive]="['active']"
+              [routerLinkActiveOptions]="{exact:true}"
+              routerLink="/"
+      >
+        <a matLine>Servis</a>
+        <button mat-icon-button>
+          <mat-icon>home</mat-icon>
+        </button>
+      </mat-list-item>
+      <mat-list-item
+              [routerLinkActive]="['active']"
+              [routerLinkActiveOptions]="{exact:true}"
+              routerLink="/"
+      >
+        <a matLine>Podrska</a>
+        <button mat-icon-button>
+          <mat-icon>home</mat-icon>
+        </button>
+      </mat-list-item>
+      <mat-list-item
+              [routerLinkActive]="['active']"
+              [routerLinkActiveOptions]="{exact:true}"
+              routerLink="/"
+      >
+        <a matLine>iWatch</a>
+        <button mat-icon-button>
+          <mat-icon>home</mat-icon>
+        </button>
+      </mat-list-item>
+      <mat-list-item
+              [routerLinkActive]="['active']"
+              [routerLinkActiveOptions]="{exact:true}"
+              routerLink="/"
+      >
+        <a matLine>iMusic</a>
+        <button mat-icon-button>
+          <mat-icon>home</mat-icon>
+        </button>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+    <mat-sidenav-content>
+        <mat-toolbar class="toolbar-main">
+            <button
+                    type="button"
+                    aria-label="Toggle sidenav"
+                    mat-icon-button
+                    (click)="drawer.toggle()"
+                    *ngIf="isHandset$ | async"
+            >
+                <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+            </button>
+            <div class="toolbar-main-logo d-flex align-items-center justify-content-center">
+                <img src="../../../../assets/Logo.png" alt="" height="30px">
+<!--                <p>iComp</p>-->
+            </div>
+        </mat-toolbar>
+        <router-outlet></router-outlet>
+        <app-footer></app-footer>
+    </mat-sidenav-content>
+</mat-sidenav-container>

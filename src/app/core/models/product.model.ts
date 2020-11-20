@@ -33,3 +33,10 @@ export interface Chip {
   type: string;
   desc: string;
 }
+
+export interface AccessorizeData {
+  mac: [];
+  iphone: [];
+  ipad: [];
+  audio: [];
+}

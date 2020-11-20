@@ -2431,3 +2431,135 @@ export const AllProductsData = {
         }
     ]
 };
+
+export const AccessorizesData = {
+    mac: [
+        {
+            name: 'Tucano Nido Hard Shell case for MacBook Air 13"',
+            img: 'https://istyle.rs/pub/media/catalog/product/cache/image/400x400/beff4985b56e3afdbeabfc89641a4582/h/s/hsni-mba13_b_3.jpg',
+            price: 5690
+        },
+        {
+            name: 'Apple USB-C to USB Adapter',
+            img: 'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/m/j/mj1m2zm.jpg',
+            price: 4490
+        },
+        {
+            name: 'Apple USB SuperDrive',
+            img: 'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/m/d/md564zma-99_big.jpg',
+            price: 14300
+        },
+        {
+            name: 'Moshi Mini DisplayPort to HDMI Adapter Pro',
+            img: 'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/5/5/5566.jpeg',
+            price: 5000
+        },
+        {
+            name: 'Apple Magic Mouse 2',
+            img: 'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/m/o/mouse_8_1.jpg',
+            price: 12400
+        },
+        {
+            name: 'iSTYLE TYPE-C PRO HUB',
+            img: 'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/i/s/istyle_type-c_hub_pro-space-2.jpg',
+            price: 12000
+        }
+    ],
+    iphone: [
+        {
+            name: 'Apple Lightning to micro USB Adapter',
+            img: 'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/m/d/md820.jpeg',
+            price: 3690
+        },
+        {
+            name: 'Apple Lightning to SD Card Camera Reader',
+            img: 'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/m/j/mjyt2.jpeg',
+            price: 5290
+        },
+        {
+            name: 'iSTYLE Premium Lightning Cable',
+            img: 'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/i/s/istyle_premium_cable_1_5m_-_dark_grey_2.jpg',
+            price: 4800
+        },
+        {
+            name: 'Next One 3D Glass Screen Protector za iPhone 11 Pro',
+            img: 'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/f/o/folie_3d_iphone11pro.jpg',
+            price: 3500
+        },
+        {
+            name: 'Apple Smart Battery Case za iPhone 11 Pro',
+            img: 'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/m/w/mwvm2_av6_geo_us.jpeg',
+            price: 23900
+        },
+        {
+            name: 'Apple 20W USB-C Power Adapter',
+            img: 'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/m/u/mu7v2_geo_emea_1.jpg',
+            price: 4100
+        }
+    ],
+    ipad: [
+        {
+            name: 'Apple Pencil (2nd Generation)',
+            img: 'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/a/p/apple-pencil-2018_1.jpg',
+            price: 21800
+        },
+        {
+            name: 'Apple Smart Keyboard Folio za iPad Pro (2018)',
+            img: 'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/m/u/mu8h2ll_av2.jpeg',
+            price: 34900
+        },
+        {
+            name: 'Apple Smart Cover za iPad mini',
+            img: 'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/m/v/mvqf2_av1_silver.jpg',
+            price: 7200
+        },
+        {
+            name: 'iSTYLE WIRELESS PD 18W POWER BANK 10000 mAh - 10W/7,5W/5W + PD 18W',
+            img: 'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/i/s/istyle_wireless_pd_18w_powerbank-2.jpg',
+            price: 6600
+        },
+        {
+            name: 'Next One Tempered Glass za iPad Air 2019',
+            img: 'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/i/p/ipad-air3_1.png',
+            price: 3900
+        },
+        {
+            name: 'Apple Smart Cover za iPad 10,2"',
+            img: 'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/m/v/mvq42_av1_silver.jpeg',
+            price: 9000
+        }
+    ],
+    audio: [
+        {
+            name: 'Beats Solo³',
+            img: 'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/m/p/mp162zm_a_7.jpg',
+            price: 29100
+        },
+        {
+            name: 'Beats Powerbeats Pro',
+            img: 'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/m/v/mv722.jpeg',
+            price: 39300
+        },
+        {
+            name: 'Harman/Kardon Onyx Studio 6',
+            img: 'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/o/n/onyxstudio6_hero_black_1605x1605.jpg',
+            price: 36790
+        },
+        {
+            name: 'Apple bežično kućište za punjenje Apple AirPods slušalica',
+            img: 'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/m/r/mr8u2_av3_3.jpeg',
+            price: 13790
+        },
+        {
+            name: 'JBL GO 2',
+            img: 'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/b/l/black1_8.jpg',
+            price: 4700
+        },
+        {
+            name: 'Beatsˣ',
+            img: 'https://istyle.rs/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/m/l/mlye2-2_1_2_1.jpeg',
+            price: 19600
+        }
+    ]
+};
+

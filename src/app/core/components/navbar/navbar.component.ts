@@ -109,12 +109,12 @@ export class NavbarComponent implements OnInit {
     {
       name: 'Apple Watch Series 6',
       image: '/assets/images/iwatch-menu/watch-series-6.png',
-      route: '/iwatch/details/51',
+      route: '/iwatch/details/52',
     },
     {
       name: 'Apple Watch SE',
       image: '/assets/images/iwatch-menu/watch-series-se.png',
-      route: '/iwatch/details/52',
+      route: '/iwatch/details/51',
     }
   ];
 
